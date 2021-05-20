@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  .follow {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #000000;
+  }
+
+  .mediaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.25rem;
+    .socialMedia {
+      height: 80px;
+      width: 450px;
+      border: solid black 1px;
+    }
+  }
+  .impLinks {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+    border-bottom: 1px solid #4f4f4f;
+    margin-top: 10rem;
+    div {
+      .heading {
+        text-transform: uppercase;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height */
+
+        color: #000000;
+        margin-bottom: 1rem;
+      }
+      ul {
+        list-style: none;
+        li {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 27px;
+
+          a {
+            text-decoration: none;
+            color: #4f4f4f;
+          }
+        }
+      }
+    }
+  }
+}

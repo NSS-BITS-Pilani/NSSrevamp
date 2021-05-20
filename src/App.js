@@ -9,6 +9,7 @@ import Home from "./Components/Home/home.js";
 import Events from "./Components/Events/events.js";
 
 import TopBar from './Components/TopBar/topbar';
+import Footer from './Components/Footer/footer';
 
 const App = () => (
   <Router>
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/events" exact component={Events} />
       <Route path="/contacts" exact component={Contacts} />
       <Route path="/" exact component={Home} />
+      <Footer />
     </Router>
 );
 
