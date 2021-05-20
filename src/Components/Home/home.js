@@ -1,121 +1,43 @@
 import React from 'react';
+import EventCard from './EventCard/eventcard';
+import DepCard from './DepCards/depcards';
 import classes from "./home.scss";
 
 const home = () => {
+    const events = [
+        { eventName: "Junoon", eventInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.", imgPath: "home_initiatives.png"},
+        { eventName: "Junoon", eventInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.", imgPath: "home_initiatives.png" },
+        { eventName: "Junoon", eventInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.", imgPath: "home_initiatives.png" }
+    ];
+
+    const departments = [
+        { depName: "CLP", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "D3", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "Desco", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "EPD", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "HPA", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "Parishod", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "Events", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "School", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." },
+        { depName: "Umang", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero." }
+    ];
+    
     return (
         <div>
-            <div className="initiatives">
-                <div className="section_heading">Our initiatives</div>
-                <div className="cards">
-                <div className="card">
-                    <img src="/assets/home_initiatives.png" alt="Initiative" className="card_image"/>
-                    <div className="card_info">
-                        <div className="event">Events</div>
-                        <div className="event_heading">Junoon</div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.
-                        <div className="view_more">View More</div>
-                    </div>
+            <div className={`${classes.initiatives} initiatives`}>
+                <div className={`${classes.section_heading} section_heading`}>Our initiatives</div>
+                <div className={`${classes.cards} cards`}>
+                    {events.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath}/>)}
                 </div>
-
-                <div className="card">
-                    <img src="/assets/home_initiatives.png" alt="Initiative" className="card_image"/>
-                    <div className="card_info">
-                        <div className="event">Events</div>
-                        <div className="event_heading">Junoon</div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.
-                        <div className="view_more">View More</div>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <img src="/assets/home_initiatives.png" alt="Initiative" className="card_image"/>
-                    <div className="card_info">
-                        <div className="event">Events</div>
-                        <div className="event_heading">Junoon</div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.
-                        <div className="view_more">View More</div>
-                    </div>
-                </div>
-    
-                </div>
-              <div className="button_div">
-                    <span className="button">View More</span>
+              <div className={`${classes.button_div} button_div`}>
+                    <span className={`${classes.button} button`}>View More</span>
                 </div>
             </div>
 
-            <div className="departments">
-                <div className="section_heading">Our Departments</div>
-                <div className="cards">
-                    <div className="card">
-                        <div className = "card_heading">CLP</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">D3</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">Desco</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">EPD</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">HPA</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">Parishod</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">Events</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">School</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
-
-                    <div className="card">
-                        
-                        <div className = "card_heading">Umang</div>
-                        <div className="card_info">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.  
-                        </div>
-                    </div>
+            <div className={`${classes.departments} departments`}>
+                <div className={`${classes.section_heading} section_heading`}>Our Departments</div>
+                <div className={`${classes.cards} cards`}>
+                    {departments.map((department) => <DepCard depName={department.depName} depInfo={department.depInfo}/>)}
                 </div>
             </div>
         </div>

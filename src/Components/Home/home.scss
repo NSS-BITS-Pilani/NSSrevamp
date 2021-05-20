@@ -18,39 +18,6 @@
 
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     //grid-template-columns: repeat(auto-fit, 1fr);
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-      background: #ffffff;
-
-      .card_image {
-        border-radius: 10px;
-        height: 66%;
-      }
-
-      .card_info {
-        font-size: 0.65rem;
-        padding: 1.1rem;
-
-        .event {
-          color: #828282;
-        }
-
-        .event_heading {
-          font-weight: 700;
-          font-size: 1.4rem;
-        }
-
-        .view_more {
-          margin-top: 5px;
-          font-weight: 600;
-        }
-      }
-    }
   }
 
   .button_div {
@@ -79,14 +46,5 @@
     display: grid;
     grid-gap: 7.4rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
-    .card {
-      display: block;
-
-      .card_heading {
-        font-weight: 600;
-        font-size: 1.6rem;
-      }
-    }
   }
 }
