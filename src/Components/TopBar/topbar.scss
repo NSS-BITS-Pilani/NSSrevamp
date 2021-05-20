@@ -7,35 +7,42 @@
   justify-content: center;
 
   .component1 {
-    align-items: center;
-    width: 249px;
-    height: 84px;
-    .nssLogo {
-      display: inline-block;
-      width: 84px;
+    .logo {
+      position: relative;
+      left: 10%;
+      display: grid;
+      grid-template-columns: 84px 89px 60px;
+      justify-content: space-between;
+      align-items: center;
+      width: 249px;
       height: 84px;
-    }
-    .nss {
-      display: inline-block;
-      font-family: Times New Roman;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 48px;
-      line-height: 55px;
-      text-align: right;
+      .nssLogo {
+        display: inline-block;
+        width: 84px;
+        height: 84px;
+      }
+      .nss {
+        display: inline-block;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 55px;
+        text-align: right;
 
-      color: #333333;
-    }
-    .bits {
-      display: inline-block;
-      font-family: Times New Roman;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 109.5%;
-      /* or 20px */
+        color: #333333;
+      }
+      .bits {
+        display: inline-block;
+        font-family: Times New Roman;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 109.5%;
+        /* or 20px */
 
-      color: #333333;
+        color: #333333;
+      }
     }
   }
   .component2 {

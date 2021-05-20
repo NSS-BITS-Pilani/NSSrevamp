@@ -6,14 +6,16 @@ const topbar = () => {
     return (
         <div className={`${classes.bar} bar`}>
             <div className="component1">
-                <div className="nssLogo">
-                    <img src="/assets/nss-logo-national-service-scheme 1.png" />
-                </div>
-                <div className="nss">
-                    NSS
-                </div>
-                <div className="bits">
-                    BITS PILANI
+                <div className="logo">
+                    <div className="nssLogo">
+                        <img src="/assets/nss-logo-national-service-scheme 1.png" />
+                    </div>
+                    <div className="nss">
+                        NSS
+                    </div>
+                    <div className="bits">
+                        BITS PILANI
+                    </div>
                 </div>
             </div>
             <div className="component2">
