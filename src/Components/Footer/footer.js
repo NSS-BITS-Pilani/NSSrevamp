@@ -9,7 +9,11 @@ const footer = () => {
             </div>
             <div className="mediaContainer">
                 <div className="socialMedia">
-                    
+                    <a href="#" target="_blank"><img src="/assets/image 11.png" /></a>
+                    <a href="#" target="_blank"><img src="/assets/image 9.png" /></a>
+                    <a href="#" target="_blank"><img src="/assets/image 10.png" /></a>
+                    <a href="#" target="_blank"><img src="/assets/image 12.png" /></a>
+                    <a href="#" target="_blank"><img src="/assets/image 13.png" /></a>
                 </div>
             </div>
             <div className="impLinks">
@@ -97,6 +101,17 @@ const footer = () => {
                             <a href="#" target="_blank">Umang Jaipur</a>
                         </li>
                     </ul>                    
+                </div>
+            </div>
+            <div className="copyContainer">
+                <div className="copy">
+                    &copy; 2021 NSS BITS Pilani. All Rights Reserved.
+                </div>
+                <div className="links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">Twitter</a>
                 </div>
             </div>
         </div>
