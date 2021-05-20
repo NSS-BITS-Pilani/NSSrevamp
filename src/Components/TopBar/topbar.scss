@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .bar {
   height: 126px;
   display: flex;
@@ -50,9 +51,29 @@
       color: #333333;
     }
   }
-  .NavLink {
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
+  .component2 {
+    .NavLink {
+      display: inline-block;
+      padding: 5px;
+      margin: 5px;
+      text-decoration: none;
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+
+      color: #333333;
+    }
+    // .NavLink:hover {
+    //   text-decoration: underline;
+    //   font-weight: bold;
+    // }
+    .NavLink:active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
 }

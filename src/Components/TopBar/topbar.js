@@ -16,26 +16,27 @@ const topbar = () => {
                     BITS PILANI
                 </div>
             </div>
-            <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
-                Home
-            </NavLink>
+            <div className="component2">
+                <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
+                    Home
+                </NavLink>
 
-            <NavLink to={"/aboutus"} className={`${classes.NavLink} NavLink`}>
-                About Us
-            </NavLink>
+                <NavLink to={"/aboutus"} className={`${classes.NavLink} NavLink`}>
+                    About Us
+                </NavLink>
 
-            <NavLink to={"/departments"} className={`${classes.NavLink} NavLink`}>
-                Departments
-            </NavLink>
+                <NavLink to={"/departments"} className={`${classes.NavLink} NavLink`}>
+                    Departments
+                </NavLink>
 
-            <NavLink to={"/events"} className={`${classes.NavLink} NavLink`}>
-                Events
-            </NavLink>
+                <NavLink to={"/events"} className={`${classes.NavLink} NavLink`}>
+                    Events
+                </NavLink>
 
-            <NavLink to={"/contacts"} className={`${classes.NavLink} NavLink`}>
-                Contacts
-            </NavLink>
-
+                <NavLink to={"/contacts"} className={`${classes.NavLink} NavLink`}>
+                    Contacts
+                </NavLink>
+            </div>
         </div>
     )
 }
