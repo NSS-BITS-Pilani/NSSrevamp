@@ -1,30 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .bar {
   height: 126px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
   align-items: center;
   justify-content: center;
 
   .component1 {
-    position: absolute;
+    align-items: center;
     width: 249px;
     height: 84px;
-    left: 66px;
-    top: 21px;
     .nssLogo {
-      position: absolute;
-      left: 0%;
-      right: 66.27%;
-      top: 0%;
-      bottom: 0%;
+      display: inline-block;
+      width: 84px;
+      height: 84px;
     }
     .nss {
-      position: absolute;
-      left: 36.95%;
-      right: 27.31%;
-      top: 17.86%;
-      bottom: 16.67%;
-
+      display: inline-block;
       font-family: Times New Roman;
       font-style: normal;
       font-weight: normal;
@@ -35,12 +27,7 @@
       color: #333333;
     }
     .bits {
-      position: absolute;
-      left: 75.9%;
-      right: 0%;
-      top: 27.38%;
-      bottom: 25%;
-
+      display: inline-block;
       font-family: Times New Roman;
       font-style: normal;
       font-weight: normal;
@@ -52,6 +39,9 @@
     }
   }
   .component2 {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    justify-content: space-evenly;
     .NavLink {
       display: inline-block;
       padding: 5px;
@@ -67,10 +57,6 @@
 
       color: #333333;
     }
-    // .NavLink:hover {
-    //   text-decoration: underline;
-    //   font-weight: bold;
-    // }
     .NavLink:active {
       text-decoration: underline;
       font-weight: bold;
