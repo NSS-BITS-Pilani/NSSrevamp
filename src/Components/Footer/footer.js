@@ -4,11 +4,11 @@ import classes from "./footer.scss";
 const footer = () => {
     return (
         <div className={`${classes.footer} footer`}>
-            <div className="follow">
+            <div className={`${classes.follow} follow`}>
                 Follow us on
             </div>
-            <div className="mediaContainer">
-                <div className="socialMedia">
+            <div className={`${classes.mediaContainer} mediaContainer`}>
+                <div className={`${classes.socialMedia} socialMedia`}>
                     <a href="#" target="_blank"><img src="/assets/image 11.png" /></a>
                     <a href="#" target="_blank"><img src="/assets/image 9.png" /></a>
                     <a href="#" target="_blank"><img src="/assets/image 10.png" /></a>
@@ -16,9 +16,9 @@ const footer = () => {
                     <a href="#" target="_blank"><img src="/assets/image 13.png" /></a>
                 </div>
             </div>
-            <div className="impLinks">
+            <div className={`${classes.impLinks} impLinks`}>
                 <div>
-                    <div className="heading">
+                    <div className={`${classes.heading} heading`}>
                         nss bits pilani
                     </div>
                     <ul>
@@ -34,7 +34,7 @@ const footer = () => {
                     </ul>                    
                 </div>
                 <div>
-                    <div className="heading">
+                    <div className={`${classes.heading} heading`}>
                         departments
                     </div>
                     <ul>
@@ -62,7 +62,7 @@ const footer = () => {
                     </ul>                    
                 </div>
                 <div>
-                    <div className="heading">
+                    <div className={`${classes.heading} heading`}>
                         events
                     </div>
                     <ul>
@@ -78,7 +78,7 @@ const footer = () => {
                     </ul>                    
                 </div>
                 <div>
-                    <div className="heading">
+                    <div className={`${classes.heading} heading`}>
                         our partners
                     </div>
                     <ul>
@@ -103,11 +103,11 @@ const footer = () => {
                     </ul>                    
                 </div>
             </div>
-            <div className="copyContainer">
-                <div className="copy">
+            <div className={`${classes.copyContainer} copyContainer`}>
+                <div className={`${classes.copy} copy`}>
                     &copy; 2021 NSS BITS Pilani. All Rights Reserved.
                 </div>
-                <div className="links">
+                <div className={`${classes.links} links`}>
                     <a href="#" target="_blank">Facebook</a>
                     <span class="dot"></span>
                     <a href="#" target="_blank">Instagram</a>
@@ -118,7 +118,7 @@ const footer = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default footer;

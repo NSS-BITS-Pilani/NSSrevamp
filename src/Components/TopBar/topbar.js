@@ -5,20 +5,20 @@ import { NavLink } from 'react-router-dom';
 const topbar = () => {
     return (
         <div className={`${classes.bar} bar`}>
-            <div className="component1">
-                <div className="logo">
-                    <div className="nssLogo">
+            <div className={`${classes.component1} component1`}>
+                <div className={`${classes.bar} bar`}>
+                    <div className={`${classes.nssLogo} nssLogo`}>
                         <img src="/assets/nss-logo-national-service-scheme 1.png" />
                     </div>
-                    <div className="nss">
+                    <div className={`${classes.nss} nss`}>
                         NSS
                     </div>
-                    <div className="bits">
+                    <div className={`${classes.bits} bits`}>
                         BITS PILANI
                     </div>
                 </div>
             </div>
-            <div className="component2">
+            <div className={`${classes.component2} component2`}>
                 <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
                     Home
                 </NavLink>
@@ -40,7 +40,7 @@ const topbar = () => {
                 </NavLink>
             </div>
         </div>
-    )
+    );
 }
 
 export default topbar;
