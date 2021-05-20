@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.section_heading {
+  font-family: poppins;
+  font-weight: 1000;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.initiatives {
+  font-family: poppins;
+  width: 75%;
+  margin: 0 auto;
+
+  .cards {
+    display: grid;
+    grid-gap: 2.4rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    //grid-template-columns: repeat(auto-fit, 1fr);
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      background: #ffffff;
+
+      .card_image {
+        border-radius: 10px;
+        height: 66%;
+      }
+
+      .card_info {
+        font-size: 0.65rem;
+        padding: 1.1rem;
+
+        .event {
+          color: #828282;
+        }
+
+        .event_heading {
+          font-weight: 700;
+          font-size: 1.4rem;
+        }
+
+        .view_more {
+          margin-top: 5px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .button_div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    .button {
+      display: block;
+      color: white;
+      background: #2f80ed;
+      border-radius: 15px;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      padding-left: 1.3rem;
+      padding-right: 1.3rem;
+    }
+  }
+}
