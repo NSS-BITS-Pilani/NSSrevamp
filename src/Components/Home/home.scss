@@ -2,7 +2,7 @@
 
 .section_heading {
   font-family: poppins;
-  font-weight: 1000;
+  font-weight: bold;
   font-size: 3rem;
   margin-bottom: 1.2rem;
 }
@@ -66,6 +66,27 @@
       padding-bottom: 0.8rem;
       padding-left: 1.3rem;
       padding-right: 1.3rem;
+    }
+  }
+}
+
+.departments {
+  font-family: poppins;
+  width: 75%;
+  margin: 0 auto;
+
+  .cards {
+    display: grid;
+    grid-gap: 7.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .card {
+      display: block;
+
+      .card_heading {
+        font-weight: 600;
+        font-size: 1.6rem;
+      }
     }
   }
 }
