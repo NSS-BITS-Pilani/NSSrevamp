@@ -9,6 +9,12 @@ const topbar = () => {
                 <div className="nssLogo">
                     <img src="/assets/nss-logo-national-service-scheme 1.png" />
                 </div>
+                <div className="nss">
+                    NSS
+                </div>
+                <div className="bits">
+                    BITS PILANI
+                </div>
             </div>
             <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
                 Home

@@ -17,6 +17,38 @@
       top: 0%;
       bottom: 0%;
     }
+    .nss {
+      position: absolute;
+      left: 36.95%;
+      right: 27.31%;
+      top: 17.86%;
+      bottom: 16.67%;
+
+      font-family: Times New Roman;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 55px;
+      text-align: right;
+
+      color: #333333;
+    }
+    .bits {
+      position: absolute;
+      left: 75.9%;
+      right: 0%;
+      top: 27.38%;
+      bottom: 25%;
+
+      font-family: Times New Roman;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 109.5%;
+      /* or 20px */
+
+      color: #333333;
+    }
   }
   .NavLink {
     display: inline-block;
