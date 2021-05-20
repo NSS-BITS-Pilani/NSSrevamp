@@ -91,6 +91,17 @@
     }
     .links {
       margin-right: 8.5rem;
+      display: grid;
+      grid-template-columns: repeat(7, max-content);
+      justify-content: space-between;
+      align-items: center;
+      .dot {
+        height: 8px;
+        width: 8px;
+        background-color: #4f4f4f;
+        border-radius: 50%;
+        display: inline-block;
+      }
       a {
         text-decoration: none;
         color: #4f4f4f;

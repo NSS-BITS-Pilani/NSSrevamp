@@ -109,8 +109,11 @@ const footer = () => {
                 </div>
                 <div className="links">
                     <a href="#" target="_blank">Facebook</a>
+                    <span class="dot"></span>
                     <a href="#" target="_blank">Instagram</a>
+                    <span class="dot"></span>
                     <a href="#" target="_blank">LinkedIn</a>
+                    <span class="dot"></span>
                     <a href="#" target="_blank">Twitter</a>
                 </div>
             </div>
