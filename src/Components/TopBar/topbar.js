@@ -5,6 +5,11 @@ import { NavLink } from 'react-router-dom';
 const topbar = () => {
     return (
         <div className={`${classes.bar} bar`}>
+            <div className="component1">
+                <div className="nssLogo">
+                    <img src="/assets/nss-logo-national-service-scheme 1.png" />
+                </div>
+            </div>
             <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
                 Home
             </NavLink>

@@ -1,9 +1,26 @@
 .bar {
+  height: 126px;
   display: flex;
-}
+  align-items: center;
+  justify-content: center;
 
-.NavLink {
-  display: inline-block;
-  padding: 5px;
-  margin: 5px;
+  .component1 {
+    position: absolute;
+    width: 249px;
+    height: 84px;
+    left: 66px;
+    top: 21px;
+    .nssLogo {
+      position: absolute;
+      left: 0%;
+      right: 66.27%;
+      top: 0%;
+      bottom: 0%;
+    }
+  }
+  .NavLink {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+  }
 }
