@@ -69,3 +69,24 @@
     }
   }
 }
+
+.departments {
+  font-family: poppins;
+  width: 75%;
+  margin: 0 auto;
+
+  .cards {
+    display: grid;
+    grid-gap: 7.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    .card {
+      display: block;
+
+      .card_heading {
+        font-weight: 500;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
