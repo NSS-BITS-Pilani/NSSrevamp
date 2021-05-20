@@ -6,7 +6,7 @@ const topbar = () => {
     return (
         <div className={`${classes.bar} bar`}>
             <div className={`${classes.component1} component1`}>
-                <div className={`${classes.bar} bar`}>
+                <div className={`${classes.logo} logo`}>
                     <div className={`${classes.nssLogo} nssLogo`}>
                         <img src="/assets/nss-logo-national-service-scheme 1.png" />
                     </div>
