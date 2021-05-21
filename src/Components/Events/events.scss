@@ -1,7 +1,7 @@
 .mainBody {
   display: grid;
   grid-template-columns: 2fr 8fr;
-  margin-right: 5.5625rem;
+  margin: 0.75rem 5.5625rem 0rem 4.125rem;
   grid-column-gap: 1.875rem;
 
   font-family: Poppins;
@@ -12,7 +12,9 @@
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     height: max-content;
+    padding-top: 3.0625rem;
     button {
+      text-align: left;
       font-weight: 500;
       font-size: 1.5rem;
       line-height: 2.25rem;

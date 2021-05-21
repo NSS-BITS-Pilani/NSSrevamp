@@ -1,0 +1,37 @@
+.container {
+  margin-left: 9.375rem;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+
+  form {
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 4.5rem;
+      /* identical to box height */
+
+      color: #333333;
+    }
+    .inputHead {
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+
+      color: #000000;
+    }
+    input {
+      font-size: 1.4375rem;
+      line-height: 2.125rem;
+
+      color: #828282;
+      border: none;
+      border-bottom: 1px solid #828282;
+      width: 25.625rem;
+    }
+    #message {
+      width: 66.4375rem;
+    }
+  }
+}
