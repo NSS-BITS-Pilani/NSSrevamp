@@ -1,8 +1,18 @@
 .depcard {
-      display: block;
+  display: block;
 
-      .card_heading {
-        font-weight: 600;
-        font-size: 1.6rem;
-      }
+  .card_heading {
+    font-weight: 600;
+    font-size: 1.6rem;
+    display: inline-block;
+    background: rgba(255, 190, 190, 0.43);
+
+    .card_color {
+      width: 100%;
+      //background: red;
+      height: 40px;
+      position: relative;
+      left: 50%;
     }
+  }
+}
