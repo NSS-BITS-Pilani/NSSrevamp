@@ -7,6 +7,85 @@
   margin-bottom: 1.2rem;
 }
 
+.mainInfo{
+  display: flex;
+  justify-content: center;
+  font-family: poppins;
+  margin-bottom: 4rem;
+
+  .homeFlexBox{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    flex-wrap: wrap;
+  .homeLeft{
+    width: 50%;
+    padding-right: 10%;
+
+    .button_div {
+    display: flex;
+    margin-top: 2rem;
+    cursor: pointer;
+    .button {
+      display: block;
+      color: white;
+      background: linear-gradient(90deg, #F857A6 0%, #FF5858 100%);
+      border-radius: 15px;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      padding-left: 1.3rem;
+      padding-right: 1.3rem;
+    }
+  }
+  }
+
+  .homeRight{
+    width: 50%;
+  }
+  }
+  
+}
+
+.homeAbout{
+
+  font-family: poppins;
+  width: 75%;
+  margin: 0 auto;
+  
+  .aboutInfo{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    margin-bottom: 4rem;
+
+    .aboutFlexBox{
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .left{
+        width: 50%;
+      }
+
+      .right{
+        width: 50%;
+        padding-left: 10%;
+      }
+
+      .leftB{
+        width: 50%;
+        padding-right: 10%;
+      }
+
+      .rightB{
+        width: 50%;
+        
+      }
+      
+    }
+  }
+}
+
 .initiatives {
   font-family: poppins;
   width: 75%;
