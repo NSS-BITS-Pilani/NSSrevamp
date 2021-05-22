@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// .section_heading {
+//   font-family: poppins;
+//   font-weight: bold;
+//   font-size: 3rem;
+// }
+
+.container{
+    width: 75%;
+
+    .aboutTop{
+        .aboutSection{
+            display: flex;
+
+            .bullet{
+                width: 10%;
+            }
+
+            .title{
+                width: 90%
+            }
+
+            .aboutInfo{}
+
+
+        }
+    }
+}
