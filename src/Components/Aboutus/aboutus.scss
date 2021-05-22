@@ -18,12 +18,12 @@
             display: flex;
 
             .bullet{
-                width: 5%;
+                width: 3%;
                 align-self: center;
             }
 
             .title{
-                width: 95%;
+                width: 97%;
                 font-weight: bold;
                 font-size: 2.5rem;
             }
@@ -33,11 +33,11 @@
             display: flex;
 
             .aboutInfoGap{
-                width: 5%;
+                width: 3%;
             }
 
             .aboutInfo{
-                width: 95%;
+                width: 97%;
             }
         }
     }
@@ -52,7 +52,8 @@
     .profileCards{
     
         display: grid;
-        grid-gap: 7rem;
+        grid-column-gap: 7rem;
+        grid-row-gap: 3rem;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   
         margin-bottom: 3rem;
