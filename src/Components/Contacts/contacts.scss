@@ -64,3 +64,17 @@
     }
   }
 }
+@media all and (max-width: 480px) {
+  .container {
+    display: block;
+    form {
+      #message {
+        width: 25.625rem;
+      }
+    }
+    .mapContainer {
+      position: relative;
+      left: 0%;
+    }
+  }
+}
