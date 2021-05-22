@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from "./aboutus.scss";
+import ProfileCard from './ProfileCard/ProfileCard';
 
 const aboutus = () => {
     return (
@@ -58,9 +59,54 @@ const aboutus = () => {
 
             <div className={`${classes.section_heading} section_heading`}>Our Team</div>
 
-            
-            
-            
+            <div className={`${classes.team_heading} team_heading`}>
+                Faculty Coordinator
+            </div>
+
+            <div className={`${classes.profileCards} profileCards`}>
+                <ProfileCard
+                    imgPath="ProfilePic.png"
+                    designation="Faculty Coordinator"
+                    personName="Ashish Tiwari"
+                 />
+            </div>
+
+            <div className={`${classes.team_heading} team_heading`}>
+                Proffesors Incharge
+            </div>
+
+            <div className={`${classes.profileCards} profileCards`}>
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
+            </div>
+
+            <div className={`${classes.team_heading} team_heading`}>
+                Leaderships
+            </div>
+
+            <div className={`${classes.profileCards} profileCards`}>
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
+            </div>
+
+            <div className={`${classes.team_heading} team_heading`}>
+                Coordinators
+            </div>
+
+            <div className={`${classes.profileCards} profileCards`}>
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
+            </div>
+
         </div>
     );
 }

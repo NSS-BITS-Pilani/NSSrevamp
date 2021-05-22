@@ -41,4 +41,20 @@
             }
         }
     }
+
+    .team_heading{
+        font-weight: 700;
+        color: rgba(6, 67, 150, 1);
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .profileCards{
+    
+        display: grid;
+        grid-gap: 7rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  
+        margin-bottom: 3rem;
+    }
 }

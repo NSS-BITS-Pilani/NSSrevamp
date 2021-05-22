@@ -1,0 +1,29 @@
+.card {
+      width: 288px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      background: #ffffff;
+
+      .card_image {
+        border-radius: 10px;
+        height: 66%;
+        width: 100%;
+      }
+
+      .card_info {
+        font-size: 0.65rem;
+        padding: 1.1rem;
+
+        .designation {
+          color: #828282;
+        }
+
+        .personName {
+          font-weight: 700;
+          font-size: 1.4rem;
+        }
+      }
+    }
