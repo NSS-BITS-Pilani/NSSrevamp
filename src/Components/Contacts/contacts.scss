@@ -64,10 +64,15 @@
     }
   }
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
   .container {
-    display: block;
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content max-content;
+    justify-content: center;
+
     form {
+      justify-content: center;
       #message {
         width: 25.625rem;
       }
