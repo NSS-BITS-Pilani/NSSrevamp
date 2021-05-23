@@ -95,10 +95,15 @@
       margin-right: 2rem;
       width: max-content;
       cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
       .FiMenu {
         height: 2rem;
         width: 2rem;
       }
+    }
+    .toggle:hover {
+      background: #fffeed;
     }
     .Barlinks {
       background: white;
@@ -127,8 +132,11 @@
       button:hover {
         background: #fffeed;
       }
-      .exit {
-        justify-self: flex-end;
+      .closeBtn {
+        justify-self: right;
+        width: max-content;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
       }
     }
   }
