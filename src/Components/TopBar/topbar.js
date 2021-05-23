@@ -1,25 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from "./topbar.scss";
 import { NavLink } from 'react-router-dom';
 
-const topbar = () => {
-    return (
-        <div className={`${classes.bar} bar`}>
-            <div className={`${classes.component1} component1`}>
-                <div className={`${classes.logo} logo`}>
-                    <div className={`${classes.nssLogo} nssLogo`}>
-                        <img src="/assets/nss-logo-national-service-scheme 1.png" />
-                    </div>
-                    <div className={`${classes.nss} nss`}>
-                        NSS
-                    </div>
-                    <div className={`${classes.bits} bits`}>
-                        BITS PILANI
-                    </div>
-                </div>
-            </div>
-            <div className={`${classes.component2} component2`}>
-                <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
+const Topbar = () => {
+
+    const [showDrawer, setShowDrawer] = useState(false);
+
+    const links =
+    
+        <React.Fragment>
+    
+            <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
                     Home
                 </NavLink>
 
@@ -38,9 +29,37 @@ const topbar = () => {
                 <NavLink to={"/contacts"} className={`${classes.NavLink} NavLink`}>
                     Contacts
                 </NavLink>
+    
+        </React.Fragment>
+
+    return (
+        <div className={`${classes.bar} bar`}>
+            <div className={`${classes.component1} component1`}>
+                <div className={`${classes.logo} logo`}>
+                    <div className={`${classes.nssLogo} nssLogo`}>
+                        <img src="/assets/nss-logo-national-service-scheme 1.png" />
+                    </div>
+                    <div className={`${classes.nss} nss`}>
+                        NSS
+                    </div>
+                    <div className={`${classes.bits} bits`}>
+                        BITS PILANI
+                    </div>
+                </div>
+            </div>
+            <div className={`${classes.component2} component2`}>
+                {links}
+            </div>
+
+            <div className={`${classes.toggle} toggle`} onClick={() => {setShowDrawer(!showDrawer)} }>
+                &equiv;
+            </div>
+
+            <div className={`${classes.Barlinks} Barlinks`}>
+                {showDrawer && links}
             </div>
         </div>
     );
 }
 
-export default topbar;
+export default Topbar;

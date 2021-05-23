@@ -9,7 +9,7 @@
 .bar {
   height: 126px;
   display: grid;
-  grid-template-columns: 4fr 6fr;
+  grid-template-columns: 4fr 6fr 2fr;
   align-items: center;
   justify-content: center;
 
@@ -76,6 +76,24 @@
       font-weight: bold;
     }
   }
+
+  .toggle{
+    border: 2px solid black;
+  }
+
+  .Barlinks{
+      display: block;
+      background: rgba(252, 255, 59, 0.9);
+      position: absolute;
+      top: 5rem;
+      left:25%;
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
 }
 @media all and (max-width: 768px) {
   .bar {

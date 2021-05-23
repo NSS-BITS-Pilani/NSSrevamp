@@ -7,83 +7,77 @@
   margin-bottom: 1.2rem;
 }
 
-.mainInfo{
+.mainInfo {
   display: flex;
   justify-content: center;
   font-family: poppins;
   margin-bottom: 4rem;
 
-  .homeFlexBox{
+  .homeFlexBox {
     display: flex;
     width: 75%;
     justify-content: center;
     flex-wrap: wrap;
-  .homeLeft{
-    width: 50%;
-    padding-right: 10%;
+    .homeLeft {
+      width: 50%;
+      padding-right: 10%;
 
-    .button_div {
-    display: flex;
-    margin-top: 2rem;
-    cursor: pointer;
-    .button {
-      display: block;
-      color: white;
-      background: linear-gradient(90deg, #F857A6 0%, #FF5858 100%);
-      border-radius: 15px;
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem;
-      padding-left: 1.3rem;
-      padding-right: 1.3rem;
+      .button_div {
+        display: flex;
+        margin-top: 2rem;
+        cursor: pointer;
+        .button {
+          display: block;
+          color: white;
+          background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+          border-radius: 15px;
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+          padding-left: 1.3rem;
+          padding-right: 1.3rem;
+        }
+      }
+    }
+
+    .homeRight {
+      width: 50%;
     }
   }
-  }
-
-  .homeRight{
-    width: 50%;
-  
-    }
-  }
-  
 }
 
-.homeAbout{
-
+.homeAbout {
   font-family: poppins;
   width: 75%;
   margin: 0 auto;
-  
-  .aboutInfo{
+
+  .aboutInfo {
     display: flex;
     justify-content: center;
     font-family: poppins;
     margin-bottom: 4rem;
 
-    .aboutFlexBox{
+    .aboutFlexBox {
       display: flex;
       width: 100%;
       align-items: center;
 
-      .left{
+      .left {
         width: 50%;
-        
       }
 
-      .right{
+      .right {
         width: 50%;
         padding-left: 10%;
       }
 
-      .leftB{
+      .leftB {
         width: 50%;
         padding-right: 10%;
       }
 
-      .rightB{
+      .rightB {
         width: 50%;
-        
       }
-      
     }
   }
 }
