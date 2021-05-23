@@ -77,3 +77,10 @@
     }
   }
 }
+@media all and (max-width: 768px) {
+  .bar {
+    .component2 {
+      display: none;
+    }
+  }
+}
