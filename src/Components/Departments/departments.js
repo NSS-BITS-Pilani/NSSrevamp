@@ -1,37 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from "./departments.scss";
 
-const departments = () => {
+const Departments = () => {
+
+    const [departmentIndex, setDepartmentIndex] = useState(6);
+
+    const Departments = [
+        { title: "CLP", color: "#fffeed" },
+        { title: "D3", color: "#fffeed" },
+        { title: "Desco", color: "#fffeed" },
+        { title: "EPD", color: "#fffeed" },
+        { title: "HPA", color: "#fffeed" },
+        { title: "Parishod", color: "#fffeed" },
+        { title: "School", color: "#fffeed" },
+        { title: "Umang", color: "#fffeed" },
+    ];
+
     return (
         <div className={`${classes.contentBody} contentBody`}>
             <aside>
-                <button onClick="">
-                    CLP
-                </button>
-                <button onClick="">
-                    D3
-                </button>
-                <button onClick="">
-                    Desco
-                </button> 
-                <button onClick="">
-                    EPD
-                </button> 
-                <button onClick="">
-                    HPA
-                </button>
-                <button onClick="">
-                    Parishod
-                </button>
-                <button onClick="">
-                    School
-                </button>
-                <button onClick="">
-                    Umang
-                </button>
+                {Departments.map((department, index) =>
+                    <button onClick={() => setDepartmentIndex(index)} style={departmentIndex === index ? {background: department.color} : null}>{department.title}</button>
+                )}
             </aside>
             <div className={`${classes.mainContent} mainContent`}>
-                <h1>School</h1>
+                <h1>{ Departments[departmentIndex].title }</h1>
                 <div className={`${classes.caption} caption`}>
                     Educating today's Learners for Tomorrow's World
                 </div>
@@ -56,4 +49,4 @@ const departments = () => {
     );
 }
 
-export default departments;
+export default Departments;

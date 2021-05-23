@@ -1,22 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from "./events.scss";
 
-const events = () => {
+const Events = () => {
+
+    const events = [
+        { title: "Junoon" },
+        { title: "Smile For A Shop" },
+        { title: "Blood Donation Camp" }
+    ];
+
+    const [eventIndex, setEventIndex] = useState(0);
+
+
     return (
         <div className={`${classes.mainBody} mainBody`}>
             <aside>
-                <button onClick="">
-                    Junoon
-                </button>
-                <button onClick="">
-                    Shop For a Smile
-                </button>
-                <button onClick="">
-                    Blood Donation Camp
-                </button>
+                {events.map((event, index) =>
+                    <button onClick={() => setEventIndex(index)} style={eventIndex === index ? {background: "#EDFFFD"} : null}>{event.title}</button>
+                )}
             </aside>
             <div className={`${classes.mainText} mainText`}>
-                <h1>Junoon</h1>
+                <h1>{events[eventIndex].title}</h1>
                 <div className={`${classes.caption} caption`}>
                     A WORLD OF MILLION DIFFERENT ABILITIES
                 </div>
@@ -38,4 +42,4 @@ const events = () => {
     );
 }
 
-export default events;
+export default Events;
