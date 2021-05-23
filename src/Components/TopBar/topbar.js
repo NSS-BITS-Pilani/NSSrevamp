@@ -56,6 +56,7 @@ const Topbar = () => {
             </div>
 
             <div className={`${classes.Barlinks} Barlinks`}>
+                {showDrawer && <button onClick={() => { setShowDrawer(!showDrawer) }}>X</button>}
                 {showDrawer && links}
             </div>
         </div>
