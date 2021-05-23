@@ -13,25 +13,43 @@ const Topbar = () => {
         <React.Fragment>
     
             <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
-                    Home
-                </NavLink>
+                Home
+            </NavLink>
 
-                <NavLink to={"/aboutus"} className={`${classes.NavLink} NavLink`}>
-                    About Us
-                </NavLink>
+            <NavLink to={"/aboutus"} className={`${classes.NavLink} NavLink`}>
+                About Us
+            </NavLink>
 
-                <NavLink to={"/departments"} className={`${classes.NavLink} NavLink`}>
-                    Departments
-                </NavLink>
+            <NavLink to={"/departments"} className={`${classes.NavLink} NavLink`}>
+                Departments
+            </NavLink>
 
-                <NavLink to={"/events"} className={`${classes.NavLink} NavLink`}>
-                    Events
-                </NavLink>
+            <NavLink to={"/events"} className={`${classes.NavLink} NavLink`}>
+                Events
+            </NavLink>
 
-                <NavLink to={"/contacts"} className={`${classes.NavLink} NavLink`}>
-                    Contacts
-                </NavLink>
+            <NavLink to={"/contacts"} className={`${classes.NavLink} NavLink`}>
+                Contacts
+            </NavLink>
     
+        </React.Fragment>
+    const navBtn = 
+        <React.Fragment>
+            <button onClick="">
+                Home
+            </button>
+            <button onClick="">
+                About Us
+            </button>
+            <button onClick="">
+                Departments
+            </button> 
+            <button onClick="">
+                Events
+            </button> 
+            <button onClick="">
+                Contacts
+            </button>
         </React.Fragment>
 
     return (
@@ -54,12 +72,12 @@ const Topbar = () => {
             </div>
 
             <div className={`${classes.toggle} toggle`} onClick={() => {setShowDrawer(!showDrawer)} }>
-                <FiMenu />
+                <FiMenu className={`${classes.FiMenu} FiMenu`}/>
             </div>
 
             <div className={`${classes.Barlinks} Barlinks`}>
                 {showDrawer && <button onClick={() => { setShowDrawer(!showDrawer) }}><AiOutlineClose /></button>}
-                {showDrawer && links}
+                {showDrawer && navBtn}
             </div>
         </div>
     );
