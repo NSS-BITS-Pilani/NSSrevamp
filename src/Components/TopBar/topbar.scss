@@ -77,23 +77,22 @@
     }
   }
 
-  .toggle{
+  .toggle {
     border: 2px solid black;
   }
 
-  .Barlinks{
-      display: block;
-      background: rgba(252, 255, 59, 0.9);
-      position: absolute;
-      top: 5rem;
-      left:25%;
-      width: 50%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-    }
+  .Barlinks {
+    display: block;
+    background: rgba(252, 255, 59, 0.9);
+    position: absolute;
+    top: 5rem;
+    left: 25%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media all and (max-width: 768px) {
   .bar {

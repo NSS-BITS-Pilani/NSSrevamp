@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import classes from "./topbar.scss";
 import { NavLink } from 'react-router-dom';
+import { FiMenu } from 'react-icons/fi'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const Topbar = () => {
 
@@ -52,11 +54,11 @@ const Topbar = () => {
             </div>
 
             <div className={`${classes.toggle} toggle`} onClick={() => {setShowDrawer(!showDrawer)} }>
-                &equiv;
+                <FiMenu />
             </div>
 
             <div className={`${classes.Barlinks} Barlinks`}>
-                {showDrawer && <button onClick={() => { setShowDrawer(!showDrawer) }}>X</button>}
+                {showDrawer && <button onClick={() => { setShowDrawer(!showDrawer) }}><AiOutlineClose /></button>}
                 {showDrawer && links}
             </div>
         </div>
