@@ -36,19 +36,19 @@ const Topbar = () => {
     const navBtn = 
         <React.Fragment>
             <button onClick="">
-                Home
+                <NavLink to={"/"}>Home</NavLink>
             </button>
             <button onClick="">
-                About Us
+                <NavLink to={"/aboutus"}>About Us</NavLink>
             </button>
             <button onClick="">
-                Departments
+                <NavLink to={"/departments"}>Departments</NavLink>
             </button> 
             <button onClick="">
-                Events
+                <NavLink to={"/events"}>Events</NavLink>
             </button> 
             <button onClick="">
-                Contacts
+                <NavLink to={"/contacts"}>Contacts</NavLink>
             </button>
         </React.Fragment>
 
