@@ -50,7 +50,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className={`${classes.homeRight} homeRight`}>
-                        <div><img src="/assets/home_top.png" alt="img" align="right"/></div>
+                        <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" align="right"/></div>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@ const Home = () => {
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                         <div className={`${classes.left} left`}>
-                            <div><img src="/assets/rectangle_24.png" alt="img" /></div>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
                         </div>
 
                         <div className={`${classes.right} right`}>
@@ -82,7 +82,7 @@ const Home = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet et donec ut iaculis mauris amet fringilla neque eget. Habitant nec risus viverra at ut arcu, arcu venenatis. Lectus egestas diam at non nec mattis enim vivamus. Faucibus purus orci elit, id ornare pellentesque lectus aliquam. Ut leo consequat malesuada vel proin maecenas dictumst justo. Tristique nam iaculis amet augue justo volutpat varius imperdiet nunc.
                         </div>
                         <div className={`${classes.rightB} rightB`}>
-                            <div><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
                         </div>
                     </div>
                 </div>

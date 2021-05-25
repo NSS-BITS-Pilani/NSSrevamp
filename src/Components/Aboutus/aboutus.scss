@@ -7,55 +7,68 @@
   margin-bottom: 3rem;
 }
 
-.mainDivision{
-    width: 75%;
-    margin: 0 auto;
-    font-family: poppins;
+.mainDivision {
+  width: 75%;
+  margin: 0 auto;
+  font-family: poppins;
 
-    .aboutTop{
-        margin-bottom: 3rem;
-        .aboutSectionH{
-            display: flex;
+  .aboutTop {
+    margin-bottom: 3rem;
+    .aboutSectionH {
+      display: flex;
 
-            .bullet{
-                width: 3%;
-                align-self: center;
-            }
+      .bullet {
+        width: 3%;
+        align-self: center;
+      }
 
-            .title{
-                width: 97%;
-                font-weight: bold;
-                font-size: 2.5rem;
-            }
-        }
-
-        .aboutSectionI{
-            display: flex;
-
-            .aboutInfoGap{
-                width: 3%;
-            }
-
-            .aboutInfo{
-                width: 97%;
-            }
-        }
+      .title {
+        width: 97%;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
     }
 
-    .team_heading{
-        font-weight: 700;
-        color: rgba(6, 67, 150, 1);
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
+    .aboutSectionI {
+      display: flex;
 
-    .profileCards{
-    
-        display: grid;
-        grid-column-gap: 7rem;
-        grid-row-gap: 3rem;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  
-        margin-bottom: 3rem;
+      .aboutInfoGap {
+        width: 3%;
+      }
+
+      .aboutInfo {
+        width: 97%;
+      }
     }
+  }
+
+  .team_heading {
+    font-weight: 700;
+    color: rgba(6, 67, 150, 1);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .profileCards {
+    display: grid;
+    grid-column-gap: 7rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .aboutTop {
+    .bullet,
+    .aboutInfoGap {
+      display: none;
+    }
+    .title,
+    .aboutInfo {
+      width: 100%;
+    }
+  }
 }
