@@ -1,0 +1,167 @@
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ct-footer {
+  padding-top: 70px;
+  font-family: poppins;
+  margin-top: 20px;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.ct-footer-list {
+  padding: 50px 0;
+  list-style: none;
+  padding-left: 0;
+  display: table;
+  width: 100%;
+}
+
+@media (max-width: 479px) {
+  .ct-footer-list {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ct-footer-list > li {
+    width: 20%;
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .ct-footer-list > li:last-child {
+    width: 7%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ct-footer-list > li {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .ct-footer-list > li {
+    width: 50%;
+  }
+}
+
+@media (max-width: 479px) {
+  .ct-footer-list > li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ct-footer-list > li {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.ct-footer-list > li .ct-footer-list-header {
+  font-family: poppins;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.ct-footer-list > li ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ct-footer-list > li ul li a {
+  color: #4f4f4f;
+}
+
+.ct-footer-list > li ul li a:hover {
+  text-decoration: underline;
+}
+
+.ct-footer-post {
+  border-top: 1px solid #4f4f4f;
+  padding: 30px 0;
+}
+
+.ct-footer-post .inner-left,
+.ct-footer-post .inner-right {
+  padding: 20px 0;
+}
+
+.ct-footer-post ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 -20px;
+}
+
+.ct-footer-post ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.ct-footer-post a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .ct-footer-post p {
+    display: inline-block;
+  }
+
+  .ct-footer-post p + p {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ct-footer-post .inner-left {
+    float: left;
+  }
+
+  .ct-footer-post .inner-right {
+    float: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .ct-footer-post {
+    text-align: center;
+  }
+}
+
+.follow {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #000000;
+}
+
+.mediaContainer {
+  margin-top: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .socialMedia {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width: 450px;
+
+    img {
+      width: 42px;
+    }
+  }
+}
