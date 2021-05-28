@@ -39,10 +39,15 @@ const Home = () => {
     
     return (
         <div>
+            <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "85%", top: "6.5rem", zIndex: "-1" }} src="/assets/ellipse_blue.svg"></img>
+            <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "37.5%", top: "22rem", zIndex: "-1" }} src="/assets/ellipse_yellow.svg"></img>
+            <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "80%", top: "44rem", zIndex: "-1" }} src="/assets/green_blob.svg"></img>
+             <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "0%", top: "72rem", zIndex:"-1"}} src="/assets/blue_blob.svg"></img>
             <div className={`${classes.mainInfo} mainInfo`}>
                 <div className={`${classes.homeFlexBox} homeFlexBox`}>
                     <div className={`${classes.homeLeft} homeLeft`}>
-                        <div className={`${classes.section_heading} section_heading`}>
+                        <div className={`${classes.section_heading_home} section_heading_home`}>
+                            
                             NSS BITS PILANI<br></br>Not me but you
                         </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
@@ -51,14 +56,17 @@ const Home = () => {
                         </div>
                     </div>
                     <div className={`${classes.homeRight} homeRight`}>
-                        <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" align="right"/></div>
+                        <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" /></div>
+                    </div>
+                    <div className={`${classes.button_div} button_div_mob`}>
+                        <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                     </div>
                 </div>
             </div>
 
 
             <div className={`${classes.homeAbout} homeAbout`}>
-                <div className={`${classes.section_heading} section_heading`}>Our initiatives</div>
+                <div className={`${classes.section_heading_home} section_heading_home`}>About Us</div>
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                         <div className={`${classes.left} left`}>
@@ -66,7 +74,7 @@ const Home = () => {
                         </div>
 
                         <div className={`${classes.right} right`}>
-                            <div className={`${classes.section_heading} section_heading`}>
+                            <div className={`${classes.section_heading_home} section_heading_home`}>
                             <span style={{color: "rgba(39, 174, 96, 1)"}}>What are we</span>
                             </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
@@ -77,7 +85,7 @@ const Home = () => {
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                         <div className={`${classes.leftB} leftB`}>
-                            <div className={`${classes.section_heading} section_heading`}>
+                            <div className={`${classes.section_heading_home} section_heading_home`}>
                             <span style={{color: "rgba(45, 156, 219, 1)"}}>What we do</span>
                             </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet et donec ut iaculis mauris amet fringilla neque eget. Habitant nec risus viverra at ut arcu, arcu venenatis. Lectus egestas diam at non nec mattis enim vivamus. Faucibus purus orci elit, id ornare pellentesque lectus aliquam. Ut leo consequat malesuada vel proin maecenas dictumst justo. Tristique nam iaculis amet augue justo volutpat varius imperdiet nunc.
@@ -90,7 +98,7 @@ const Home = () => {
             </div>
             
             <div className={`${classes.initiatives} initiatives`}>
-                <div className={`${classes.section_heading} section_heading`}>Our initiatives</div>
+                <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
                 <div className={`${classes.cards} cards`}>
                     {renderEvents()}
                 </div>
@@ -100,7 +108,7 @@ const Home = () => {
             </div>
 
             <div className={`${classes.departments} departments`}>
-                <div className={`${classes.section_heading} section_heading`}>Our Departments</div>
+                <div className={`${classes.section_heading_home} section_heading_home`}>Our Departments</div>
                 <div className={`${classes.cards} cards`}>
                     {departments.map((department) => <DepCard
                         depName={department.depName}

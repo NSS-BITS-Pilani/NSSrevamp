@@ -9,7 +9,7 @@ a:active {
 .ct-footer {
   padding-top: 70px;
   font-family: poppins;
-  margin-top: 20px;
+  margin-top: 4rem !important;
   position: relative;
   margin: 0 auto;
   width: 80%;
@@ -21,6 +21,10 @@ a:active {
   padding-left: 0;
   display: table;
   width: 100%;
+}
+
+.ct-footer-list li{
+  margin: 0.5rem;
 }
 
 @media (max-width: 479px) {
@@ -142,7 +146,7 @@ a:active {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   text-align: center;
   color: #000000;
 }
@@ -151,6 +155,7 @@ a:active {
   margin-top: 2.25rem;
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
   align-items: center;
   .socialMedia {
     display: grid;

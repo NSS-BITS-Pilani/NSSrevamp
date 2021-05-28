@@ -8,7 +8,7 @@ const Topbar = () => {
 
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
                     <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center"}}>
                         <div><img className={`${classes.nssLogo} nssLogo`} src="/assets/nss-logo-national-service-scheme 1.png" /></div>

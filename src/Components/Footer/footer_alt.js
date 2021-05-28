@@ -24,7 +24,7 @@ const footer_alt = () => {
                     <li>
                         <h2 class="ct-footer-list-header">NSS BITS PILANI</h2>
                         <ul>
-                            <li>
+                            <li style={{marginTop:"1rem"}}>
                                 <a href="#">About us</a>
                             </li>
                             <li>
@@ -38,7 +38,7 @@ const footer_alt = () => {
                     <li>
                         <h2 class="ct-footer-list-header">DEPARTMENTS</h2>
                         <ul>
-                            <li>
+                            <li style={{marginTop:"1rem"}}>
                                 <a href="#">School</a>
                             </li>
                             <li>
@@ -64,7 +64,7 @@ const footer_alt = () => {
                     <li>
                         <h2 class="ct-footer-list-header">EVENTS</h2>
                         <ul>
-                            <li>
+                            <li style={{marginTop:"1rem"}}>
                                 <a href="#">Junoon</a>
                             </li>
                             <li>
@@ -78,7 +78,7 @@ const footer_alt = () => {
                     <li>
                         <h2 class="ct-footer-list-header">OUR PARTNERS</h2>
                         <ul>
-                            <li>
+                            <li style={{marginTop:"1rem"}}>
                                 <a href="#">BITSAA</a>
                             </li>
                             <li>
@@ -102,7 +102,8 @@ const footer_alt = () => {
             </div>
 
             <div class="ct-footer-post">
-                <div class="alt_container">
+                
+                <div class="alt_container" style={{marginBottom:"4rem"}}>
                     <div class="inner-right">
                             <ul>
                                 <li>

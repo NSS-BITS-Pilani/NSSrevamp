@@ -8,7 +8,7 @@ const EventCard = (props) => {
                 <div className={`${classes.card_info} card_info`}>
                     <div className={`${classes.event} event`}>Events</div>
                 <div className={`${classes.event_heading} event_heading`}>{props.eventName}</div>
-                    {props.eventInfo}
+                    <span style={{fontSize:"0.725rem"}}>{props.eventInfo}</span>
                 <div className={`${classes.view_more} view_more`}>View More</div>
                 </div>
         </div>

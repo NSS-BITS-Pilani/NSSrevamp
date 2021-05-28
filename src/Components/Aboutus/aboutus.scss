@@ -3,35 +3,56 @@
 .section_heading {
   font-family: poppins;
   font-weight: bold;
-  font-size: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 4rem !important;
   margin-bottom: 3rem;
 }
 
+.blue_bullet{
+  width: 12rem;
+  height: 0.5rem;
+  background: #064396;
+  border-radius: 0px 5px 5px 0px;
+  position: relative;
+  top: 1.8rem;
+  right: 12.5rem;
+}
+
 .mainDivision {
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
+  margin-top: 4rem;
   font-family: poppins;
 
   .aboutTop {
     margin-bottom: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
     .aboutSectionH {
       display: flex;
 
       .bullet {
-        width: 3%;
+        width: 0.8%;
+        margin-right: 2.2%;
+        height: 2.5rem;
+        position: relative;
+        bottom: 0.2rem;
         align-self: center;
       }
 
       .title {
         width: 97%;
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         margin-bottom: 0.5rem;
+
       }
     }
 
     .aboutSectionI {
       display: flex;
+      font-size: 1rem;
 
       .aboutInfoGap {
         width: 3%;
@@ -46,21 +67,24 @@
   .team_heading {
     font-weight: 700;
     color: rgba(6, 67, 150, 1);
+    width: 80%;
+    margin: 0 auto;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 
   .profileCards {
     display: grid;
+    width: 80%;
+    margin: 0 auto;
     grid-column-gap: 7rem;
     grid-row-gap: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-
     margin-bottom: 3rem;
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 800px) {
   .aboutTop {
     .bullet,
     .aboutInfoGap {
@@ -68,7 +92,25 @@
     }
     .title,
     .aboutInfo {
-      width: 100%;
+      width: 80%;
+    }
+
+    .title{
+      font-size: 2.2rem;
+    }
+  }
+
+  .section_heading{
+    font-size: 3.4rem;
+  }
+
+  .hiddenimage{
+    display: none;
+  }
+
+  .mainDivision{
+    .profileCards{
+      width: 80%;
     }
   }
 }

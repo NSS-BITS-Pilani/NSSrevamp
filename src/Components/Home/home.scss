@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.section_heading {
+.section_heading_home {
   font-family: poppins;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1.2rem;
 }
 
@@ -12,16 +12,33 @@
   justify-content: center;
   font-family: poppins;
   margin-bottom: 4rem;
+  margin-top: 4.5rem;
 
   .homeFlexBox {
     display: flex;
-    width: 75%;
+    width: 80%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
     img {
       max-width: 100%;
+    }
+
+    .button_div_mob{
+      display: none;
+      margin-top: 2rem;
+        cursor: pointer;
+        .button {
+          display: block;
+          color: white;
+          background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+          border-radius: 15px;
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+          padding-left: 1.3rem;
+          padding-right: 1.3rem;
+        }
     }
 
     .homeLeft {
@@ -49,14 +66,19 @@
 
     .homeRight {
       width: 50%;
+      .homeimg{
+        display: flex;
+        justify-content: flex-end;
+      }
     }
   }
 }
 
 .homeAbout {
   font-family: poppins;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
+  margin-top: 10rem;
 
   img {
     max-width: 100%;
@@ -77,6 +99,9 @@
 
       .left {
         width: 50%;
+        .homeimg{
+          display: flex;
+        }
       }
 
       .right {
@@ -98,25 +123,27 @@
 
 .initiatives {
   font-family: poppins;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 3rem;
+  margin-top: 10rem;
 
   .cards {
     display: grid;
+    margin-top: 3rem;
     // grid-row-gap: 2.4rem;
 
     // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 7rem;
     grid-row-gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
     //grid-template-columns: repeat(auto-fit, 1fr);
   }
 
   .button_div {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
     cursor: pointer;
     .button {
       display: block;
@@ -133,36 +160,64 @@
 
 .departments {
   font-family: poppins;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
+  margin-top: 6rem;
 
   .cards {
     display: grid;
-    grid-gap: 7.4rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 5rem;
+    grid-row-gap: 6rem;
+    grid-column-gap: 7.4rem;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 }
 
 @media all and (max-width: 1050px) {
+
   .section_heading {
     font-size: 2.2rem;
+    margin: 0 auto;
+  }
+
+  .departments{
+    .cards{
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
+  .initiatives{
+    .cards{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 
   .mainInfo {
     .homeFlexBox {
       flex-direction: column;
 
+      .button_div_mob{
+        display: flex;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+      }
+
       .homeLeft {
         width: 100%;
 
         .button_div {
-          align-self: center;
+          display: none;
         }
       }
 
       .homeRight {
         width: 100%;
         margin-top: 2rem;
+
+        .homeimg{
+          justify-content: center;
+        }
       }
     }
   }
@@ -193,7 +248,20 @@
         .right {
           margin-top: 1rem;
         }
+
+        .left{
+          .homeimg{
+          justify-content: center;
+        }
+        }
       }
     }
+  }
+}
+
+@media all and (max-width: 800px) {
+
+  .hiddenimageH{
+    display: none;
   }
 }

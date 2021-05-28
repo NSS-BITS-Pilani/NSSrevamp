@@ -4,12 +4,18 @@ import ProfileCard from './ProfileCard/ProfileCard';
 
 const aboutus = () => {
     return (
+        <React.Fragment>
+        <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "85%", top: "6.5rem", zIndex: "-1" }} src="/assets/ellipse_blue.svg"></img>
+        <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "37.5%", top: "22rem", zIndex: "-1" }} src="/assets/ellipse_yellow.svg"></img>
+        <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "80%", top: "39rem", zIndex: "-1" }} src="/assets/magenta_blob.svg"></img>
+        <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "0%", top: "66rem", zIndex: "-1" }} src="/assets/blue_blob.svg"></img>
+            
         <div className={`${classes.mainDivision} mainDivision`}>
             <div className={`${classes.section_heading} section_heading`}>About us</div>
             <div className={`${classes.aboutTop} aboutTop`}>
                 <div className={`${classes.aboutSection} aboutSectionH`}>
-                    <div className={`${classes.bullet} bullet`}>
-                        <img src="/assets/LineBlue.svg"></img>
+                    <div className={`${classes.bullet} bullet`} style={{backgroundColor:"#2F80ED"}}>
+                        
                     </div>
                     <div className={`${classes.title} title`} style={{ color: "rgba(47, 128, 237, 1)" }}>
                         Introduction
@@ -25,8 +31,8 @@ const aboutus = () => {
 
             <div className={`${classes.aboutTop} aboutTop`}>
                 <div className={`${classes.aboutSection} aboutSectionH`}>
-                    <div className={`${classes.bullet} bullet`}>
-                        <img src="/assets/LineGreen.svg"></img>
+                    <div className={`${classes.bullet} bullet`} style={{backgroundColor:"#6FCF97"}}>
+                    
                     </div>
                     <div className={`${classes.title} title`} style={{ color: "rgba(39, 174, 96, 1)"}}>
                         Organisation
@@ -42,8 +48,8 @@ const aboutus = () => {
 
             <div className={`${classes.aboutTop} aboutTop`}>
                 <div className={`${classes.aboutSection} aboutSectionH`}>
-                    <div className={`${classes.bullet} bullet`}>
-                        <img src="/assets/LinePink.svg"></img>
+                    <div className={`${classes.bullet} bullet`} style={{backgroundColor:"#F857A6"}}>
+              
                     </div>
                     <div className={`${classes.title} title`} style={{ color: "rgba(248, 87, 166, 1)"}}>
                         Nature of work
@@ -57,9 +63,10 @@ const aboutus = () => {
                 </div>
             </div>
 
-            <div className={`${classes.section_heading} section_heading`}>Our Team</div>
+            <div className={`${classes.section_heading} section_heading`} style={{marginTop:"6rem"}}>Our Team</div>
 
             <div className={`${classes.team_heading} team_heading`}>
+            <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Faculty Coordinator
             </div>
 
@@ -71,7 +78,8 @@ const aboutus = () => {
                  />
             </div>
 
-            <div className={`${classes.team_heading} team_heading`}>
+                <div className={`${classes.team_heading} team_heading`}>
+                    <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Proffesors Incharge
             </div>
 
@@ -79,12 +87,10 @@ const aboutus = () => {
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
             </div>
 
-            <div className={`${classes.team_heading} team_heading`}>
+                <div className={`${classes.team_heading} team_heading`}>
+                    <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Leaderships
             </div>
 
@@ -94,7 +100,8 @@ const aboutus = () => {
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
             </div>
 
-            <div className={`${classes.team_heading} team_heading`}>
+                <div className={`${classes.team_heading} team_heading`}>
+                    <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Coordinators
             </div>
 
@@ -107,7 +114,8 @@ const aboutus = () => {
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
             </div>
 
-        </div>
+            </div>
+            </React.Fragment>
     );
 }
 

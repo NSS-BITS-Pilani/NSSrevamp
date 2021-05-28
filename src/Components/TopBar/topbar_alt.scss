@@ -6,13 +6,18 @@
     display: inline-block;
 }
 
+.navBarTop{
+    background-color: #FFFFFF;
+}
+
 
 .top_link{
     display: inline-block;
       padding: 0.8rem;
       margin: 0.8rem;
       text-decoration: none;
-
+      font-size: 1rem;
+      color: #333333;
       font-family: Poppins;
       font-style: normal;
       font-weight: normal;
@@ -48,7 +53,7 @@
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
     .logo{
         width: 90%;
         height: auto;
