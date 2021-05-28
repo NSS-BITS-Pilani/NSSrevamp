@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import EventCard from './EventCard/eventcard';
 import DepCard from './DepCards/depcards';
 import classes from "./home.scss";
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
     
@@ -46,7 +47,7 @@ const Home = () => {
                         </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                         <div className={`${classes.button_div} button_div`}>
-                            <span className={`${classes.button} button`}>View More</span>
+                            <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                         </div>
                     </div>
                     <div className={`${classes.homeRight} homeRight`}>

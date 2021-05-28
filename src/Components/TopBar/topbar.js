@@ -56,9 +56,8 @@ const Topbar = () => {
         <div className={`${classes.bar} bar`}>
             <div className={`${classes.component1} component1`}>
                 <div className={`${classes.logo} logo`}>
-                    <div className={`${classes.nssLogo} nssLogo`}>
-                        <img src="/assets/nss-logo-national-service-scheme 1.png" />
-                    </div>
+                    <img className={`${classes.nssLogo} nssLogo`} src="/assets/nss-logo-national-service-scheme 1.png" />
+                
                     <div className={`${classes.nss} nss`}>
                         NSS
                     </div>

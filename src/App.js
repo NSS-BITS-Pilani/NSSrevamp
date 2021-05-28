@@ -8,7 +8,7 @@ import Departments from "./Components/Departments/departments.js";
 import Home from "./Components/Home/home.js";
 import Events from "./Components/Events/events.js";
 
-import TopBar from './Components/TopBar/topbar';
+import TopBar from './Components/TopBar/topbar_alt';
 import Footer from './Components/Footer/footer_alt';
 
 const App = () => (
