@@ -7,6 +7,8 @@
   margin-bottom: 1.2rem;
 }
 
+
+
 .mainInfo {
   display: flex;
   justify-content: center;
@@ -142,6 +144,10 @@
   margin-bottom: 3rem;
   margin-top: 10rem;
 
+  .homeCarousel1, .homeCarousel2{
+    display: none !important;
+  }
+
   .cards {
     display: grid;
     margin-top: 3rem;
@@ -226,6 +232,14 @@
   }
 
   .initiatives{
+
+    .homeCarousel2{
+      display: block !important;
+    }
+
+    .homeCarousel1, .cards_desk{
+      display: none;
+    }
     .cards{
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
@@ -305,6 +319,21 @@
 
   .hiddenimageH{
     display: none;
+  }
+
+  .initiatives{
+
+    .homeCarousel1{
+      display: block !important;
+    }
+
+    .cards_desk{
+      display: none;
+    }
+
+    .homeCarousel2{
+      display: none !important;
+    }
   }
 
   .departments{

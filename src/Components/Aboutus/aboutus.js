@@ -2,6 +2,9 @@ import React from 'react';
 import classes from "./aboutus.scss";
 import ProfileCard from './ProfileCard/ProfileCard';
 import ShowMoreText from 'react-show-more-text';
+import Fade from 'react-reveal/Fade';
+import Footer from "../Footer/footer_alt";
+import Carousel from "./carousel/carousel";
 
 const aboutus = () => {
     return (
@@ -11,7 +14,8 @@ const aboutus = () => {
         <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "80%", top: "39rem", zIndex: "-1" }} src="/assets/magenta_blob.svg"></img>
         <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "0%", top: "66rem", zIndex: "-1" }} src="/assets/blue_blob.svg"></img>
             
-        <div className={`${classes.mainDivision} mainDivision`}>
+            <div className={`${classes.mainDivision} mainDivision`}>
+                <Fade>
             <div className={`${classes.section_heading} section_heading`}>About us</div>
             <div className={`${classes.aboutTop} aboutTop`}>
                 <div className={`${classes.aboutSection} aboutSectionH`}>
@@ -38,7 +42,9 @@ const aboutus = () => {
                     </div>
                 </div>
             </div>
-
+                </Fade>
+                
+                <Fade>
             <div className={`${classes.aboutTop} aboutTop`}>
                 <div className={`${classes.aboutSection} aboutSectionH`}>
                     <div className={`${classes.bullet} bullet`} style={{backgroundColor:"#6FCF97"}}>
@@ -63,7 +69,7 @@ const aboutus = () => {
                     </div>
                 </div>
             </div>
-
+    
             <div className={`${classes.aboutTop} aboutTop`}>
                 <div className={`${classes.aboutSection} aboutSectionH`}>
                     <div className={`${classes.bullet} bullet`} style={{backgroundColor:"#F857A6"}}>
@@ -88,15 +94,17 @@ const aboutus = () => {
                     </div>
                 </div>
             </div>
-
+                </Fade>
+                <Fade>            
             <div className={`${classes.section_heading} section_heading`} style={{marginTop:"6rem"}}>Our Team</div>
 
-            <div className={`${classes.team_heading} team_heading`}>
+                <div className={`${classes.team_heading} team_heading`}>
+
             <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Faculty Coordinator
             </div>
 
-            <div className={`${classes.profileCards} profileCards`}>
+            <div className={`${classes.profileCardsAlways} profileCardsAlways`}>
                 <ProfileCard
                     imgPath="ProfilePic.png"
                     designation="Faculty Coordinator"
@@ -113,8 +121,10 @@ const aboutus = () => {
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-            </div>
-
+                    </div>
+                    <div className={`${classes.carouselab1} carouselab1`}><Carousel number={3} slides={1}></Carousel></div>
+                </Fade>
+                <Fade>
                 <div className={`${classes.team_heading} team_heading`}>
                     <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Leaderships
@@ -123,9 +133,10 @@ const aboutus = () => {
             <div className={`${classes.profileCards} profileCards`}>
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
+                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                        
             </div>
-
+                <div className={`${classes.carouselab1} carouselab1`}><Carousel number={3} slides={1}></Carousel></div>
                 <div className={`${classes.team_heading} team_heading`}>
                     <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Coordinators
@@ -137,10 +148,13 @@ const aboutus = () => {
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari"/>
+                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                        
+                    </div>
+                    <div className={`${classes.carouselab1} carouselab1`}><Carousel number={6} slides={1}></Carousel></div>
+            </Fade>
             </div>
-
-            </div>
+            <Footer></Footer>
             </React.Fragment>
     );
 }

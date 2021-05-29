@@ -1,9 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+
+import Footer from "../Footer/footer_alt";
+    
 import EventCard from './EventCard/eventcard';
 import DepCard from './DepCards/depcards';
+
+import Carousel from './Carousel/carousel';
 import classes from "./home.scss";
 import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
+
+import Fade from 'react-reveal/Fade';
+
 
 const Home = () => {
     
@@ -46,7 +54,9 @@ const Home = () => {
             <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "37.5%", top: "22rem", zIndex: "-1" }} src="/assets/ellipse_yellow.svg"></img>
             <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "80%", top: "44rem", zIndex: "-1" }} src="/assets/green_blob.svg"></img>
              <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "0%", top: "72rem", zIndex:"-1"}} src="/assets/blue_blob.svg"></img>
+        
             <div className={`${classes.mainInfo} mainInfo`}>
+                <Fade>
                 <div className={`${classes.homeFlexBox} homeFlexBox`}>
                     <div className={`${classes.homeLeft} homeLeft`}>
                         <div className={`${classes.section_heading_home} section_heading_home`}>
@@ -64,12 +74,15 @@ const Home = () => {
                     <div className={`${classes.button_div} button_div_mob`}>
                         <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                     </div>
-                </div>
+                    </div>
+                    </Fade>
             </div>
 
-
+           
             <div className={`${classes.homeAbout} homeAbout`}>
+                <Fade>
                 <div className={`${classes.section_heading_home} section_heading_home`}>About Us</div>
+            
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                         <div className={`${classes.left} left`}>
@@ -80,15 +93,20 @@ const Home = () => {
                             <div className={`${classes.section_heading_home} section_heading_home`}>
                             <span style={{color: "rgba(39, 174, 96, 1)"}}>What are we</span>
                             </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
+                        
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
+                              
                         </div>
 
                         <div className={`${classes.left_mob} left_mob`}>
                             <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
                         </div>
                     </div>
-                </div>
-
+                    </div>
+                    </Fade>
+                
+                    
+                <Fade>
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                         <div className={`${classes.leftB} leftB`}>
@@ -101,17 +119,27 @@ const Home = () => {
                             <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
                         </div>
                     </div>
-                </div>
+                    </div>
+                    </Fade>
             </div>
             
+            <Fade>
             <div className={`${classes.initiatives} initiatives`}>
                 <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
-                <div className={`${classes.cards} cards`}>
+                <div className={`${classes.cards_desk} cards_desk`}>
+                    <div className={`${classes.cards} cards`}>
                     {renderEvents()}
                 </div>
               <div className={`${classes.button_div} button_div`}>
                     <span className={`${classes.button} button`} onClick={() => {setEventsExpanded(!eventsExpanded)}}>{eventsExpanded ? "View Less" : "View More"}</span>
                 </div>
+                    </div>
+                    <div className={`${classes.homeCarousel1} homeCarousel1`}>
+                        <Carousel slides={1}></Carousel>
+                    </div>
+                    <div className={`${classes.homeCarousel2} homeCarousel2`}>
+                        <Carousel slides={2}></Carousel>
+                    </div>      
             </div>
 
             <div className={`${classes.departments} departments`}>
@@ -150,7 +178,10 @@ const Home = () => {
                         return null;
                         })}
                 </div>
-            </div>
+                </div>
+            </Fade>
+            <Footer></Footer>
+                
         </div>
     );
 }

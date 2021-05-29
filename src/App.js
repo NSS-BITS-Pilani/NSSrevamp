@@ -19,7 +19,6 @@ const App = () => (
       <Route path="/events" exact component={Events} />
       <Route path="/contacts" exact component={Contacts} />
       <Route path="/" exact component={Home} />
-      <Footer />
     </Router>
 );
 

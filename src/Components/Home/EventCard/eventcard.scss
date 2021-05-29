@@ -35,8 +35,8 @@
   }
 }
 
-// @media all and (max-width: 500px) {
-//   .card{
-//     width: initial;
-//   }
-// }
+@media all and (max-width: 400px) {
+  .card{
+    width: 100%;
+  }
+}
