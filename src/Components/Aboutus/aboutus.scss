@@ -9,6 +9,10 @@
   margin-bottom: 3rem;
 }
 
+.anchor_class{
+  color: blue;
+}
+
 .blue_bullet{
   width: 12rem;
   height: 0.5rem;
@@ -60,6 +64,10 @@
 
       .aboutInfo {
         width: 97%;
+
+        .mobInfo{
+          display: none;
+        }
       }
     }
   }
@@ -93,6 +101,16 @@
     .title,
     .aboutInfo {
       width: 80%;
+    }
+
+    .aboutInfo{
+      .desktopInfo{
+        display: none;
+      }
+
+      .mobInfo{
+        display: block !important;
+      }
     }
 
     .title{

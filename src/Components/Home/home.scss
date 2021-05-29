@@ -97,11 +97,21 @@
       align-items: center;
       justify-content: center;
 
+      .left_mob{
+        display: none;
+        .homeimg{
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+
       .left {
         width: 50%;
         .homeimg{
           display: flex;
+          justify-content: flex-start;
         }
+        
       }
 
       .right {
@@ -116,6 +126,10 @@
 
       .rightB {
         width: 50%;
+        .homeimg{
+          display: flex;
+          justify-content: flex-end;
+        }
       }
     }
   }
@@ -171,9 +185,34 @@
     grid-column-gap: 7.4rem;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
+
+  .cardsMob{
+    display: grid;
+    margin-top: 5rem;
+    grid-row-gap: 6rem;
+    grid-column-gap: 7.4rem;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    display: none;
+  }
+
+  .formMob{
+    display: none;
+  }
 }
 
 @media all and (max-width: 1050px) {
+
+  .homeAbout{
+    .aboutFlexBox{
+      .left{
+        display: none;
+      }
+
+      .left_mob{
+        display: block !important;
+      }
+    }
+  }
 
   .section_heading {
     font-size: 2.2rem;
@@ -228,11 +267,17 @@
       .aboutFlexBox {
         flex-direction: column;
 
-        .left,
+        .left,.left_mob,
         .right,
         .leftB,
         .rightB {
           width: 100%;
+        }
+
+        .left, .left_mob, .rightB{
+          .homeimg{
+            justify-content: center;
+          }
         }
 
         .right,
@@ -249,11 +294,8 @@
           margin-top: 1rem;
         }
 
-        .left{
-          .homeimg{
-          justify-content: center;
-        }
-        }
+        
+        
       }
     }
   }
@@ -263,5 +305,19 @@
 
   .hiddenimageH{
     display: none;
+  }
+
+  .departments{
+    .cardsMob{
+      display: block;
+    }
+
+    .formMob{
+      display: block;
+    }
+
+    .cards{
+      display: none;
+    }
   }
 }

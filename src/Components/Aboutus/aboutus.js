@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from "./aboutus.scss";
 import ProfileCard from './ProfileCard/ProfileCard';
+import ShowMoreText from 'react-show-more-text';
 
 const aboutus = () => {
     return (
@@ -22,9 +23,18 @@ const aboutus = () => {
                     </div>
                 </div>
                 <div className={`${classes.aboutSectionI} aboutSectionI`}>
-                    <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
-                    <div className={`${classes.aboutInfo} aboutInfo`}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+                 <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
+                      <div className={`${classes.aboutInfo} aboutInfo`}>
+                            <div className={`${classes.desktopInfo} desktopInfo`}>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+
+                            </div>
+                            
+                            <ShowMoreText className={`${classes.mobInfo} mobInfo`} lines={5} anchorClass="anchor_class">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+
+                            </ShowMoreText>
+                            
                     </div>
                 </div>
             </div>
@@ -41,7 +51,15 @@ const aboutus = () => {
                 <div className={`${classes.aboutSectionI} aboutSectionI`}>
                     <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
                     <div className={`${classes.aboutInfo} aboutInfo`}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+                        <div className={`${classes.desktopInfo} desktopInfo`}>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+
+                            </div>
+                            
+                            <ShowMoreText className={`${classes.mobInfo} mobInfo`} lines={5} anchorClass="anchor_class">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+
+                            </ShowMoreText>
                     </div>
                 </div>
             </div>
@@ -58,7 +76,15 @@ const aboutus = () => {
                 <div className={`${classes.aboutSectionI} aboutSectionI`}>
                     <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
                     <div className={`${classes.aboutInfo} aboutInfo`}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+                        <div className={`${classes.desktopInfo} desktopInfo`}>
+                                                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+
+                            </div>
+                            
+                            <ShowMoreText className={`${classes.mobInfo} mobInfo`} lines={5} anchorClass="anchor_class">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor dictum tincidunt lobortis nisi. Vitae turpis augue vitae tempor, tellus interdum aliquam imperdiet mi. Faucibus sit praesent phasellus tincidunt justo, quisque purus dignissim. Elementum imperdiet quis viverra malesuada mauris est. Malesuada dolor tristique nibh viverra penatibus suspendisse. Magna et elit sed amet, sit tortor tempus et. Velit vitae morbi proin at. Diam integer hac metus, at senectus ligula duis lectus. Blandit magna ut diam malesuada.
+
+                            </ShowMoreText>
                     </div>
                 </div>
             </div>

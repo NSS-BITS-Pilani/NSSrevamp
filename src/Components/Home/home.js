@@ -3,6 +3,7 @@ import EventCard from './EventCard/eventcard';
 import DepCard from './DepCards/depcards';
 import classes from "./home.scss";
 import { NavLink } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
 
 const Home = () => {
     
@@ -23,7 +24,9 @@ const Home = () => {
         return expandedEvents.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath}/>)
     }
 
-    const [ eventsExpanded, setEventsExpanded ] = useState(false);
+    const [eventsExpanded, setEventsExpanded] = useState(false);
+    
+    const [currentDepartment, setCurrentDepartment] = useState("CLP");
 
     const departments = [
         { depName: "CLP", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.", topColor:"rgba(255, 251, 165, 0.44)"},
@@ -79,6 +82,10 @@ const Home = () => {
                             </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                         </div>
+
+                        <div className={`${classes.left_mob} left_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
+                        </div>
                     </div>
                 </div>
 
@@ -108,12 +115,40 @@ const Home = () => {
             </div>
 
             <div className={`${classes.departments} departments`}>
+                
                 <div className={`${classes.section_heading_home} section_heading_home`}>Our Departments</div>
+                <Form className={`${classes.formMob} formMob`}>
+                    <Form.Group>
+                        <Form.Control as="select" onChange={(event) => setCurrentDepartment(event.target.value)}>
+                            <option>CLP</option>
+                            <option>D3</option>
+                            <option>Desco</option>
+                            <option>EPD</option>
+                            <option>HPA</option>
+                            <option>Parishod</option>
+                            <option>Events</option>
+                            <option>School</option>
+                            <option>Umang</option>
+                        </Form.Control>
+                    </Form.Group>
+                </Form>
                 <div className={`${classes.cards} cards`}>
                     {departments.map((department) => <DepCard
                         depName={department.depName}
                         depInfo={department.depInfo}
                         topColor={department.topColor}/>)}
+                </div>
+
+                <div className={`${classes.cards} cardsMob`}>
+                    {departments.map(department => {
+                        if (department.depName === currentDepartment) {
+                            return <DepCard
+                                depName={department.depName}
+                                depInfo={department.depInfo}
+                                topColor={department.topColor} />;
+                        }
+                        return null;
+                        })}
                 </div>
             </div>
         </div>
