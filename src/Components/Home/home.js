@@ -54,9 +54,9 @@ const Home = () => {
             <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "37.5%", top: "22rem", zIndex: "-1" }} src="/assets/ellipse_yellow.svg"></img>
             <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "80%", top: "44rem", zIndex: "-1" }} src="/assets/green_blob.svg"></img>
              <img className={`${classes.hiddenimage} hiddenimageH`} style={{ position: "absolute", right: "0%", top: "72rem", zIndex:"-1"}} src="/assets/blue_blob.svg"></img>
-        
+            <Fade>
             <div className={`${classes.mainInfo} mainInfo`}>
-                <Fade>
+            
                 <div className={`${classes.homeFlexBox} homeFlexBox`}>
                     <div className={`${classes.homeLeft} homeLeft`}>
                         <div className={`${classes.section_heading_home} section_heading_home`}>
@@ -75,12 +75,12 @@ const Home = () => {
                         <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                     </div>
                     </div>
-                    </Fade>
+                    
             </div>
 
            
             <div className={`${classes.homeAbout} homeAbout`}>
-                <Fade>
+                
                 <div className={`${classes.section_heading_home} section_heading_home`}>About Us</div>
             
                 <div className={`${classes.aboutInfo} aboutInfo`}>
@@ -103,10 +103,10 @@ const Home = () => {
                         </div>
                     </div>
                     </div>
-                    </Fade>
+                    
                 
                     
-                <Fade>
+                
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                         <div className={`${classes.leftB} leftB`}>
@@ -120,10 +120,10 @@ const Home = () => {
                         </div>
                     </div>
                     </div>
-                    </Fade>
+                    
             </div>
             
-            <Fade>
+            
             <div className={`${classes.initiatives} initiatives`}>
                 <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
                 <div className={`${classes.cards_desk} cards_desk`}>
@@ -177,11 +177,12 @@ const Home = () => {
                         }
                         return null;
                         })}
+                    </div>
+                    
                 </div>
-                </div>
-            </Fade>
+            
             <Footer></Footer>
-                
+                </Fade>
         </div>
     );
 }

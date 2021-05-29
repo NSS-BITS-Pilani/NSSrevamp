@@ -124,16 +124,19 @@
 
       .mobInfo{
         display: block !important;
+        margin-top: 0.5rem;
       }
     }
 
     .title{
-      font-size: 2.2rem;
+      font-size: 2.5rem !important;
+      text-align: center !important;
     }
   }
 
   .section_heading{
-    font-size: 3.4rem;
+    font-size: 3.2rem !important;
+    text-align: center;
   }
 
   .hiddenimage{

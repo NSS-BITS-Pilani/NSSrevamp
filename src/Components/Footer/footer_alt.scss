@@ -27,6 +27,10 @@ a:active {
   margin: 0.5rem;
 }
 
+.ct-footer-post{
+  margin-bottom: 4rem;
+}
+
 @media (max-width: 479px) {
   .ct-footer-list {
     padding: 20px 0;
@@ -169,4 +173,20 @@ a:active {
       width: 42px;
     }
   }
+}
+
+@media all and (max-width: 800px) {
+
+  .ct-footer-list, .follow, .mediaContainer{
+    display: none;
+  }
+
+  .ct-footer-post{
+    margin-bottom: 0rem !important;
+  }
+
+  .ct-footer{
+    margin-top: 2rem !important;
+  }
+
 }

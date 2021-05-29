@@ -103,7 +103,7 @@ const footer_alt = () => {
 
             <div class="ct-footer-post">
                 
-                <div class="alt_container" style={{marginBottom:"4rem"}}>
+                <div class="alt_container">
                     <div class="inner-right">
                             <ul>
                                 <li>

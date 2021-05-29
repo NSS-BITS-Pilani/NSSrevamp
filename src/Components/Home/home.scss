@@ -194,7 +194,7 @@
 
   .cardsMob{
     display: grid;
-    margin-top: 5rem;
+    margin-top: 2.3rem;
     grid-row-gap: 6rem;
     grid-column-gap: 7.4rem;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -207,6 +207,10 @@
 }
 
 @media all and (max-width: 1050px) {
+
+  .homeimg{
+    margin-top: 2rem !important;
+  }
 
   .homeAbout{
     .aboutFlexBox{
@@ -316,6 +320,35 @@
 }
 
 @media all and (max-width: 800px) {
+
+  .mainInfo{
+    margin-top: 2rem;
+  }
+
+  .section_heading_home{
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .homeimg{
+    margin-top: 2rem !important;
+  }
+
+  .homeAbout{
+    margin-top: 4rem !important;
+  }
+
+  .initiatives{
+    margin-top: 4rem !important;
+  }
+
+  .departments{
+    margin-top: 3rem !important;
+  }
+
+  .formMob{
+    margin-top: 2rem;
+  }
 
   .hiddenimageH{
     display: none;

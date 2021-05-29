@@ -154,7 +154,9 @@ const aboutus = () => {
                     <div className={`${classes.carouselab1} carouselab1`}><Carousel number={6} slides={1}></Carousel></div>
             </Fade>
             </div>
-            <Footer></Footer>
+            <Fade>
+                <Footer></Footer>
+                </Fade>
             </React.Fragment>
     );
 }
