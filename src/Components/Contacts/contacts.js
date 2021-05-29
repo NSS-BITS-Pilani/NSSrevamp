@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from "./contacts.scss";
+import Footer from "../Footer/footer_alt";
 
 const contacts = () => {
     return (
+        <React.Fragment>
         <div className={`${classes.container} container`}>
             <form action="#" method="POST">
                 <h1>Contact Us</h1>
@@ -30,6 +32,9 @@ const contacts = () => {
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
         </div>
+
+        <Footer></Footer>
+        </React.Fragment>
     );
 }
 

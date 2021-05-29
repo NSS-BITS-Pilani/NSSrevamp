@@ -1,5 +1,8 @@
 import React, {useState} from 'react';
 import classes from "./departments.scss";
+import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
+
 
 const Departments = () => {
 
@@ -18,11 +21,14 @@ const Departments = () => {
 
     return (
         <div className={`${classes.contentBody} contentBody`}>
-            <aside>
+            <aside className={`${classes.depAside} depAside`}>
+                <Slide left>
                 {Departments.map((department, index) =>
                     <button onClick={() => setDepartmentIndex(index)} style={departmentIndex === index ? {background: department.color} : null}>{department.title}</button>
-                )}
+                    )}
+                    </Slide>
             </aside>
+            <Zoom>
             <div className={`${classes.mainContent} mainContent`}>
                 <h1>{ Departments[departmentIndex].title }</h1>
                 <div className={`${classes.caption} caption`}>
@@ -44,7 +50,8 @@ const Departments = () => {
                 <p>
                     More importantly, School aims to generate a mentor-student relation between volunteers and students. Home visits, occasional workshops, festival celebration, birthday celebrations and different cultural and sports events are all key components of this endeavour. Over the years, many students and volunteers alike have left school with a deep place in their hearts for each other.
                 </p>
-            </div>
+                </div>
+                </Zoom>
         </div>
     );
 }

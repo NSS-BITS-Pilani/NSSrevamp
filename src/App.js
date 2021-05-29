@@ -6,10 +6,9 @@ import Aboutus from "./Components/Aboutus/aboutus";
 import Contacts from "./Components/Contacts/contacts";
 import Departments from "./Components/Departments/departments.js";
 import Home from "./Components/Home/home.js";
-import Events from "./Components/Events/events.js";
+import Events from "./Components/Events/events_alt.js";
 
 import TopBar from './Components/TopBar/topbar_alt';
-import Footer from './Components/Footer/footer_alt';
 
 const App = () => (
   <Router>
