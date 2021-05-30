@@ -4,7 +4,7 @@ import "./App.scss";
 
 import Aboutus from "./Components/Aboutus/aboutus";
 import Contacts from "./Components/Contacts/contacts";
-import Departments from "./Components/Departments/departments.js";
+import Departments from "./Components/Departments/departments";
 import Home from "./Components/Home/home.js";
 import Events from "./Components/Events/events_alt.js";
 

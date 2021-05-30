@@ -2,29 +2,34 @@ import React, {useState} from 'react';
 import classes from "./events_alt.scss";
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+import MobCard from '../Departments/mobCard/mobCard';
 
 const Events = () => {
 
-    const [eventIndex, setEventIndex] = useState(0);
+    const [eventIndex, setEventIndex] = useState(1);
 
-    const events = [
-        { title: "Junoon" },
-        { title: "Smile For A Shop" },
-        { title: "Blood Donation Camp" }
+    const [showModal, setShowModal] = useState({show: false, index: 1});
+
+    const Events = [
+        { title: "Junoon", img:"/assets/CLP_icon.svg", color: "#E6FFB1" },
+        { title: "Smile For A Shop", img:"/assets/CLP_icon.svg", color:"#A5F4FF70"  },
+        { title: "Blood Donation Camp", img:"/assets/CLP_icon.svg", color:"#F2C94C"}
     ];
 
     return (
+        <React.Fragment>
         <div className={`${classes.contentBody} contentBody`}>
             <Slide left>
             <aside className={`${classes.eveAside} eveAside`}>
-                {events.map((event, index) =>
-                    <button onClick={() => setEventIndex(index)} style={eventIndex === index ? {background: "#EDFFFD"} : null}>{event.title}</button>
+                {Events.map((event, index) =>
+                    <button onClick={() => setEventIndex(index)} style={eventIndex === index ? {background: `${Events[eventIndex].color}`} : null}>{event.title}</button>
                 )}
                 </aside>
             </Slide>
             <Zoom>
-            <div className={`${classes.mainContent} mainContentEve`}>
-                <h1>{events[eventIndex].title}</h1>
+                    <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${Events[eventIndex].color}` }}>
+                <h1>{Events[eventIndex].title}</h1>
                 <div className={`${classes.caption} caption`}>
                     A WORLD OF MILLION DIFFERENT ABILITIES
                 </div>
@@ -43,7 +48,45 @@ const Events = () => {
                 </p>
                 </div>
                 </Zoom>
+            </div>
+            
+            <div className={`${classes.mobileContent} mobileContent`}>
+            <div className={`${classes.mobTitle} mobTitle`}>
+                Events
+            </div>
+
+            <div className="backMob" onClick={() => setShowModal({show: false})} style={ showModal.show ? {display: "block"} : {display: "none"}}>
+                <img src="assets/back.svg" /> Back
+            </div>
+
+            <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
+                <Fade>
+                {Events.map((event, i) =>
+                    <MobCard
+                        title={event.title}
+                        img={event.img}
+                        color={event.color}
+                        click={() => {
+                            setShowModal({ show: true, index: i });
+                            setEventIndex(i);
+                        }}
+                    />)}
+                    </Fade>
+            </div>
+
+            <Zoom>
+            <div style={ showModal.show ? {display: "block", background:`${Events[eventIndex].color}`} : {display: "none"}} className="mobModal">
+                <h1>School</h1>
+                <p>School is one our foremost initiative for providing quality education to children of Pilani and its neighbouring areas. NSS School aims to bring about not just academic improvement but an overall development in children. We inculcate these qualities with the wide amount of activities children undergo in the whole year.</p>
+                <h2>WORKING:</h2>
+                <p> NSS School facilitates the education of almost 100 students of classes 1-12. To bring about a deeper development of children, we push for a closer bond between the mentor and student by maintaining a 1:2 ratio of volunteers to students, by facilitating home visits of students by the volunteers and by Parent Volunteer meets.
+                    To bring about an overall development of students, School also organises events Udaan and Sports Day to inculcate and promote cultural spirit and sportsmanship among the students. These events are wholly organised by the first year recruits of NSS giving them management expertise and chance to bond deeper with the students.
+                    NSS School has also started programs for English improvement called English Learning Program and for competitive exams preparation called UNNATI. We also have a program for preparing students for the prestigious Jawahar Navodaya schools. These programs aim to give the children a better base for future development.
+                    More importantly, School aims to generate a mentor-student relation between volunteers and students. Home visits, occasional workshops, festival celebration, birthday celebrations and different cultural and sports events are all key components of this endeavour. Over the years, many students and volunteers alike have left school with a deep place in their hearts for each other.</p>
+            </div>
+            </Zoom>
         </div>
+            </React.Fragment>
     );
 }
 
