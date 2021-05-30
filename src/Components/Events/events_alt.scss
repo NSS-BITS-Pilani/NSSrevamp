@@ -106,7 +106,7 @@
     display: grid;
     width: 90%;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(1, minmax(160px, 1fr));
     grid-row-gap: 2rem;
     grid-column-gap: 0.5rem;
     margin-bottom: 2rem;

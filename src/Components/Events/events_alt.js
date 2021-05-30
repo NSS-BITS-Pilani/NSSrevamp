@@ -3,7 +3,7 @@ import classes from "./events_alt.scss";
 import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
-import MobCard from '../Departments/mobCard/mobCard';
+import MobCard from './mobCard/mobCard';
 
 const Events = () => {
 

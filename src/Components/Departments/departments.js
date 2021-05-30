@@ -70,7 +70,7 @@ const Departments = () => {
                 <img src="assets/back.svg" /> Back
             </div>
 
-            <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
+            <div className="mobColsD" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
                 <Fade>
                 {Departments.map((department, i) =>
                     <MobCard

@@ -1,0 +1,70 @@
+
+.container_con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem !important;
+
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 4.5rem;
+      /* identical to box height */
+
+      color: #333333;
+    }
+    .inputHead {
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      margin: 2.6875rem 0rem 1rem 0.125rem;
+
+      color: #000000;
+    }
+    input {
+      font-size: 1.4375rem;
+      line-height: 2.125rem;
+
+      color: #828282;
+      border: none;
+      border-bottom: 1px solid #828282;
+      width: 100%;
+    }
+
+    [type="submit"] {
+      height: 4rem;
+      width: 14rem;
+      background: #333333;
+      border-radius: 1.25rem;
+
+      font-size: 1.4rem;
+  
+
+      color: #ffffff;
+    }
+
+    .button_form_mob{
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mapContainer{
+      width: 100%;
+      margin: 2rem auto;
+      height: 400px;
+      
+    }
+
+    
+}
+
+@media all and (min-width: 800px) {
+
+  .mapContainer{
+    width: 75% !important;
+  }
+}
