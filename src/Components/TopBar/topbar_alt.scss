@@ -1,68 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-.nssLogo{
-    max-width: 90%;
-    height: auto;
-    display: inline-block;
+.nssLogo {
+  max-width: 90%;
+  height: auto;
+  display: inline-block;
 }
 
-.navBarTop{
-    background-color: #FFFFFF;
+.navBarTop {
+  background-color: #ffffff;
 }
 
-
-.top_link{
-    display: inline-block;
-      padding: 0.8rem;
-      margin: 0.8rem;
-      text-decoration: none;
-      font-size: 1rem;
-      color: #333333;
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 0.2;
+.top_link {
+  display: inline-block;
+  padding: 0.8rem;
+  margin: 0.8rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333333;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0.2;
 }
 
-.active_top_link{
-    font-weight: bold;
-    // border-bottom: 3px solid black;
-    // box-shadow: 0px 24px 3px -24px black;
+.active_top_link {
+  font-weight: bold;
+  // border-bottom: 3px solid black;
+  // box-shadow: 0px 24px 3px -24px black;
 }
 
-.logo{
-    
-    font-family: 'Times New Roman', Times, serif;
+.logo {
+  font-family: "Times New Roman", Times, serif !important;
 
-    .nss{
-        font-size: 3rem;
-    }
-    .bits{
-        font-size: 1rem;
-    }
+  .nss {
+    font-size: 3rem;
+  }
+  .bits {
+    font-size: 1rem;
+    line-height: 125%;
+  }
 }
 
-@media all and (min-width: 990px){
-    .brand{
-        margin-left: 2rem;
-    }
+@media all and (min-width: 990px) {
+  .brand {
+    margin-left: 2rem;
+  }
 
-    .links_top{
-        margin-right: 2rem; 
-    }   
+  .links_top {
+    margin-right: 2rem;
+  }
 }
-
 
 @media all and (max-width: 600px) {
-    .logo{
-        width: 90%;
-        height: auto;
+  .logo {
+    width: 90%;
+    height: auto;
 
-        .nss{
-        font-size: 2.4rem;
-        }
-        .bits{
-            font-size: 0.8rem;
-        }
+    .nss {
+      font-size: 2.4rem;
     }
+    .bits {
+      font-size: 0.8rem;
+    }
+  }
 }
