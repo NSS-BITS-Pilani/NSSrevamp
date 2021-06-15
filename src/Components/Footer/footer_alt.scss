@@ -6,6 +6,10 @@ a:active {
   color: inherit;
 }
 
+.inner-right-500{
+  display: none;
+}
+
 .ct-footer {
   padding-top: 70px;
   font-family: poppins;
@@ -25,6 +29,7 @@ a:active {
 
 .ct-footer-list li{
   margin: 0.5rem;
+  margin-left: 0;
 }
 
 .ct-footer-post{
@@ -187,6 +192,23 @@ a:active {
 
   .ct-footer{
     margin-top: 2rem !important;
+  }
+
+}
+
+@media all and (max-width: 500px) {
+
+  .inner-right{
+    display: none;
+  }
+  .inner-right-500{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+
+  .inner-left{
+    font-size: 0.9rem;
   }
 
 }

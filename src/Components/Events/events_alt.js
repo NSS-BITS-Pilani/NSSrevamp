@@ -14,7 +14,8 @@ const Events = () => {
     const Events = [
         { title: "Junoon", img:"/assets/CLP_icon.svg", color: "#E6FFB1" },
         { title: "Smile For A Shop", img:"/assets/CLP_icon.svg", color:"#A5F4FF70"  },
-        { title: "Blood Donation Camp", img:"/assets/CLP_icon.svg", color:"#F2C94C"}
+        { title: "Blood Donation Camp", img: "/assets/CLP_icon.svg", color: "#F2C94C" },
+        { title: "Conferencia De Youth", img:"/assets/CLP_icon.svg", color:"#F2C94C"}
     ];
 
     return (
@@ -74,7 +75,7 @@ const Events = () => {
                     </Fade>
             </div>
 
-            <Zoom>
+            <Slide bottom>
             <div style={ showModal.show ? {display: "block", background:`${Events[eventIndex].color}`} : {display: "none"}} className="mobModal">
                 <h1>School</h1>
                 <p>School is one our foremost initiative for providing quality education to children of Pilani and its neighbouring areas. NSS School aims to bring about not just academic improvement but an overall development in children. We inculcate these qualities with the wide amount of activities children undergo in the whole year.</p>
@@ -84,7 +85,7 @@ const Events = () => {
                     NSS School has also started programs for English improvement called English Learning Program and for competitive exams preparation called UNNATI. We also have a program for preparing students for the prestigious Jawahar Navodaya schools. These programs aim to give the children a better base for future development.
                     More importantly, School aims to generate a mentor-student relation between volunteers and students. Home visits, occasional workshops, festival celebration, birthday celebrations and different cultural and sports events are all key components of this endeavour. Over the years, many students and volunteers alike have left school with a deep place in their hearts for each other.</p>
             </div>
-            </Zoom>
+            </Slide>
         </div>
             </React.Fragment>
     );
