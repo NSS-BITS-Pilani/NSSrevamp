@@ -87,7 +87,7 @@
     margin-top: 3rem !important;
 
     h1 {
-      //font-weight: bold;
+      font-weight: bold;
       font-size: 3rem;
       line-height: 4.5rem;
       /* identical to box height */
@@ -111,6 +111,17 @@
       border-bottom: 1px solid #828282;
       width: 100%;
     }
+    textarea{
+      font-size: 1.4375rem;
+      line-height: 2.125rem;
+
+      color: #828282;
+      border: none;
+      border: 1px solid #828282;
+      width: 100%;
+      padding: 8px;
+      border-radius: 1rem;
+    }
 
     [type="submit"] {
       height: 4rem;
@@ -125,15 +136,26 @@
     }
 
     .button_form_mob{
-      margin-top: 2rem;
+      margin-top: 3rem;
       display: flex;
-      justify-content: center;
+
     }
 
     .mapContainer_mob{
       width: 75%;
-      margin: 2rem auto;
-      height: 400px;
+      margin: 0 auto 0;
+      margin-top: 3.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span{
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      img{
+        width: 125px;
+      }
       
     }
 

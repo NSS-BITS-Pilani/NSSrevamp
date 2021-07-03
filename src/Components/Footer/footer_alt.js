@@ -120,6 +120,22 @@ const footer_alt = () => {
                                 </li>
                             </ul>
                     </div>
+                    <div class="inner-right-500">
+        
+                                <div>
+                                    <a href="">Facebook</a>
+                                </div>
+                                <div>
+                                    <a href="">Instagram</a>
+                                </div>
+                                <div>
+                                    <a href="">LinkedIn</a>
+                                </div>
+                                <div>
+                                    <a href="">Twitter</a>
+                                </div>
+    
+                    </div>
                     <div class="inner-left">
                         <p>
                             © 2021 NSS BITS PILANI. All Rights Reserved.

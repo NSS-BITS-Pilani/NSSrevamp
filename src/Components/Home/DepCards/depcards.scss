@@ -20,3 +20,13 @@
   
   }
 }
+
+@media all and (max-width: 800px){
+  .depcard{
+    .card_heading{
+    display: none;
+  }
+
+  }
+  
+} 

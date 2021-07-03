@@ -9,9 +9,11 @@ import Carousel from './Carousel/carousel';
 import classes from "./home.scss";
 import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
+import { Select } from "@chakra-ui/react"
+
 
 import Fade from 'react-reveal/Fade';
-
+import Slide from 'react-reveal/Slide';
 
 const Home = () => {
     
@@ -27,7 +29,7 @@ const Home = () => {
 
     const renderEvents = () => {
         if (!eventsExpanded) {
-            return events.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath} />);
+            return events.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath}/>);
         }
         return expandedEvents.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath}/>)
     }
@@ -57,20 +59,27 @@ const Home = () => {
             <Fade>
             <div className={`${classes.mainInfo} mainInfo`}>
             
-                <div className={`${classes.homeFlexBox} homeFlexBox`}>
+                    <div className={`${classes.homeFlexBox} homeFlexBox`}>
+                        <Slide left>
                     <div className={`${classes.homeLeft} homeLeft`}>
                         <div className={`${classes.section_heading_home} section_heading_home`}>
                             
                             NSS BITS PILANI<br></br>Not me but you
+                        </div>
+                        <div className={`${classes.homeRight_mob} homeRight_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" /></div>
                         </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                         <div className={`${classes.button_div} button_div`}>
                             <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                         </div>
                     </div>
+                            </Slide>
+                        <Slide right>
                     <div className={`${classes.homeRight} homeRight`}>
                         <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" /></div>
-                    </div>
+                            </div>
+                            </Slide>
                     <div className={`${classes.button_div} button_div_mob`}>
                         <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                     </div>
@@ -80,27 +89,30 @@ const Home = () => {
 
            
             <div className={`${classes.homeAbout} homeAbout`}>
-                
+                <Slide left>
                 <div className={`${classes.section_heading_home} section_heading_home`}>About Us</div>
-            
+            </Slide>
                 <div className={`${classes.aboutInfo} aboutInfo`}>
-                    <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
+                        <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
+                            <Slide left>
                         <div className={`${classes.left} left`}>
                             <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
                         </div>
-
+                            </Slide>
+                            
+                        <Slide right>
                         <div className={`${classes.right} right`}>
                             <div className={`${classes.section_heading_home} section_heading_home`}>
-                            <span style={{color: "rgba(39, 174, 96, 1)"}}>What are we</span>
+                                        <span style={{ color: "rgba(39, 174, 96, 1)" }}>What are we</span>
+                                        <div className={`${classes.left_mob} left_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
+                        </div>
                             </div>
                         
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                               
-                        </div>
-
-                        <div className={`${classes.left_mob} left_mob`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
-                        </div>
+                                </div>
+                                </Slide>
                     </div>
                     </div>
                     
@@ -109,15 +121,24 @@ const Home = () => {
                 
                 <div className={`${classes.aboutInfo} aboutInfo`}>
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
-                        <div className={`${classes.leftB} leftB`}>
+                            <Slide left>
+                            <div className={`${classes.leftB} leftB`}>
+                                
                             <div className={`${classes.section_heading_home} section_heading_home`}>
-                            <span style={{color: "rgba(45, 156, 219, 1)"}}>What we do</span>
+                                        <span style={{ color: "rgba(45, 156, 219, 1)" }}>What we do</span>
+                                        <div className={`${classes.rightB} rightB_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                                </div>
                             </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet et donec ut iaculis mauris amet fringilla neque eget. Habitant nec risus viverra at ut arcu, arcu venenatis. Lectus egestas diam at non nec mattis enim vivamus. Faucibus purus orci elit, id ornare pellentesque lectus aliquam. Ut leo consequat malesuada vel proin maecenas dictumst justo. Tristique nam iaculis amet augue justo volutpat varius imperdiet nunc.
-                        </div>
+                                </div>
+                            </Slide>
+                            
+                            <Slide right>
                         <div className={`${classes.rightB} rightB`}>
                             <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
-                        </div>
+                                </div>
+                                </Slide>
                     </div>
                     </div>
                     
@@ -125,7 +146,8 @@ const Home = () => {
             
             
             <div className={`${classes.initiatives} initiatives`}>
-                <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
+                    <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
+                    <Slide bottom>
                 <div className={`${classes.cards_desk} cards_desk`}>
                     <div className={`${classes.cards} cards`}>
                     {renderEvents()}
@@ -139,26 +161,34 @@ const Home = () => {
                     </div>
                     <div className={`${classes.homeCarousel2} homeCarousel2`}>
                         <Carousel slides={2}></Carousel>
-                    </div>      
+                        </div>
+                    </Slide>    
             </div>
 
             <div className={`${classes.departments} departments`}>
                 
                 <div className={`${classes.section_heading_home} section_heading_home`}>Our Departments</div>
                 <Form className={`${classes.formMob} formMob`}>
-                    <Form.Group>
-                        <Form.Control as="select" onChange={(event) => setCurrentDepartment(event.target.value)}>
-                            <option>CLP</option>
-                            <option>D3</option>
-                            <option>Desco</option>
-                            <option>EPD</option>
-                            <option>HPA</option>
-                            <option>Parishod</option>
-                            <option>Events</option>
-                            <option>School</option>
-                            <option>Umang</option>
-                        </Form.Control>
-                    </Form.Group>
+                        <Select variant="filled"
+                            
+                            bg={departments.find( dep => dep.depName === currentDepartment).topColor}
+                            color="black"
+                            size="lg"
+                            value={currentDepartment}
+                            onChange={e => setCurrentDepartment(e.target.value)}
+                            focusBorderColor={departments.find(dep => dep.depName === currentDepartment).topColor}
+                            _focusVisible={{backgroundColor: `${departments.find( dep => dep.depName === currentDepartment).topColor}` }}
+                        >
+                            <option value="CLP" style={{fontFamily:"poppins"}}>CLP</option>
+                            <option value="D3">D3</option>
+                            <option value="Desco">Desco</option>
+                            <option value="EPD">EPD</option>
+                            <option value="HPA">HPA</option>
+                            <option value="Parishod">Parishod</option>
+                            <option value="Events">Events</option>
+                            <option value="School">School</option>
+                            <option value="Umang">Umang</option>
+                        </Select>
                 </Form>
                 <div className={`${classes.cards} cards`}>
                     {departments.map((department) => <DepCard

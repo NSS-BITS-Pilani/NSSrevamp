@@ -63,7 +63,7 @@ const contacts = () => {
                     </div>
                             </label>
                             
-                <input type="text" id="message" name="message" placeholder="Hey there..." />
+                <textarea name="message" rows="4" cols="50" placeholder="Hey there..."/>
                         </div>
                         <div className="button_form_mob">
                             <input type="submit" value="Send message" />
@@ -71,12 +71,12 @@ const contacts = () => {
                     </form>
                     </div>
             <div className={`${classes.mapContainer_mob} mapContainer_mob`}>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.00110235882!2d75.58583171491678!3d28.358816282526607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39131964f43e4575%3A0x1fbad30854cf884d!2sBirla%20Institute%20of%20Technology%20and%20Science%2C%20Pilani!5e0!3m2!1sen!2sin!4v1622363431831!5m2!1sen!2sin"
-                        width="100%"
-                        height="100%"
-                        allowfullscreen
-                        loading="lazy"
-                    />
+                    <div>
+                        <span>Find us here</span>
+                    </div>
+                    <div>
+                        <a href="https://www.google.com/maps/place/Birla+Institute+of+Technology+and+Science,+Pilani,+Vidya+Vihar,+Pilani,+Rajasthan+333031/@28.3588163,75.5880204,15z/data=!4m2!3m1!1s0x39131964f43e4575:0x1fbad30854cf884d"><img src='/assets/map.png' /></a>
+                    </div> 
             </div>
         </div>
 
