@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5.5rem;
+  width: 100%;
+}
+
+.footer .follow {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+
+.footer .mediaContainer {
+  margin-top: 2.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .mediaContainer .socialMedia {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[5];
+      grid-template-columns: repeat(5, -webkit-max-content);
+      grid-template-columns: repeat(5, max-content);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 450px;
+}
+
+.footer .impLinks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[4];
+      grid-template-columns: repeat(4, -webkit-max-content);
+      grid-template-columns: repeat(4, max-content);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 1px solid #4f4f4f;
+  margin-top: 10rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 2.25rem;
+}
+
+.footer .impLinks div .heading {
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.footer .impLinks div ul {
+  list-style: none;
+}
+
+.footer .impLinks div ul li {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.footer .impLinks div ul li a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+.footer .copyContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 4fr;
+      grid-template-columns: 6fr 4fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #4f4f4f;
+  margin-bottom: 3rem;
+}
+
+.footer .copyContainer .copy {
+  margin-left: 5rem;
+}
+
+.footer .copyContainer .links {
+  margin-right: 8.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (max-content)[7];
+      grid-template-columns: repeat(7, -webkit-max-content);
+      grid-template-columns: repeat(7, max-content);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .copyContainer .links .dot {
+  height: 8px;
+  width: 8px;
+  background-color: #4f4f4f;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.footer .copyContainer .links a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+@media all and (max-width: 1100px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .follow, .footer .mediaContainer {
+    display: none;
+  }
+  .footer .impLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

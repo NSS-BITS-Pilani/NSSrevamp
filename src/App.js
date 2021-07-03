@@ -18,7 +18,7 @@ const App = () => (
       <Route path="/events" component={Events} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/" exact component={Home} />
-    </Router>
+  </Router>
 );
 
 export default App;

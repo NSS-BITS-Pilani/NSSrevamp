@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.section_heading_home {
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: poppins;
+  margin-bottom: 4rem;
+  margin-top: 4.5rem;
+}
+
+.mainInfo .homeFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mainInfo .homeFlexBox img {
+  max-width: 100%;
+}
+
+.mainInfo .homeFlexBox .button_div_mob {
+  display: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.mainInfo .homeFlexBox .button_div_mob .button {
+  display: block;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#f857a6), to(#ff5858));
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+  border-radius: 15px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.mainInfo .homeFlexBox .homeLeft {
+  width: 50%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainInfo .homeFlexBox .homeLeft .button_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.mainInfo .homeFlexBox .homeLeft .button_div .button {
+  display: block;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#f857a6), to(#ff5858));
+  background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+  border-radius: 15px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.mainInfo .homeFlexBox .homeRight {
+  width: 50%;
+}
+
+.mainInfo .homeFlexBox .homeRight .homeimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.homeAbout {
+  font-family: poppins;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.homeAbout img {
+  max-width: 100%;
+}
+
+.homeAbout .aboutInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: poppins;
+  margin-bottom: 4rem;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .left_mob {
+  display: none;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .left_mob .homeimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .left {
+  width: 50%;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .left .homeimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .right {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .leftB {
+  width: 50%;
+  padding-right: 10%;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .rightB {
+  width: 50%;
+}
+
+.homeAbout .aboutInfo .aboutFlexBox .rightB .homeimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.initiatives {
+  font-family: poppins;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 10rem;
+}
+
+.initiatives .homeCarousel1, .initiatives .homeCarousel2 {
+  display: none !important;
+}
+
+.initiatives .cards {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 3rem;
+  grid-column-gap: 7rem;
+  grid-row-gap: 3rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.initiatives .button_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.initiatives .button_div .button {
+  display: block;
+  color: white;
+  background: #2f80ed;
+  border-radius: 15px;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.departments {
+  font-family: poppins;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.departments .cards {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 5rem;
+  grid-row-gap: 6rem;
+  grid-column-gap: 7.4rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.departments .cardsMob {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2.3rem;
+  grid-row-gap: 6rem;
+  grid-column-gap: 7.4rem;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+  display: none;
+}
+
+.departments .formMob {
+  display: none;
+}
+
+@media all and (max-width: 1050px) {
+  .homeimg {
+    margin-top: 2rem !important;
+  }
+  .homeAbout .aboutFlexBox .left {
+    display: none;
+  }
+  .homeAbout .aboutFlexBox .left_mob {
+    display: block !important;
+  }
+  .section_heading {
+    font-size: 2.2rem;
+    margin: 0 auto;
+  }
+  .departments .cards {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .initiatives .homeCarousel2 {
+    display: block !important;
+  }
+  .initiatives .homeCarousel1, .initiatives .cards_desk {
+    display: none;
+  }
+  .initiatives .cards {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .mainInfo .homeFlexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainInfo .homeFlexBox .button_div_mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainInfo .homeFlexBox .homeLeft {
+    width: 100%;
+  }
+  .mainInfo .homeFlexBox .homeLeft .button_div {
+    display: none;
+  }
+  .mainInfo .homeFlexBox .homeRight {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .mainInfo .homeFlexBox .homeRight .homeimg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeAbout .aboutInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeAbout .aboutInfo .aboutFlexBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeAbout .aboutInfo .aboutFlexBox .left, .homeAbout .aboutInfo .aboutFlexBox .left_mob,
+  .homeAbout .aboutInfo .aboutFlexBox .right,
+  .homeAbout .aboutInfo .aboutFlexBox .leftB,
+  .homeAbout .aboutInfo .aboutFlexBox .rightB {
+    width: 100%;
+  }
+  .homeAbout .aboutInfo .aboutFlexBox .left .homeimg, .homeAbout .aboutInfo .aboutFlexBox .left_mob .homeimg, .homeAbout .aboutInfo .aboutFlexBox .rightB .homeimg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeAbout .aboutInfo .aboutFlexBox .right,
+  .homeAbout .aboutInfo .aboutFlexBox .leftB {
+    padding-left: initial;
+    padding-right: initial;
+  }
+  .homeAbout .aboutInfo .aboutFlexBox .rightB {
+    margin-top: 1.4rem;
+  }
+  .homeAbout .aboutInfo .aboutFlexBox .right {
+    margin-top: 1rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .mainInfo {
+    margin-top: 2rem;
+  }
+  .section_heading_home {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .homeimg {
+    margin-top: 2rem !important;
+  }
+  .homeAbout {
+    margin-top: 4rem !important;
+  }
+  .initiatives {
+    margin-top: 4rem !important;
+  }
+  .departments {
+    margin-top: 3rem !important;
+  }
+  .formMob {
+    margin-top: 2rem;
+  }
+  .hiddenimageH {
+    display: none;
+  }
+  .initiatives .homeCarousel1 {
+    display: block !important;
+  }
+  .initiatives .cards_desk {
+    display: none;
+  }
+  .initiatives .homeCarousel2 {
+    display: none !important;
+  }
+  .departments .cardsMob {
+    display: block;
+  }
+  .departments .formMob {
+    display: block;
+  }
+  .departments .cards {
+    display: none;
+  }
+}
+/*# sourceMappingURL=home.css.map */

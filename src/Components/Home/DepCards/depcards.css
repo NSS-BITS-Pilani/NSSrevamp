@@ -1,0 +1,19 @@
+.depcard {
+  display: block;
+}
+
+.depcard .card_heading {
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.depcard .card_heading .card_color {
+  width: 60%;
+  height: 2rem;
+  position: relative;
+  bottom: 2.1rem;
+  left: 60%;
+  z-index: -1;
+}
+/*# sourceMappingURL=depcards.css.map */

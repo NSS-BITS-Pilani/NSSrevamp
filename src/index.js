@@ -2,6 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import App from "./App";
+import Loader from "./Components/Loader/loader";
 
-ReactDOM.render(<App/>, document.querySelector('#root'));
+ReactDOM.render(<Loader/>, document.querySelector('#root'));

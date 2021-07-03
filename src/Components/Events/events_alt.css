@@ -1,0 +1,145 @@
+.contentBody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 8fr;
+      grid-template-columns: 2fr 8fr;
+  grid-column-gap: 1.875rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+
+.contentBody .eveAside {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 0.5rem;
+  -ms-grid-rows: (minmax(200px, 1fr))[autofit];
+      grid-template-rows: repeat(autofit, minmax(200px, 1fr));
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 3.0625rem;
+}
+
+.contentBody .eveAside button {
+  text-align: left;
+  font-weight: 500;
+  overflow: hidden;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  padding-left: 20%;
+  background: white;
+  border-radius: 0px 1.25rem 1.25rem 0px;
+  color: #000000;
+  height: 4.0625rem;
+  border: none;
+  cursor: pointer;
+}
+
+.contentBody .mainContentEve {
+  border-radius: 1.5rem;
+  padding: 2.5rem 3.5rem;
+  margin: 3rem 3rem 5rem 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+}
+
+.contentBody .mainContentEve h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  color: black;
+}
+
+.contentBody .mainContentEve .caption {
+  font-style: italic;
+  line-height: 1.6875;
+  /* identical to box height */
+  color: #2f80ed;
+  text-transform: uppercase;
+}
+
+.contentBody .mainContentEve .eventQuote {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2.125rem;
+  /* or 189% */
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.contentBody .mainContentEve p {
+  line-height: 2.125rem;
+  color: #4f4f4f;
+}
+
+.contentBody .mainContentEve h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 4rem;
+}
+
+@media all and (max-width: 800px) {
+  .contentBody {
+    display: none !important;
+  }
+  .mobileContent {
+    display: block !important;
+  }
+  .mobTitle {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: poppins;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .mobCols {
+    display: -ms-grid;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    -ms-grid-columns: (minmax(160px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(160px, 1fr));
+    grid-row-gap: 2rem;
+    grid-column-gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .backMob {
+    width: 90%;
+    font-family: poppins;
+    color: #064396;
+    margin: 1rem auto 1rem;
+    cursor: pointer;
+  }
+  .mobModal {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background: #e6ffb160;
+    border-radius: 0.8rem;
+    font-family: poppins;
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .mobModal h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .mobModal h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .mobCols {
+    grid-column-gap: 0.2rem;
+  }
+}
+/*# sourceMappingURL=events_alt.css.map */

@@ -1,0 +1,77 @@
+.mobCardDEE {
+  width: 45%;
+  min-width: 200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.8rem;
+  font-family: poppins;
+  margin: 0 auto;
+}
+
+.mobCardDEE .mobCardimg {
+  margin-top: 7.5%;
+  width: 80% img;
+  width-width: 100%;
+}
+
+.mobCardDEE .titleDE {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.mobCardDEE .titleDE .title_text {
+  text-align: center;
+}
+
+.mobCardDEE .cardBottom {
+  background: #FFFFFF8F;
+  width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 0 0.8rem 0.8rem;
+  cursor: pointer;
+}
+
+.mobCardDEE .cardBottom .viewDeets {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+@media all and (max-width: 400px) {
+  .mobCardDE {
+    width: 140px;
+  }
+}
+/*# sourceMappingURL=mobCard.css.map */

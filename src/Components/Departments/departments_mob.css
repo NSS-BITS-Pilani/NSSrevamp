@@ -1,0 +1,58 @@
+.mobTitle {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: poppins;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.mobCols {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.backMob {
+  width: 90%;
+  font-family: poppins;
+  color: #064396;
+  margin: 1rem auto 1rem;
+}
+
+.mobModal {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background: #e6ffb160;
+  border-radius: 0.8rem;
+  font-family: poppins;
+  padding: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mobModal h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.mobModal h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media all and (max-width: 380px) {
+  .mobCols {
+    grid-column-gap: 0.2rem;
+  }
+}
+/*# sourceMappingURL=departments_mob.css.map */

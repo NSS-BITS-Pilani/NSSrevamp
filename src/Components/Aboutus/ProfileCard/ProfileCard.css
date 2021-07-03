@@ -1,0 +1,42 @@
+.card {
+  width: 288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+          box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.card .liIcon {
+  position: relative;
+  top: 0.3rem;
+}
+
+.card .card_image {
+  border-radius: 10px;
+  height: 66%;
+  width: 100%;
+}
+
+.card .card_info {
+  font-size: 0.875rem;
+  padding: 1.1rem;
+}
+
+.card .card_info .designation {
+  color: #828282;
+  font-size: 0.875rem;
+}
+
+.card .card_info .personName {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=ProfileCard.css.map */

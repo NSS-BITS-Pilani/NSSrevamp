@@ -1,0 +1,158 @@
+.container_con {
+  display: none;
+}
+
+.container {
+  margin: 3.75rem 9.375rem 0rem 9.375rem;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.container form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (max-content)[8];
+      grid-template-rows: repeat(8, -webkit-max-content);
+      grid-template-rows: repeat(8, max-content);
+}
+
+.container form h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  /* identical to box height */
+  color: #333333;
+}
+
+.container form .inputHead {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 2.6875rem 0rem 1rem 0.125rem;
+  color: #000000;
+}
+
+.container form input {
+  font-size: 1.4375rem;
+  line-height: 2.125rem;
+  color: #828282;
+  border: none;
+  border-bottom: 1px solid #828282;
+  width: 25.625rem;
+}
+
+.container form [type="submit"] {
+  height: 5.25rem;
+  width: 17.625rem;
+  background: #333333;
+  border-radius: 1.25rem;
+  font-size: 1.4375rem;
+  line-height: 2.125rem;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+.container form #message {
+  width: 66.4375rem;
+  margin-bottom: 3.5rem;
+}
+
+.container .mapContainer {
+  width: 33.3125rem;
+  height: 23.5625rem;
+  position: relative;
+  left: -30.1875rem;
+  margin-top: 3.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .mapContainer iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media all and (max-width: 1300px) {
+  .container {
+    display: none !important;
+  }
+  .container_con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem !important;
+  }
+  .container_con h1 {
+    font-size: 3rem;
+    line-height: 4.5rem;
+    /* identical to box height */
+    color: #333333;
+  }
+  .container_con .inputHead_mob {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin: 2.6875rem 0rem 1rem 0.125rem;
+    color: #000000;
+  }
+  .container_con input {
+    font-size: 1.4375rem;
+    line-height: 2.125rem;
+    color: #828282;
+    border: none;
+    border-bottom: 1px solid #828282;
+    width: 100%;
+  }
+  .container_con [type="submit"] {
+    height: 4rem;
+    width: 14rem;
+    background: #333333;
+    border-radius: 1.25rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .container_con .button_form_mob {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container_con .mapContainer_mob {
+    width: 75%;
+    margin: 2rem auto;
+    height: 400px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .mapContainer_mob {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

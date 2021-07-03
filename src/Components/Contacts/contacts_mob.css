@@ -1,0 +1,75 @@
+.container_con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3rem !important;
+}
+
+.container_con h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  /* identical to box height */
+  color: #333333;
+}
+
+.container_con .inputHead {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin: 2.6875rem 0rem 1rem 0.125rem;
+  color: #000000;
+}
+
+.container_con input {
+  font-size: 1.4375rem;
+  line-height: 2.125rem;
+  color: #828282;
+  border: none;
+  border-bottom: 1px solid #828282;
+  width: 100%;
+}
+
+.container_con [type="submit"] {
+  height: 4rem;
+  width: 14rem;
+  background: #333333;
+  border-radius: 1.25rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.container_con .button_form_mob {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_con .mapContainer {
+  width: 100%;
+  margin: 2rem auto;
+  height: 400px;
+}
+
+@media all and (min-width: 800px) {
+  .mapContainer {
+    width: 75% !important;
+  }
+}
+/*# sourceMappingURL=contacts_mob.css.map */
