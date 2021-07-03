@@ -66,11 +66,14 @@ const Home = () => {
                             
                             NSS BITS PILANI<br></br>Not me but you
                         </div>
+                        <div className={`${classes.homeRight_mob} homeRight_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" /></div>
+                        </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                         <div className={`${classes.button_div} button_div`}>
                             <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                         </div>
-                            </div>
+                    </div>
                             </Slide>
                         <Slide right>
                     <div className={`${classes.homeRight} homeRight`}>
@@ -100,17 +103,16 @@ const Home = () => {
                         <Slide right>
                         <div className={`${classes.right} right`}>
                             <div className={`${classes.section_heading_home} section_heading_home`}>
-                            <span style={{color: "rgba(39, 174, 96, 1)"}}>What are we</span>
+                                        <span style={{ color: "rgba(39, 174, 96, 1)" }}>What are we</span>
+                                        <div className={`${classes.left_mob} left_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
+                        </div>
                             </div>
                         
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                               
                                 </div>
                                 </Slide>
-
-                        <div className={`${classes.left_mob} left_mob`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
-                        </div>
                     </div>
                     </div>
                     
@@ -123,7 +125,10 @@ const Home = () => {
                             <div className={`${classes.leftB} leftB`}>
                                 
                             <div className={`${classes.section_heading_home} section_heading_home`}>
-                            <span style={{color: "rgba(45, 156, 219, 1)"}}>What we do</span>
+                                        <span style={{ color: "rgba(45, 156, 219, 1)" }}>What we do</span>
+                                        <div className={`${classes.rightB} rightB_mob`}>
+                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                                </div>
                             </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet et donec ut iaculis mauris amet fringilla neque eget. Habitant nec risus viverra at ut arcu, arcu venenatis. Lectus egestas diam at non nec mattis enim vivamus. Faucibus purus orci elit, id ornare pellentesque lectus aliquam. Ut leo consequat malesuada vel proin maecenas dictumst justo. Tristique nam iaculis amet augue justo volutpat varius imperdiet nunc.
                                 </div>
