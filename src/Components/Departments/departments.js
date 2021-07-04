@@ -4,10 +4,13 @@ import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
+import sanityClient from '../../client';
 
 
 
 const Departments = () => {
+
+    const [depData, setDepData] = useState("NO DATA YET!");
 
     const [departmentIndex, setDepartmentIndex] = useState(0);
 
@@ -24,6 +27,17 @@ const Departments = () => {
         { title: "Umang", img:"/assets/CLP_icon.svg", color:"#E6FFB1"  },
     ];
 
+    React.useEffect(() => {
+        sanityClient
+            .fetch(`*[_type == "post"]{
+                title,
+                body
+            }`).then((data) => {
+                setDepData(data[0].body[0].children[0].text);
+
+            }).catch(console.error);
+    });
+
     return (
         <React.Fragment>
         <div className={`${classes.contentBody} contentBody`}>
@@ -37,7 +51,7 @@ const Departments = () => {
             <Zoom>
             <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].color}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
-                <div className={`${classes.caption} caption`}>
+                        {/*<div className={`${classes.caption} caption`}>
                     Educating today's Learners for Tomorrow's World
                 </div>
                 <p>
@@ -55,8 +69,10 @@ const Departments = () => {
                 </p>
                 <p>
                     More importantly, School aims to generate a mentor-student relation between volunteers and students. Home visits, occasional workshops, festival celebration, birthday celebrations and different cultural and sports events are all key components of this endeavour. Over the years, many students and volunteers alike have left school with a deep place in their hearts for each other.
-                </p>
+                </p>*/}
+                        {depData}
                 </div>
+                
                 </Zoom>
             </div>
 
