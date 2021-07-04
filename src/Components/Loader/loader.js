@@ -50,8 +50,13 @@ const Loader = () => {
                 !completed ? (
                     <div className={`${classes.loaderWrapper} loaderWrapper`}>
                         {
-                            !loading ?
-                                <Lottie options={defaultOptions1} height={400}width={400}/>
+                            !loading ? (
+                                <>
+                                {/* ADD LOADER PAGE CONTENTS INSIDE THIS PARENT BLOCK ELEMENT */}
+                                    <img src="./assets/nsslogo.png" />
+                                </>
+                            )
+
                             :   <Lottie options={defaultOptions2} height={100}width={100}/>
                         }
                     </div>
