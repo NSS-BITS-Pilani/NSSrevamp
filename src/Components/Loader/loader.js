@@ -26,7 +26,7 @@ const defaultOptions1 = {
 
 const Loader = () => {
 
-    const [data, setDate] = useState([]);
+    const [data, setData] = useState([]);
     const [loading, setLoading] = useState(undefined);
     const [completed, setCompleted] = useState(undefined);
 
@@ -35,31 +35,32 @@ const Loader = () => {
             fetch('https://jsonplaceholder.typicode.com/todos')
                 .then((response) => response.json())
                 .then((json) => {
-                    setDate(json);
+                    setData(json);
                     setLoading(true);
                 
                     setTimeout(() => {
                         setCompleted(true);
                     }, 1000);
             });
-        }, 2000);
+        }, 5000);
     }, []);
     return (
         <>
             {
                 !completed ? (
                     <div className={`${classes.loaderWrapper} loaderWrapper`}>
-                        {
-                            !loading ? (
-                                <>
-                                {/* ADD LOADER PAGE CONTENTS INSIDE THIS PARENT BLOCK ELEMENT */}
-                                    <img src="./assets/nsslogo.png" />
-                                </>
-                            )
-
-                            :   <Lottie options={defaultOptions2} height={100}width={100}/>
-                        }
+                          {/* ADD LOADER PAGE CONTENTS INSIDE THIS PARENT BLOCK ELEMENT */}
+                            <img src="./assets/nsslogo.svg" />
                     </div>
+                    // {
+                    //     !loading ? (
+                    //         <>
+                    //         {/* ADD LOADER PAGE CONTENTS INSIDE THIS PARENT BLOCK ELEMENT */}
+                    //             <img src="./assets/nsslogo.svg" />
+                    //         </>
+                    //     )
+                    //     :   <Lottie options={defaultOptions2} height={100}width={100}/>
+                    // }
                 ) : (
                     <App />
                 )}
