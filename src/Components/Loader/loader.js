@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classes from "./loader.scss";
 
-import Lottie from 'react-lottie';
 import * as location from './1055-world-locations.json'
 import * as sucess from './1127-success.json'
 import App from '../../App';
@@ -42,7 +41,7 @@ const Loader = () => {
                         setCompleted(true);
                     }, 1000);
             });
-        }, 5000);
+        }, 50000);
     }, []);
     return (
         <>
@@ -50,17 +49,9 @@ const Loader = () => {
                 !completed ? (
                     <div className={`${classes.loaderWrapper} loaderWrapper`}>
                           {/* ADD LOADER PAGE CONTENTS INSIDE THIS PARENT BLOCK ELEMENT */}
-                            <img src="./assets/nsslogo.svg" />
+                            <img src="./assets/nsslogo.png" />
+                            <h2>nss bits pilani</h2>
                     </div>
-                    // {
-                    //     !loading ? (
-                    //         <>
-                    //         {/* ADD LOADER PAGE CONTENTS INSIDE THIS PARENT BLOCK ELEMENT */}
-                    //             <img src="./assets/nsslogo.svg" />
-                    //         </>
-                    //     )
-                    //     :   <Lottie options={defaultOptions2} height={100}width={100}/>
-                    // }
                 ) : (
                     <App />
                 )}
