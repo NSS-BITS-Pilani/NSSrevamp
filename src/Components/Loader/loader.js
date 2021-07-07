@@ -41,7 +41,7 @@ const Loader = () => {
                         setCompleted(true);
                     }, 1000);
             });
-        }, 50000);
+        }, 3000);
     }, []);
     return (
         <>

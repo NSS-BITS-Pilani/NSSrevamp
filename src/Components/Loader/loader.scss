@@ -15,12 +15,14 @@
 
   img {
     margin: 1rem;
+    max-width: 65%;
     border: rgb(64, 19, 107) solid 0.75rem;
     border-radius: 50%;
     transform: scale(1.2);
     animation: scaleDown 1.5s ease-out forwards;
   }
   h2 {
+    max-width: 80%;
     opacity: 0;
     text-transform: uppercase;
     color: white;
@@ -28,6 +30,15 @@
     word-spacing: 2rem;
     text-align: center;
     animation: shrink 2s ease-in-out 1s forwards;
+  }
+}
+@media all and (max-width: 450px) {
+  body {
+    .loaderWrapper {
+      img {
+        border: rgb(64, 19, 107) solid 0.5rem;
+      }
+    }
   }
 }
 @keyframes shrink {
