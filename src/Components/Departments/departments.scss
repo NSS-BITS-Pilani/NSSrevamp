@@ -48,6 +48,17 @@
 
     font-size: 1.125rem;
 
+    .depImage{
+      border-radius: 10px;
+      box-shadow:  2px 2px 5px black;
+      overflow: hidden;
+      justify-self: center;
+      width: 50%;
+      img{
+        max-width: 100%;
+      }
+    }
+
     h1 {
       font-weight: bold;
       font-size: 3rem;

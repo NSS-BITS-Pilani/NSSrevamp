@@ -15,7 +15,7 @@ const App = () => (
   <Router>
       <TopBar />
       <Route path="/aboutus" component={Aboutus} />
-      <Route path="/departments" component={Departments} />
+      <Route path="/departments/:id?" component={Departments} />
       <Route path="/events" component={Events} />
       <Route path="/contacts" component={Contacts} />
       <Route path="/" exact component={Home} />

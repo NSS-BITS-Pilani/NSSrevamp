@@ -10,28 +10,33 @@ import classes from "./home.scss";
 import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { Select } from "@chakra-ui/react"
-
+import sanityClient from '../../client';
 
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
 const Home = () => {
     
-    const events = [
-        { eventName: "Junoon", eventInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.", imgPath: "home_initiatives.png"},
-        { eventName: "Junoon", eventInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.", imgPath: "home_initiatives.png" },
-        { eventName: "Junoon", eventInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra.", imgPath: "home_initiatives.png" }
-    ];          // set top 3 events in this array
 
-    const expandedEvents = [
-        ...events, ...events
-    ];          // set all events in this array
+    const [initiatives, setInitiatives] = useState([]);
+    const [topInitiatives, setTopInitiatives] = useState([]);
+
+    async function fetchData() {
+        const dataArray = await sanityClient.fetch('*[_type == "initiative"]');
+        setInitiatives(dataArray);
+        setTopInitiatives(dataArray.slice(0,3));
+    }
+
+    React.useEffect(() => {
+        fetchData();
+    }, []);
+
 
     const renderEvents = () => {
         if (!eventsExpanded) {
-            return events.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath}/>);
+            return topInitiatives.map((event) => <EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imgurl} eventType={event.eventType}/>);
         }
-        return expandedEvents.map((event) => <EventCard eventName={event.eventName} eventInfo={event.eventInfo} imgPath={event.imgPath}/>)
+        return initiatives.map((event) => <EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imgurl} eventType={event.eventType}/>);
     }
 
     const [eventsExpanded, setEventsExpanded] = useState(false);
@@ -110,9 +115,8 @@ const Home = () => {
                             </div>
                         
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
-                              
-                                </div>
-                                </Slide>
+                            </div>
+                        </Slide>
                     </div>
                     </div>
                     

@@ -1,5 +1,6 @@
 .depcard {
   display: block;
+  cursor: pointer;
 
   .card_heading {
     font-weight: 600;
@@ -19,6 +20,13 @@
   .depInfo {
   
   }
+}
+
+.depcard:hover{
+  .card_color{
+      width: 0.2*100vw;
+      left: initial;
+    }
 }
 
 @media all and (max-width: 800px){
