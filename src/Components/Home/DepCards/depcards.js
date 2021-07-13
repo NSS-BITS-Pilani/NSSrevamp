@@ -1,8 +1,12 @@
 import React from 'react';
 import classes from "./depcards.scss";
+import { NavLink} from 'react-router-dom';
 
 const DepCard = (props) => {
+
+   
     return (
+        <NavLink to={props.depName === 'Events' ? "/events" : `/departments/${props.depName}`}>
         <div className={`${classes.depcard} depcard`}>
             <div className={`${classes.card_heading} card_heading`}>
                 <div>{props.depName}</div>
@@ -11,7 +15,8 @@ const DepCard = (props) => {
             <div className={`${classes.depInfo} depInfo`}>
                 {props.depInfo}  
             </div>
-        </div>
+            </div>
+        </NavLink>
     );
 }
 
