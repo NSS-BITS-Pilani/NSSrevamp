@@ -1,0 +1,35 @@
+.heroCarousel{
+    display: flex;
+    justify-content: center;
+
+    .CarouselImg{
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 80%;
+        box-shadow: 0 0 5px rgb(61, 59, 59);
+    }
+    
+}
+
+
+@media all and (max-width: 1050px) {
+  .heroCarousel {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem;
+  }
+
+  .CarouselImg{
+        width: 90%;
+    }
+}
+
+
+@media all and (max-width: 800px) {
+  .heroCarousel {
+    width: 100%;
+    
+    .CarouselImg{
+        width: 100%;
+    }
+}
+}

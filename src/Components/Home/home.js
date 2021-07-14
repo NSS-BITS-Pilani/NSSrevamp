@@ -6,6 +6,7 @@ import EventCard from './EventCard/eventcard';
 import DepCard from './DepCards/depcards';
 
 import Carousel from './Carousel/carousel';
+import HeroCarousel from './HeroCarousel/HeroCarousel';
 import classes from "./home.scss";
 import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
@@ -72,7 +73,9 @@ const Home = () => {
                             NSS BITS PILANI<br></br>Not me but you
                         </div>
                         <div className={`${classes.homeRight_mob} homeRight_mob`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" /></div>
+                            <div>
+                                <HeroCarousel></HeroCarousel>
+                            </div>
                         </div>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                         <div className={`${classes.button_div} button_div`}>
@@ -82,7 +85,7 @@ const Home = () => {
                             </Slide>
                         <Slide right>
                     <div className={`${classes.homeRight} homeRight`}>
-                        <div className={`${classes.homeimg} homeimg`}><img src="/assets/home_top.png" alt="img" /></div>
+                        <div><HeroCarousel></HeroCarousel></div>
                             </div>
                             </Slide>
                     <div className={`${classes.button_div} button_div_mob`}>
