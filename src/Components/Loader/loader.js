@@ -19,7 +19,7 @@ const Loader = () => {
                         setCompleted(true);
                     }, 1000);
             });
-        }, 1000);
+        }, 2000);
     }, []);
     return (
         <>
