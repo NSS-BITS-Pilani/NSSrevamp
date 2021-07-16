@@ -44,15 +44,6 @@
     animation: shrink 2s ease-in-out 1s forwards;
   }
 }
-@media all and (max-width: 450px) {
-  body {
-    .loaderWrapper {
-      img {
-        border: rgb(64, 19, 107) solid 0.5rem;
-      }
-    }
-  }
-}
 @keyframes shrink {
   100% {
     opacity: 1;
@@ -64,13 +55,5 @@
   100% {
     opacity: 1;
     transform: scale(0.8);
-  }
-}
-@keyframes showAnimation {
-  100% {
-    z-index: 0;
-  }
-  99% {
-    z-index: 3;
   }
 }
