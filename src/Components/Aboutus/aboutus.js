@@ -98,7 +98,7 @@ const aboutus = () => {
             </div>
                 </Pulse>
                 <Fade>            
-            <div className={`${classes.section_heading} section_heading`} style={{marginTop:"6rem"}}>Our Team</div>
+            <div className={`${classes.section_heading} section_heading`} style={{marginTop:"6rem", marginBottom:"3rem"}}>Our Team</div>
 
                 <div className={`${classes.team_heading} team_heading`}>
 

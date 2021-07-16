@@ -48,7 +48,7 @@ const Departments = (props) => {
         }
     });
     const [departmentIndex, setDepartmentIndex] = useState(index);
-
+    
     async function fetchData() {
         const dataArray = await sanityClient.fetch('*[_type == "department"]');
         setDepData(dataArray);
