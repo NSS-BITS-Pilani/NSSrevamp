@@ -20,7 +20,7 @@ fill="navy" stroke="none">
 -865 363 -80 61 -243 220 -315 307 -190 232 -320 509 -387 822 -25 119 -27
 146 -27 368 0 225 1 248 27 370 34 157 83 309 141 431 341 719 1081 1145 1866
 1073z"/>
-    <animate attributeName="fill" begin="0s" to="navy" dur="1.5s" fill="freeze" repeatCount="1" />
+    <animate attributeName="fill" begin="0s" to="navy" dur="1s" fill="freeze" repeatCount="1" />
 </g>
 <path d="M1780 3774 c-14 -2 -68 -11 -120 -20 -208 -35 -476 -145 -665 -272
 -760 -512 -1005 -1545 -556 -2342 224 -397 578 -686 1009 -824 909 -292 1894
@@ -195,7 +195,7 @@ l42 35 -182 189 c-146 152 -189 191 -219 199 -42 12 -79 51 -79 84 0 12 -20
 -38 226 -67 299 -67 l44 0 0 276 c0 261 -1 277 -20 301 -25 32 -25 70 0 108
 20 30 29 135 12 135 -4 0 -26 -19 -49 -42z"/>
 </g>
-    <animateTransform attributeName="transform" type="rotate" begin="0s" from="360 2000 2000" to="0 2000 2000" dur="1.5s" repeatCount="1" />
+    <animateTransform attributeName="transform" type="rotate" begin="0s" from="360 2000 2000" to="0 2000 2000" dur="1s" repeatCount="1" />
 </g>
 </g>
 </svg>
