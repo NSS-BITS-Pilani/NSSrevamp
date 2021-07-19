@@ -13,7 +13,7 @@ const Contacts = () => {
 
     const submitHandler = e => {
         e.preventDefault();
-        console.log(formData);
+        setFormData({ name: "", email: "", message: "" });
     
 
         axios.post(Math.random() < 0.5 ? url1 : url2, formData).then( response => {
@@ -69,7 +69,7 @@ const Contacts = () => {
             
             <div className={`${classes.container_con} container_con`}>
             <div>
-                <form action="#" method="POST">
+                <form action="#" method="POST" onSubmit={submitHandler}>
                         <h1>Contact Us</h1>
                         <div>
                 <label for="name">
@@ -77,7 +77,11 @@ const Contacts = () => {
                         Name&nbsp;:&nbsp;
                     </div>
                 </label>
-                <input type="text" id="name" name="name" placeholder="James Bond" />
+                <input type="text" id="name" name="name" value={formData.name} onChange={
+                            (e) => {
+                                setFormData({ email: formData.email, message: formData.message, [e.target.name]: e.target.value });
+                            } 
+                        } placeholder="James Bond" />
 
                         </div>
                         <div>
@@ -86,7 +90,11 @@ const Contacts = () => {
                         E-mail&nbsp;:&nbsp;
                     </div>
                 </label>
-                <input type="text" id="email" name="email" placeholder="abc@xyz.com" />
+                <input type="text" id="email" name = "email" value = {formData.email} onChange={
+                            (e) => {
+                                setFormData({ name: formData.name, message: formData.message, [e.target.name]: e.target.value });
+                            } 
+                        } placeholder="abc@xyz.com" />
                         </div>
                         <div>
                             <label for="message">
@@ -95,7 +103,11 @@ const Contacts = () => {
                     </div>
                             </label>
                             
-                <textarea name="message" rows="4" cols="50" placeholder="Hey there..."/>
+                <textarea id="message" name = "message" value = {formData.message} onChange={
+                            (e) => {
+                                setFormData({ email: formData.email, name: formData.name, [e.target.name]: e.target.value });
+                            } 
+                        } rows="4" cols="50" placeholder="Hey there..."/>
                         </div>
                         <div className="button_form_mob">
                             <input type="submit" value="Send message" />
