@@ -1,33 +1,65 @@
-import React from 'react';
+import React, { useState} from 'react';
 import classes from "./contacts.scss";
 import Footer from "../Footer/footer_alt";
+import axios from 'axios';
 
-const contacts = () => {
+const Contacts = () => {
+
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+    const url1 = 'https://sheet.best/api/sheets/25c88114-88cd-438b-a017-066cc9a056c9';
+    const url2 = "https://sheet.best/api/sheets/5e0c7761-3e9a-411e-8356-c9ca84d5bc3a";
+
+
+    const submitHandler = e => {
+        e.preventDefault();
+        console.log(formData);
+    
+
+        axios.post(Math.random() < 0.5 ? url1 : url2, formData).then( response => {
+            console.log(response.data);
+        });
+    }
+    
+
+    
     return (
         <React.Fragment>
             <div style={{display:"flex", justifyContent:"center"}}>
         <div className={`${classes.container} container`}>
-            <form action="#" method="POST">
+            <form action="#" method="POST" onSubmit={submitHandler}>
                 <h1>Contact Us</h1>
                 <label for="name">
                     <div className={`${classes.inputHead} inputHead`}>
                         Name
                     </div>
                 </label>
-                <input type="text" id="name" name="name" placeholder="James Bond" />
+                        <input type="text" id="name" name="name" value={formData.name} onChange={
+                            (e) => {
+                                setFormData({ email: formData.email, message: formData.message, [e.target.name]: e.target.value });
+                            } 
+                        } placeholder="James Bond" />
                 <label for="email">
                     <div className={`${classes.inputHead} inputHead`}>
                         E-mail
                     </div>
                 </label>
-                <input type="text" id="email" name="email" placeholder="abc@xyz.com" />
+                <input type="text" id="email" name = "email" value = {formData.email} onChange={
+                            (e) => {
+                                setFormData({ name: formData.name, message: formData.message, [e.target.name]: e.target.value });
+                            } 
+                        } placeholder="abc@xyz.com" />
                 <label for="message">
                     <div className={`${classes.inputHead} inputHead`}>
                         Message
                     </div>
                 </label>
-                <input type="text" id="message" name="message" placeholder="Hey there, I wanted to say hi and that" />
-                <input type="submit" value="Send message" />              
+                <input type="text" id="message" name = "message" value = {formData.message} onChange={
+                            (e) => {
+                                setFormData({ email: formData.email, name: formData.name, [e.target.name]: e.target.value });
+                            } 
+                        } placeholder="Hey there, I wanted to say hi and that" />
+                <input type="submit" value="Send message"/>              
             </form>
             <div className={`${classes.mapContainer} mapContainer`}>
                 <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
@@ -85,4 +117,4 @@ const contacts = () => {
     );
 }
 
-export default contacts;
+export default Contacts;
