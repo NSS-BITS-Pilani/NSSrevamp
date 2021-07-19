@@ -18,6 +18,7 @@ const App = () => (
       <Route path="/departments/:id?" component={Departments} />
       <Route path="/events" component={Events} />
       <Route path="/contacts" component={Contacts} />
+      <Route path="/contacts#" component={Contacts} />
       <Route path="/" exact component={Home} />
     </Router>
     </ChakraProvider>

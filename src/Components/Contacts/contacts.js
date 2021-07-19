@@ -15,8 +15,9 @@ const Contacts = () => {
         e.preventDefault();
         setFormData({ name: "", email: "", message: "" });
     
+        const d = new Date();
 
-        axios.post(Math.random() < 0.5 ? url1 : url2, formData).then( response => {
+        axios.post(Math.random() < 0.5 ? url1 : url2, { ...formData, date: d.toDateString(), time: d.toTimeString() }).then( response => {
             console.log(response.data);
         });
     }
