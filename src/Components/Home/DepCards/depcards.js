@@ -7,7 +7,7 @@ const DepCard = (props) => {
 
    
     return (
-        <NavLink to={props.depName === 'Events' ? "/events" : `/departments/${props.depName}`}>
+        <NavLink to={`/departments/${props.depName}`}>
         <div className={`${classes.depcard} depcard`}>
             <div className={`${classes.card_heading} card_heading`}>
                     <div>{props.depName}</div>
