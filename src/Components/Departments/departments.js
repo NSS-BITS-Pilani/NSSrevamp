@@ -4,7 +4,8 @@ import Slide from 'react-reveal/Slide';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
-import sanityClient from '../../client';
+
+import { useSelector} from 'react-redux';
 
 const BlockContent = require('@sanity/block-content-to-react');
 
@@ -16,8 +17,6 @@ const Departments = (props) => {
 
     const [showModal, setShowModal] = useState({ show: false, index: 0 });
     
-    const [imgUrl, setImgUrl] = useState(null);
-
     const initialDep = props.match.params.id;
 
     const serializers = {
@@ -38,7 +37,8 @@ const Departments = (props) => {
         { title: "HPA", img:"/assets/HPA.svg", color:"#F857A6"  },
         { title: "Parishod", img:"/assets/CLP_icon.svg", color:"#E6FFB1"  },
         { title: "School", img:"/assets/school.svg", color:"#9B51E0"  },
-        { title: "Umang", img:"/assets/CLP_icon.svg", color:"#E6FFB1"  },
+        { title: "Umang", img: "/assets/CLP_icon.svg", color: "#E6FFB1" },
+        { title: "Events", img:"/assets/CLP_icon.svg", color:"#E6FFB1"  },
     ];
 
     let index=0;
@@ -49,25 +49,29 @@ const Departments = (props) => {
     });
     const [departmentIndex, setDepartmentIndex] = useState(index);
     
-    async function fetchData() {
-        const dataArray = await sanityClient.fetch('*[_type == "department"]');
-        setDepData(dataArray);
-        setCurrentDep(<BlockContent blocks={dataArray[7].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
-        setImgUrl(dataArray[7].imgurl);
-    }
-
     function onClickChange(index) {
         setDepartmentIndex(index);
         depData.forEach((element) => {
             if (element.title === Departments[index].title) {
                 setCurrentDep(<BlockContent blocks={element.body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
-                setImgUrl(element.imgurl)
             }
         });
     }
 
+    const dataArray = useSelector((state) => state.departments);
+
     React.useEffect(() => {
-        fetchData();
+        setDepData(dataArray);
+
+        let i = 2;
+
+        dataArray.forEach(
+            (data, index) => {
+                if (data.title === "CLP") i = index;
+            }
+        )
+
+        setCurrentDep(<BlockContent blocks={dataArray[i].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
     }, []);
 
     return (
@@ -84,7 +88,6 @@ const Departments = (props) => {
             <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].color}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
                     {currentDep}
-                    <div style={{display:"flex"}}>{ imgUrl ? <div className="depImage"><img src={imgUrl}/></div> : null }</div>
                 </div>
                 </Zoom>
             </div>
@@ -116,8 +119,6 @@ const Departments = (props) => {
             <Slide bottom>
             <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].color}`} : {display: "none"}} className="mobModal">
                 {currentDep}
-                <div style={{ display: "flex" }}>{imgUrl ? <div className="eventImage"><img src={imgUrl} /></div> : null}</div>
-    
             </div>
             </Slide>
         </div>

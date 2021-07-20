@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import classes from "./events_alt.scss";
 import Slide from 'react-reveal/Slide';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
-import sanityClient from '../../client';
+import { useSelector} from 'react-redux';
 const BlockContent = require('@sanity/block-content-to-react')
 
 const Events = () => {
+
+    
 
     const [eventIndex, setEventIndex] = useState(1);
 
@@ -17,8 +18,6 @@ const Events = () => {
     
     const [currentEvent, setCurrentEvent] = useState("Loading...");
     
-    const [imgUrl, setImgUrl] = useState(null);
-
     const serializers = {
             types: {
                 code: (props) => (
@@ -36,25 +35,28 @@ const Events = () => {
         { title: "Conferencia De Youth", img:"/assets/CLP_icon.svg", color:"#F2C94C"}
     ];
 
-    async function fetchData() {
-        const dataArray = await sanityClient.fetch('*[_type == "event"]');
-        setImgUrl(dataArray[2].imgurl)
-        setEventData(dataArray);
-        setCurrentEvent(<BlockContent blocks={dataArray[2].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
-    }
-
     function onClickChange(index) {
         setEventIndex(index);
         eventData.forEach((element) => {
             if (element.title === Events[index].title) {
                 setCurrentEvent(<BlockContent blocks={element.body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
-                setImgUrl(element.imgurl)
             }
         });
     }
 
+    const dataArray = useSelector((state) => state.events);
+
     React.useEffect(() => {
-        fetchData();
+        setEventData(dataArray);
+        let i = 2;
+
+        dataArray.forEach(
+            (data, index) => {
+                if (data.title === "Smile For A Shop") i = index;
+            }
+        )
+
+        setCurrentEvent(<BlockContent blocks={dataArray[i].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
     }, []);
 
     return (
@@ -70,7 +72,7 @@ const Events = () => {
             <Slide bottom>
                     <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${Events[eventIndex].color}` }}>
                         {currentEvent}
-                        <div style={{display:"flex"}}>{ imgUrl ? <div className="eventImage"><img src={imgUrl}/></div> : null }</div>
+                        
                 </div>
                 </Slide>
             </div>
@@ -102,7 +104,6 @@ const Events = () => {
             <Slide bottom>
             <div style={ showModal.show ? {display: "block", background:`${Events[eventIndex].color}`} : {display: "none"}} className="mobModal">
                 {currentEvent}
-                <div style={{display:"flex"}}>{ imgUrl ? <div className="eventImage"><img src={imgUrl}/></div> : null }</div>
             </div>
             </Slide>
         </div>

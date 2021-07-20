@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import classes from "./loader.scss";
 
+import { useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from '../../State/index';
+
 import App from '../../App';
 
 const Loader = () => {
@@ -8,7 +12,14 @@ const Loader = () => {
     const [data, setData] = useState([]);
     const [completed, setCompleted] = useState(undefined);
 
+    const dispatch = useDispatch();
+
+    const { getDepartments, getEvents, getInitiatives } = bindActionCreators(actionCreators, dispatch);
+
     useEffect(() => {
+        getDepartments();
+        getEvents();
+        getInitiatives();
         setTimeout(() => {
             fetch('https://jsonplaceholder.typicode.com/todos')
                 .then((response) => response.json())

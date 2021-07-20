@@ -34,9 +34,7 @@ const EventCard = (props) => {
           <ModalCloseButton />
                         <ModalBody>
                             <span className={`${classes.modalInfo} modalInfo`}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat condimentum tempor. Fusce porttitor nisl et eros blandit, at pulvinar tortor tempor. Quisque id magna diam. Quisque consequat volutpat ex vel euismod. Quisque pulvinar luctus augue, et porttitor tellus hendrerit vitae. Donec porttitor mollis justo, eget tincidunt metus. Vivamus hendrerit nunc id fermentum sodales. Phasellus nec bibendum enim. Vivamus tincidunt placerat tellus vitae euismod. In hac habitasse platea dictumst. Suspendisse non dolor vel tellus dapibus elementum a sit amet risus.
-
-            Donec mollis id orci at mattis. Fusce tincidunt et dolor eu dignissim. Pellentesque tempor sed dolor sed elementum. </span>
+            {props.eventInfo}</span>
           </ModalBody>
 
           <ModalFooter>

@@ -11,27 +11,24 @@ import classes from "./home.scss";
 import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { Select } from "@chakra-ui/react"
-import sanityClient from '../../client';
+
 
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 
+import { useSelector} from 'react-redux';
+
+
 const Home = () => {
     
-
-    const [initiatives, setInitiatives] = useState([]);
-    const [topInitiatives, setTopInitiatives] = useState([]);
-
-    async function fetchData() {
-        const dataArray = await sanityClient.fetch('*[_type == "initiative"]');
-        setInitiatives(dataArray);
-        setTopInitiatives(dataArray.slice(0,3));
+    const dataArray = useSelector((state) => state.initiatives);
+    let topInitiatives = [];
+    const initiatives = dataArray;
+    if (dataArray.length <= 3) {
+       topInitiatives = dataArray;
+    } else {
+        topInitiatives = dataArray.slice(0,3);
     }
-
-    React.useEffect(() => {
-        fetchData();
-    }, []);
-
 
     const renderEvents = () => {
         if (!eventsExpanded) {

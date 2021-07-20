@@ -1,5 +1,15 @@
-.mobileContent{
+.mobileContent {
   display: none;
+}
+
+figure {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+  }
 }
 
 .contentBody {
@@ -20,6 +30,7 @@
     height: max-content;
     grid-row-gap: 0.5rem;
     padding-top: 3.0625rem;
+    margin-bottom: 2rem;
 
     button {
       text-align: left;
@@ -48,17 +59,6 @@
 
     font-size: 1.125rem;
 
-    .depImage{
-      border-radius: 10px;
-      box-shadow:  2px 2px 5px black;
-      overflow: hidden;
-      justify-self: center;
-      width: 50%;
-      img{
-        max-width: 100%;
-      }
-    }
-
     h1 {
       font-weight: bold;
       font-size: 3rem;
@@ -85,17 +85,16 @@
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
+  .contentBody {
+    display: none !important;
+  }
 
-.contentBody{
-  display: none !important;
-}
+  .mobileContent {
+    display: block !important;
+  }
 
-.mobileContent{
-  display: block !important;
-}
-    
-.mobTitle{
+  .mobTitle {
     width: 90%;
     margin: 0 auto;
     font-size: 2.5rem;
@@ -104,9 +103,9 @@
     font-family: poppins;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-}
+  }
 
-.mobColsD{
+  .mobColsD {
     display: grid;
     width: 90%;
     margin: 0 auto;
@@ -114,17 +113,17 @@
     grid-row-gap: 2rem;
     grid-column-gap: 0.5rem;
     margin-bottom: 2rem;
-}
+  }
 
-.backMob{
+  .backMob {
     width: 90%;
     font-family: poppins;
     color: #064396;
     margin: 1rem auto 1rem;
     cursor: pointer;
-}
+  }
 
-.mobModal{
+  .mobModal {
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -135,20 +134,20 @@
     font-size: 1rem;
     margin-bottom: 2rem;
 
-    h1{
-        font-size: 1.4rem;
-        font-weight: bold;
+    h1 {
+      font-size: 1.4rem;
+      font-weight: bold;
     }
 
-    h2{
-        font-size: 1.2rem;
-        font-weight: bold;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
     }
-}
+  }
 }
 
-@media all and (max-width: 380px){
-    .mobCols{
-        grid-column-gap: 0.2rem;
-    }
+@media all and (max-width: 380px) {
+  .mobCols {
+    grid-column-gap: 0.2rem;
+  }
 }
