@@ -30,15 +30,15 @@ const Departments = (props) => {
         }
 
     const Departments = [
-        { title: "CLP", img:"/assets/CLP_icon.svg", color:"#E6FFB1" },
-        { title: "D3", img:"/assets/D3.svg", color:"#A5F4FF70" },
-        { title: "Desco", img:"/assets/Desco_icon.svg", color:"#F2C94C" },
-        { title: "EPD", img:"/assets/EPD.svg", color:"#27AE60"  },
-        { title: "HPA", img:"/assets/HPA.svg", color:"#F857A6"  },
-        { title: "Parishod", img:"/assets/CLP_icon.svg", color:"#E6FFB1"  },
-        { title: "School", img:"/assets/school.svg", color:"#9B51E0"  },
-        { title: "Umang", img: "/assets/CLP_icon.svg", color: "#E6FFB1" },
-        { title: "Events", img:"/assets/CLP_icon.svg", color:"#E6FFB1"  },
+        { title: "CLP", img:"/assets/clp.svg", color:"#9E9E9E", color_light:"#9E9E9E88" },
+        { title: "D3", img:"/assets/d3.svg", color:"rgb(161, 14, 197,0.7)", color_light:"rgb(161, 14, 197,0.65)"},
+        { title: "Desco", img:"/assets/desco.svg", color:"#FF9800", color_light:"#FF9800ee"},
+        { title: "EPD", img: "/assets/epd.svg", color: "#1DE9B6", color_light:"#1DE9B6" },
+        { title: "Events", img:"/assets/events.svg", color:"#009688", color_light:"#009688bb" },
+        { title: "HPA", img:"/assets/hpa.svg", color:"#E91E63", color_light:"#E91E63cc" },
+        { title: "Parishod", img:"/assets/parishod.svg", color:"#4CAF50", color_light:"#4CAF50dd" },
+        { title: "School", img:"/assets/school.svg", color:"#3F51B5", color_light:"#3F51B5bb" },
+        { title: "Umang", img: "/assets/umang.svg", color: "#FFC107", color_light:"#FFC107" }
     ];
 
     let index=0;
@@ -71,6 +71,12 @@ const Departments = (props) => {
             }
         )
 
+        dataArray.forEach((val, ind) => {
+        if (val.title === initialDep) {
+            i = ind;
+        }
+    });
+
         setCurrentDep(<BlockContent blocks={dataArray[i].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
     }, []);
 
@@ -80,12 +86,12 @@ const Departments = (props) => {
             <aside className={`${classes.depAside} depAside`}>
                 <Slide left>
                 {Departments.map((department, index) =>
-                    <button onClick={() => onClickChange(index)} style={departmentIndex === index ? { background: department.color } : null}>{department.title}</button>
+                    <button onClick={() => onClickChange(index)} style={departmentIndex === index ? { background: department.color_light } : null}>{department.title}</button>
                     )}
                     </Slide>
             </aside>
             <Zoom>
-            <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].color}`}}>
+            <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].color_light}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
                     {currentDep}
                 </div>
@@ -117,7 +123,7 @@ const Departments = (props) => {
             </div>
 
             <Slide bottom>
-            <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].color}`} : {display: "none"}} className="mobModal">
+            <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].color_light}`} : {display: "none"}} className="mobModal">
                 {currentDep}
             </div>
             </Slide>

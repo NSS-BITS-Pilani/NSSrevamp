@@ -35,16 +35,18 @@ const Events = () => {
         { title: "Conferencia De Youth", img:"/assets/CLP_icon.svg", color:"#F2C94C"}
     ];
 
+    const dataArray = useSelector((state) => state.events);
+
     function onClickChange(index) {
         setEventIndex(index);
         eventData.forEach((element) => {
-            if (element.title === Events[index].title) {
+            if (element.title === dataArray[index].title) {
                 setCurrentEvent(<BlockContent blocks={element.body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
             }
         });
     }
 
-    const dataArray = useSelector((state) => state.events);
+    
 
     React.useEffect(() => {
         setEventData(dataArray);
@@ -64,13 +66,13 @@ const Events = () => {
         <div className={`${classes.contentBody} contentBody`}>
             <Slide left>
             <aside className={`${classes.eveAside} eveAside`}>
-                {Events.map((event, index) =>
-                    <button onClick={() => onClickChange(index)} style={eventIndex === index ? {background: `${Events[eventIndex].color}`} : null}>{event.title}</button>
+                {dataArray.map((event, index) =>
+                    <button onClick={() => onClickChange(index)} style={eventIndex === index ? {background: `${dataArray[eventIndex].color}`} : null}>{event.title}</button>
                 )}
                 </aside>
             </Slide>
             <Slide bottom>
-                    <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${Events[eventIndex].color}` }}>
+                    <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${dataArray[eventIndex].color}` }}>
                         {currentEvent}
                         
                 </div>
@@ -88,10 +90,10 @@ const Events = () => {
 
             <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
                 <Fade>
-                {Events.map((event, i) =>
+                {dataArray.map((event, i) =>
                     <MobCard
                         title={event.title}
-                        img={event.img}
+                        img={event.logo_url}
                         color={event.color}
                         click={() => {
                             setShowModal({ show: true, index: i });
@@ -102,7 +104,7 @@ const Events = () => {
             </div>
 
             <Slide bottom>
-            <div style={ showModal.show ? {display: "block", background:`${Events[eventIndex].color}`} : {display: "none"}} className="mobModal">
+            <div style={ showModal.show ? {display: "block", background:`${dataArray[eventIndex].color}`} : {display: "none"}} className="mobModal">
                 {currentEvent}
             </div>
             </Slide>

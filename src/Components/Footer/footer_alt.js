@@ -10,11 +10,11 @@ const footer_alt = () => {
             </div>
             <div className={`${classes.mediaContainer} mediaContainer`}>
                 <div className={`${classes.socialMedia} socialMedia`}>
-                    <a href="#" target="_blank"><img src="/assets/image 11.png" /></a>
-                    <a href="#" target="_blank"><img src="/assets/image 9.png" /></a>
-                    <a href="#" target="_blank"><img src="/assets/image 10.png" /></a>
-                    <a href="#" target="_blank"><img src="/assets/image 12.png" /></a>
-                    <a href="#" target="_blank"><img src="/assets/image 13.png" /></a>
+                    <a href="https://www.linkedin.com/company/nss-bits-pilani" target="_blank"><img src="/assets/image 11.png" /></a>
+                    <a href="https://instagram.com/nssbitspilani?utm_medium=copy_link" target="_blank"><img src="/assets/image 9.png" /></a>
+                    <a href="https://youtube.com/user/nssbits" target="_blank"><img src="/assets/image 10.png" /></a>
+                    <a href="https://www.facebook.com/nssbits/" target="_blank"><img src="/assets/image 12.png" /></a>
+                    <a href="https://twitter.com/nssbits?s=09" target="_blank"><img src="/assets/image 13.png" /></a>
                 </div>
             </div>
             
@@ -39,25 +39,31 @@ const footer_alt = () => {
                         <h2 class="ct-footer-list-header">DEPARTMENTS</h2>
                         <ul>
                             <li style={{marginTop:"1rem"}}>
-                                <a href="#">School</a>
+                                <a href="#">CLP</a>
                             </li>
                             <li>
-                                <a href="#">Computer Literacy Programme</a>
+                                <a href="#">D3</a>
                             </li>
                             <li>
-                                <a href="#">Health and Public Awareness</a>
+                                <a href="#">Desco</a>
                             </li>
                             <li>
-                                <a href="#">Umang</a>
+                                <a href="#">EPD</a>
                             </li>
                             <li>
-                                <a href="#">Team Events</a>
+                                <a href="#">Events</a>
+                            </li>
+                            <li>
+                                <a href="#">HPA</a>
                             </li>
                             <li>
                                 <a href="#">Parishod</a>
                             </li>
                             <li>
-                                <a href="#">English and Personality Development</a>
+                                <a href="#">School</a>
+                            </li>
+                            <li>
+                                <a href="#">Umang</a>
                             </li>
                         </ul>
                     </li>
@@ -72,6 +78,9 @@ const footer_alt = () => {
                             </li>
                             <li>
                                 <a href="#">Shop For A Smile</a>
+                            </li>
+                            <li>
+                                <a href="#">Conferencia De Youth</a>
                             </li>
                         </ul>
                     </li>
@@ -107,32 +116,32 @@ const footer_alt = () => {
                     <div class="inner-right">
                             <ul>
                                 <li>
-                                    <a href="">Facebook</a>
+                                    <a href="https://www.facebook.com/nssbits/">Facebook</a>
                                 </li>
                                 <li>
-                                    <a href="">Instagram</a>
+                                    <a href="https://instagram.com/nssbitspilani?utm_medium=copy_link">Instagram</a>
                                 </li>
                                 <li>
-                                    <a href="">LinkedIn</a>
+                                    <a href="https://www.linkedin.com/company/nss-bits-pilani">LinkedIn</a>
                                 </li>
                                 <li>
-                                    <a href="">Twitter</a>
+                                    <a href="https://twitter.com/nssbits?s=09">Twitter</a>
                                 </li>
                             </ul>
                     </div>
                     <div class="inner-right-500">
         
                                 <div>
-                                    <a href="">Facebook</a>
+                                    <a href="https://www.facebook.com/nssbits/">Facebook</a>
                                 </div>
                                 <div>
-                                    <a href="">Instagram</a>
+                                    <a href="https://instagram.com/nssbitspilani?utm_medium=copy_link">Instagram</a>
                                 </div>
                                 <div>
-                                    <a href="">LinkedIn</a>
+                                    <a href="https://www.linkedin.com/company/nss-bits-pilani">LinkedIn</a>
                                 </div>
                                 <div>
-                                    <a href="">Twitter</a>
+                                    <a href="https://twitter.com/nssbits?s=09">Twitter</a>
                                 </div>
     
                     </div>
