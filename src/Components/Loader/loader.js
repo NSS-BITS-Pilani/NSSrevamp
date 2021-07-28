@@ -7,6 +7,7 @@ import { actionCreators } from '../../State/index';
 
 import App from '../../App';
 
+
 const Loader = () => {
 
     const [data, setData] = useState([]);
@@ -42,7 +43,7 @@ const Loader = () => {
                             <div className="logo">
                                 <img src="./assets/nss.svg" alt="NSS Logo" />
                             </div>
-                            <h2>nss bits pilani</h2>
+                            <h2 className="loaderText">nss bits pilani</h2>
                         </div>
                     </>
                 ) : (

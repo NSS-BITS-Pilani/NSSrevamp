@@ -37,13 +37,13 @@
   }
   h2 {
     max-width: 80%;
-    opacity: 0;
+    //opacity: 0;
     text-transform: uppercase;
     color: #1a1a1a;
     letter-spacing: 0.9rem;
     word-spacing: 1.75rem;
     text-align: center;
-    animation: shrink 2s ease-in-out 1s forwards;
+    //animation: shrink 2s ease-in-out 1s forwards;
   }
 }
 @keyframes shrink {
