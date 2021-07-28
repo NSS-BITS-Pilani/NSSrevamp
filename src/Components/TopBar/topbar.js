@@ -28,8 +28,8 @@ const Topbar = () => {
                 Events
             </NavLink>
 
-            <NavLink to={"/contacts"} className={`${classes.NavLink} NavLink`}>
-                Contacts
+            <NavLink to={"/contactus"} className={`${classes.NavLink} NavLink`}>
+                Contact Us
             </NavLink>
     
         </React.Fragment>
@@ -48,7 +48,7 @@ const Topbar = () => {
                 <NavLink to={"/events"}>Events</NavLink>
             </button> 
             <button onClick="">
-                <NavLink to={"/contacts"}>Contacts</NavLink>
+                <NavLink to={"/contactus"}>Contact </NavLink>
             </button>
         </React.Fragment>
 

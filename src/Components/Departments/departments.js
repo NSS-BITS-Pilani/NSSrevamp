@@ -77,6 +77,7 @@ const Departments = (props) => {
         }
     });
 
+
         setCurrentDep(<BlockContent blocks={dataArray[i].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
     }, []);
 

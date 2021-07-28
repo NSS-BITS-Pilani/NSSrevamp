@@ -1,7 +1,10 @@
 import React from 'react';
 import classes from "./footer_alt.scss";
+//import { NavLink } from 'react-router-dom';
+import { HashLink as NavLink } from 'react-router-hash-link';
 
-const footer_alt = () => {
+
+const footer_alt = (props) => {
     return (
         <footer class="ct-footer">
             
@@ -25,13 +28,13 @@ const footer_alt = () => {
                         <h2 class="ct-footer-list-header">NSS BITS PILANI</h2>
                         <ul>
                             <li style={{marginTop:"1rem"}}>
-                                <a href="#">About us</a>
+                                <NavLink to={'/aboutus#top'}>About us</NavLink>
                             </li>
                             <li>
-                                <a href="#">Meet the team</a>
+                                <NavLink to={'/aboutus#mid'}>Meet the team</NavLink>
                             </li>
                             <li>
-                                <a href="#">Contact us</a>
+                                <NavLink to={'/contactus#top'}>Contact us</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -39,31 +42,31 @@ const footer_alt = () => {
                         <h2 class="ct-footer-list-header">DEPARTMENTS</h2>
                         <ul>
                             <li style={{marginTop:"1rem"}}>
-                                <a href="#">CLP</a>
+                               <NavLink to={`/departments/CLP`}>CLP</NavLink>
                             </li>
                             <li>
-                                <a href="#">D3</a>
+                                <NavLink to={'/departments/D3'}>D3</NavLink>
                             </li>
                             <li>
-                                <a href="#">Desco</a>
+                                <NavLink to={'/departments/Desco'}>Desco</NavLink>
                             </li>
                             <li>
-                                <a href="#">EPD</a>
+                                <NavLink to={'/departments/EPD'}>EPD</NavLink>
                             </li>
                             <li>
-                                <a href="#">Events</a>
+                                <NavLink to={'/departments/Events'}>Events</NavLink>
                             </li>
                             <li>
-                                <a href="#">HPA</a>
+                                <NavLink to={'/departments/HPA'}>HPA</NavLink>
                             </li>
                             <li>
-                                <a href="#">Parishod</a>
+                                <NavLink to={'/departments/Parishod'}>Parishod</NavLink>
                             </li>
                             <li>
-                                <a href="#">School</a>
+                                <NavLink to={'/departments/School'}>School</NavLink>
                             </li>
                             <li>
-                                <a href="#">Umang</a>
+                                <NavLink to={'/departments/Umang'}>Umang</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -71,16 +74,16 @@ const footer_alt = () => {
                         <h2 class="ct-footer-list-header">EVENTS</h2>
                         <ul>
                             <li style={{marginTop:"1rem"}}>
-                                <a href="#">Junoon</a>
+                                <NavLink to={'events/Junoon'}>Junoon</NavLink>
                             </li>
                             <li>
-                               <a href="#">Blood Donation Camp</a>
+                               <NavLink to={'events/Blood Donation Camp'}>Blood Donation Camp</NavLink>
                             </li>
                             <li>
-                                <a href="#">Shop For A Smile</a>
+                                <NavLink to={'events/Shop For A Smile'}>Shop For A Smile</NavLink>
                             </li>
                             <li>
-                                <a href="#">Conferencia De Youth</a>
+                                <NavLink to={'events/Conferencia De Youth'}>Conferencia De Youth</NavLink>
                             </li>
                         </ul>
                     </li>
@@ -88,22 +91,22 @@ const footer_alt = () => {
                         <h2 class="ct-footer-list-header">OUR PARTNERS</h2>
                         <ul>
                             <li style={{marginTop:"1rem"}}>
-                                <a href="#">BITSAA</a>
+                                <a href="https://www.bitsaa.org/">BITSAA</a>
                             </li>
                             <li>
-                                <a href="#">World Wildlife Fund</a>
+                                <a href="https://www.worldwildlife.org/">World Wildlife Fund</a>
                             </li>
                             <li>
-                                <a href="#">Disha Foundation</a>
+                                <a href="http://dishafoundationindia.in/">Disha Foundation</a>
                             </li>
                             <li>
-                                <a href="#">Deepaiaya</a>
+                                <a href="http://www.deepalaya.org/">Deepaiaya</a>
                             </li>
                             <li>
-                                <a href="#">Tender Heart</a>
+                                <a href="http://www.tenderheartngo.org/">Tender Heart</a>
                             </li>
                             <li>
-                                <a href="#">Umang Jaipur</a>
+                                <a href="http://www.umangindia.org/">Umang Jaipur</a>
                             </li>
                         </ul>
                     </li>

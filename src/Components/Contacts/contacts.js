@@ -29,7 +29,7 @@ const Contacts = () => {
             <div style={{display:"flex", justifyContent:"center"}}>
         <div className={`${classes.container} container`}>
             <form action="#" method="POST" onSubmit={submitHandler}>
-                <h1>Contact Us</h1>
+                <h1 id="top">Contact Us</h1>
                 <label for="name">
                     <div className={`${classes.inputHead} inputHead`}>
                         Name
@@ -71,7 +71,7 @@ const Contacts = () => {
             <div className={`${classes.container_con} container_con`}>
             <div>
                 <form action="#" method="POST" onSubmit={submitHandler}>
-                        <h1>Contact Us</h1>
+                        <h1 style={{ textAlign: "center" }} id="top">Contact Us</h1>
                         <div>
                 <label for="name">
                     <div className={`${classes.inputHead_mob} inputHead_mob`}>

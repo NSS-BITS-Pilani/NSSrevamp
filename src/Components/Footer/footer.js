@@ -83,22 +83,22 @@ const footer = () => {
                     </div>
                     <ul>
                         <li>
-                            <a href="#" target="_blank">BITSAA</a>
+                            <a href="https://www.bitsaa.org/" target="_blank">BITSAA</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">World Wildlife Fund</a>
+                            <a href="https://www.worldwildlife.org/" target="_blank">World Wildlife Fund</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Disha Foundation</a>
+                            <a href="http://dishafoundationindia.in/" target="_blank">Disha Foundation</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Deepalaya</a>
+                            <a href="http://www.deepalaya.org/" target="_blank">Deepalaya</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Tender Heart</a>
+                            <a href="http://www.tenderheartngo.org/" target="_blank">Tender Heart</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank">Umang Jaipur</a>
+                            <a href="http://www.umangindia.org/" target="_blank">Umang Jaipur</a>
                         </li>
                     </ul>                    
                 </div>

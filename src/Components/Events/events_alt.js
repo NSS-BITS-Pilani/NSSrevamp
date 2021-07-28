@@ -6,7 +6,7 @@ import MobCard from './mobCard/mobCard';
 import { useSelector} from 'react-redux';
 const BlockContent = require('@sanity/block-content-to-react')
 
-const Events = () => {
+const Events = (props) => {
 
     
 
@@ -17,6 +17,9 @@ const Events = () => {
     const [eventData, setEventData] = useState(null);
     
     const [currentEvent, setCurrentEvent] = useState("Loading...");
+
+    const initialEvent = props.match.params.id;
+
     
     const serializers = {
             types: {
@@ -58,6 +61,15 @@ const Events = () => {
             }
         )
 
+        if (initialEvent){
+            dataArray.forEach((val, ind) => {
+            if (val.title === initialEvent) {
+                i = ind;
+            }
+        });
+        }
+        
+        setEventIndex(i);
         setCurrentEvent(<BlockContent blocks={dataArray[i].body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
     }, []);
 
