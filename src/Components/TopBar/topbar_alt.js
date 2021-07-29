@@ -37,7 +37,8 @@ const Topbar = () => {
                         <NavLink to={"/"} exact={true} className="top_link" activeClassName="active_top_link">Home</NavLink>
                         <NavLink to={"/aboutus"} className="top_link" activeClassName="active_top_link">About Us</NavLink>
                         <NavLink to={"/departments"} className="top_link" activeClassName="active_top_link">Departments</NavLink>
-                      <NavLink to={"/events"} className="top_link" activeClassName="active_top_link">Events</NavLink>
+                        <NavLink to={"/events"} className="top_link" activeClassName="active_top_link">Events</NavLink>
+                        <NavLink to={"/resources"} className="top_link" activeClassName="active_top_link">Resources</NavLink>
                         <NavLink to={"/contactus"} className="top_link" activeClassName="active_top_link">Contact Us</NavLink>
     </Nav>
   </Navbar.Collapse>

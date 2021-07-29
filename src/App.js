@@ -7,6 +7,7 @@ import Contacts from "./Components/Contacts/contacts";
 import Departments from "./Components/Departments/departments";
 import Home from "./Components/Home/home.js";
 import Events from "./Components/Events/events_alt.js";
+import Resources from './Components/Resources/Resouces';
 import TopBar from './Components/TopBar/topbar_alt';
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="/events/:id?" component={Events} />
       <Route path="/contactus" component={Contacts} />
       <Route path="/contactus#" component={Contacts} />
+      <Route path="/resources" component={Resources} />
       <Route path="/" exact component={Home} />
     </Router>
     </ChakraProvider>
