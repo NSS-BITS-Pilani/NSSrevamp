@@ -19,7 +19,7 @@ const Resources = () => {
         <img className={`${styles.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "80%", top: "39rem", zIndex: "-1" }} src="/assets/magenta_blob.svg"></img>
             <div className="resCon">
               <Fade>  
-                    <div className="heading">Resources<span style={{color:"red", fontSize:"10px", display:"block"}}>Under development</span></div>
+                    <div className="heading">Resources</div>
                 </Fade>
             <div className="resGrid">
                 {filteredData.map((resource) => <ResCard links={resource.links} title={resource.title} infoText={resource.infoText}></ResCard>)}    
