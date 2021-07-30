@@ -15,12 +15,13 @@ const Loader = () => {
 
     const dispatch = useDispatch();
 
-    const { getDepartments, getEvents, getInitiatives } = bindActionCreators(actionCreators, dispatch);
+    const { getDepartments, getEvents, getInitiatives, getResources } = bindActionCreators(actionCreators, dispatch);
 
     useEffect(() => {
         getDepartments();
         getEvents();
         getInitiatives();
+        getResources();
         setTimeout(() => {
             fetch('https://jsonplaceholder.typicode.com/todos')
                 .then((response) => response.json())

@@ -3,14 +3,15 @@ import styles from "./Resources.scss";
 import ResCard from './ResCard/ResCard';
 import Fade from 'react-reveal/Fade';
 import Footer from '../Footer/footer_alt'
+import { useSelector} from 'react-redux';
+
 
 const Resources = () => {
-    
-    const linksthree = [{ title: "Education link", href: "#" }, { title: "Education link", href: "#" }, { title: "Education link", href: "#" }];
-    const linksfive = [{ title: "Education link", href: "#" },{ title: "Education link", href: "#" },{ title: "Education link", href: "#" },{ title: "Education link", href: "#" },{ title: "Education link", href: "#" }]
-    const linksfour = [{ title: "Education link", href: "#" }, { title: "Education link", href: "#" }, { title: "Education link", href: "#" }, { title: "Education link", href: "#" }]
-    const linkseight = [...linksfour, ...linksthree];
-
+    const dataArray = useSelector((state) => state.resources);
+    const filteredData = dataArray.map((resource) => {
+        const linkArray = resource.linksString.map((link) => { return {title:link.children[0].text.split("=>")[0], href:link.children[0].text.split("=>")[1]} });
+        return { title: resource.title, infoText:resource.infoText, links:linkArray}
+    });
     return (
         <React.Fragment>
         <img className={`${styles.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "85%", top: "6.5rem", zIndex: "-1" }} src="/assets/ellipse_blue.svg"></img>
@@ -21,14 +22,8 @@ const Resources = () => {
                     <div className="heading">Resources<span style={{color:"red", fontSize:"10px", display:"block"}}>Under development</span></div>
                 </Fade>
             <div className="resGrid">
-                <ResCard links={linksfive}></ResCard>
-                <ResCard links={linkseight}></ResCard>
-                <ResCard links={linksfour}></ResCard>
-                <ResCard links={linksthree}></ResCard>
-                <ResCard links={linksthree}></ResCard>
-                <ResCard links={linksfour}></ResCard>
-                
-                    </div>
+                {filteredData.map((resource) => <ResCard links={resource.links} title={resource.title} infoText={resource.infoText}></ResCard>)}    
+            </div>
                 
             </div>
             <Fade>

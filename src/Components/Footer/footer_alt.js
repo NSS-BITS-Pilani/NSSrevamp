@@ -13,11 +13,11 @@ const footer_alt = (props) => {
             </div>
             <div className={`${classes.mediaContainer} mediaContainer`}>
                 <div className={`${classes.socialMedia} socialMedia`}>
-                    <a href="https://www.linkedin.com/company/nss-bits-pilani" target="_blank"><img src="/assets/image 11.png" /></a>
-                    <a href="https://instagram.com/nssbitspilani?utm_medium=copy_link" target="_blank"><img src="/assets/image 9.png" /></a>
-                    <a href="https://youtube.com/user/nssbits" target="_blank"><img src="/assets/image 10.png" /></a>
-                    <a href="https://www.facebook.com/nssbits/" target="_blank"><img src="/assets/image 12.png" /></a>
-                    <a href="https://twitter.com/nssbits?s=09" target="_blank"><img src="/assets/image 13.png" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/nss-bits-pilani" target="_blank"><img src="/assets/image 11.png" /></a>
+                    <a target="_blank" href="https://instagram.com/nssbitspilani?utm_medium=copy_link" target="_blank"><img src="/assets/image 9.png" /></a>
+                    <a target="_blank" href="https://youtube.com/user/nssbits" target="_blank"><img src="/assets/image 10.png" /></a>
+                    <a target="_blank" href="https://www.facebook.com/nssbits/" target="_blank"><img src="/assets/image 12.png" /></a>
+                    <a target="_blank" href="https://twitter.com/nssbits?s=09" target="_blank"><img src="/assets/image 13.png" /></a>
                 </div>
             </div>
             
@@ -91,22 +91,22 @@ const footer_alt = (props) => {
                         <h2 class="ct-footer-list-header">OUR PARTNERS</h2>
                         <ul>
                             <li style={{marginTop:"1rem"}}>
-                                <a href="https://www.bitsaa.org/">BITSAA</a>
+                                <a target="_blank" href="https://www.bitsaa.org/">BITSAA</a>
                             </li>
                             <li>
-                                <a href="https://www.worldwildlife.org/">World Wildlife Fund</a>
+                                <a target="_blank" href="https://www.worldwildlife.org/">World Wildlife Fund</a>
                             </li>
                             <li>
-                                <a href="http://dishafoundationindia.in/">Disha Foundation</a>
+                                <a target="_blank" href="http://dishafoundationindia.in/">Disha Foundation</a>
                             </li>
                             <li>
-                                <a href="http://www.deepalaya.org/">Deepaiaya</a>
+                                <a target="_blank" href="http://www.deepalaya.org/">Deepaiaya</a>
                             </li>
                             <li>
-                                <a href="http://www.tenderheartngo.org/">Tender Heart</a>
+                                <a target="_blank" href="http://www.tenderheartngo.org/">Tender Heart</a>
                             </li>
                             <li>
-                                <a href="http://www.umangindia.org/">Umang Jaipur</a>
+                                <a target="_blank" href="http://www.umangindia.org/">Umang Jaipur</a>
                             </li>
                         </ul>
                     </li>
@@ -119,32 +119,32 @@ const footer_alt = (props) => {
                     <div class="inner-right">
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/nssbits/">Facebook</a>
+                                    <a target="_blank" href="https://www.facebook.com/nssbits/">Facebook</a>
                                 </li>
                                 <li>
-                                    <a href="https://instagram.com/nssbitspilani?utm_medium=copy_link">Instagram</a>
+                                    <a target="_blank" href="https://instagram.com/nssbitspilani?utm_medium=copy_link">Instagram</a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/company/nss-bits-pilani">LinkedIn</a>
+                                    <a target="_blank" href="https://www.linkedin.com/company/nss-bits-pilani">LinkedIn</a>
                                 </li>
                                 <li>
-                                    <a href="https://twitter.com/nssbits?s=09">Twitter</a>
+                                    <a target="_blank" href="https://twitter.com/nssbits?s=09">Twitter</a>
                                 </li>
                             </ul>
                     </div>
                     <div class="inner-right-500">
         
                                 <div>
-                                    <a href="https://www.facebook.com/nssbits/">Facebook</a>
+                                    <a target="_blank" href="https://www.facebook.com/nssbits/">Facebook</a>
                                 </div>
                                 <div>
-                                    <a href="https://instagram.com/nssbitspilani?utm_medium=copy_link">Instagram</a>
+                                    <a target="_blank" href="https://instagram.com/nssbitspilani?utm_medium=copy_link">Instagram</a>
                                 </div>
                                 <div>
-                                    <a href="https://www.linkedin.com/company/nss-bits-pilani">LinkedIn</a>
+                                    <a target="_blank" href="https://www.linkedin.com/company/nss-bits-pilani">LinkedIn</a>
                                 </div>
                                 <div>
-                                    <a href="https://twitter.com/nssbits?s=09">Twitter</a>
+                                    <a target="_blank" href="https://twitter.com/nssbits?s=09">Twitter</a>
                                 </div>
     
                     </div>

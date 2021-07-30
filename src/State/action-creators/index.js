@@ -39,3 +39,16 @@ export const getInitiatives = () => {
         })
     }
 }
+
+export const getResources = () => {
+
+    return async (dispatch) => {
+
+        const dataArray = await SanityClient.fetch('*[_type == "resource"]');
+
+        dispatch({
+            type: "getResources",
+            payload: dataArray
+        })
+    }
+}

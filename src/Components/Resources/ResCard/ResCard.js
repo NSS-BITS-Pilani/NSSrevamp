@@ -5,23 +5,26 @@ import LightSpeed from 'react-reveal/LightSpeed';
 
 
 const ResCard = (props) => {
+    console.log(props.links)
 
     return (
         <LightSpeed left>
         <div className="resCardCon">
             <div className="info">
                 <div className="head">
-                    Education    
+                        {props.title}
                 </div>
                 <div className="infotext">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    {props.infoText}
                 </div>
             </div>
             <div className="linkslist">
                 {props.links.map((link) =>
                     <div className="fancylink">
+                        <a href={link.href} target="_blank">
                         <div className="linktitle">{link.title}</div>
                         <div className="goimg"></div>
+                        </a>
                     </div>
                 )}
             </div>
