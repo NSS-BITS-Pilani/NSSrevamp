@@ -17,11 +17,11 @@
     grid-template-rows: repeat(8, max-content);
     h1 {
       font-weight: bold;
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 4.5rem;
       /* identical to box height */
 
-      //color: #333333;
+      color: #333333;
     }
     .inputHead {
       font-weight: bold;
@@ -92,7 +92,7 @@
       line-height: 4.5rem;
       /* identical to box height */
 
-      color: #333333;
+      //color: #333333;
     }
     .inputHead_mob {
       font-weight: bold;
@@ -165,6 +165,17 @@
 
 
 @media all and (max-width: 800px) {
+
+  .container{
+    form{
+      h1{
+        font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: poppins;
+      }
+    }
+  }
 
   .mapContainer_mob{
     width: 100% !important;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import SwiperCore, { Pagination} from 'swiper';
+import SwiperCore, { Pagination } from 'swiper';
 import 'swiper/swiper.scss';
 import 'swiper/components/pagination/pagination.scss';
 
@@ -12,6 +12,8 @@ import ProfileCard from '../ProfileCard/ProfileCard';
 
 
 SwiperCore.use([Pagination]);
+
+
 
 function ControlledCarousel(props) {    
 
@@ -29,7 +31,6 @@ function ControlledCarousel(props) {
       spaceBetween={20}
       slidesPerView={props.slides}
       pagination={{ clickable: true }}
-
       >
           {cards.map((card, index) => {
               if (index >= props.number) {
