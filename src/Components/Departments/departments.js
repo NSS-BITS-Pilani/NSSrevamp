@@ -30,15 +30,15 @@ const Departments = (props) => {
         }
 
     const Departments = [
-        { title: "CLP", img:"/assets/clp.svg", color:"#9E9E9E", color_light:"#9E9E9E88" },
-        { title: "D3", img:"/assets/d3.svg", color:"rgb(161, 14, 197,0.7)", color_light:"rgb(161, 14, 197,0.65)"},
-        { title: "Desco", img:"/assets/desco.svg", color:"#FF9800", color_light:"#FF9800ee"},
-        { title: "EPD", img: "/assets/epd.svg", color: "#1DE9B6", color_light:"#1DE9B6" },
-        { title: "Events", img:"/assets/events.svg", color:"#009688", color_light:"#009688bb" },
-        { title: "HPA", img:"/assets/hpa.svg", color:"#E91E63", color_light:"#E91E63cc" },
-        { title: "Parishod", img:"/assets/parishod.svg", color:"#4CAF50", color_light:"#4CAF50dd" },
-        { title: "School", img:"/assets/school.svg", color:"#3F51B5", color_light:"#3F51B5bb" },
-        { title: "Umang", img: "/assets/umang.svg", color: "#FFC107", color_light:"#FFC107" }
+        { title: "CLP", img:"/assets/clp.svg", color:"#9E9E9E99", color_light:"#9E9E9E55" },
+        { title: "D3", img:"/assets/d3.svg", color:"rgb(161, 14, 197,0.45)", color_light:"rgb(161, 14, 197,0.35)"},
+        { title: "Desco", img:"/assets/desco.svg", color:"#FF980099", color_light:"#FF980077"},
+        { title: "EPD", img: "/assets/epd.svg", color: "#1DE9B699", color_light:"#1DE9B666" },
+        { title: "Events", img:"/assets/events.svg", color:"#00968888", color_light:"#00968866" },
+        { title: "HPA", img:"/assets/hpa.svg", color:"#E91E6388", color_light:"#E91E6366" },
+        { title: "Parishod", img:"/assets/parishod.svg", color:"#4CAF5099", color_light:"#4CAF5055" },
+        { title: "School", img:"/assets/school.svg", color:"#3F51B599", color_light:"#3F51B566" },
+        { title: "Umang", img: "/assets/umang.svg", color: "#FFC10799", color_light:"#FFC10777" }
     ];
 
     let index=0;
