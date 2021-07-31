@@ -100,7 +100,7 @@ const Departments = (props) => {
             </div>
 
             <div className={`${classes.mobileContent} mobileContent`}>
-            <div className={`${classes.mobTitle} mobTitle`}>
+                <div className={`${classes.mobTitle} mobTitle`} id="depTop">
                 Departments
             </div>
 

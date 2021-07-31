@@ -1,13 +1,14 @@
 import React from 'react';
 import classes from "./depcards.scss";
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 
 
 const DepCard = (props) => {
 
    
     return (
-        <NavLink to={`/departments/${props.depName}`}>
+        <HashLink to={`/departments/${props.depName}#depTop`}>
         <div className={`${classes.depcard} depcard`}>
             <div className={`${classes.card_heading} card_heading`}>
                     <div>{props.depName}</div>
@@ -19,7 +20,7 @@ const DepCard = (props) => {
                 {props.depInfo}  
             </div>
             </div>
-        </NavLink>
+        </HashLink>
     );
 }
 
