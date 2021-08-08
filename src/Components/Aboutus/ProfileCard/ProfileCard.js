@@ -3,8 +3,12 @@ import classes from "./ProfileCard.scss";
 
 const ProfileCard = (props) => {
     return (
-        <div className={`${classes.card} card`}>
-            <img src={`assets/${props.imgPath}`} alt="propic" className={`${classes.card_image} card_image`}/>
+        <div className={`${classes.card} cardab`}>
+            <div className="imageWrapper">
+                <div>
+                    <img src={`assets/${props.imgPath}`} alt="propic" className={`${classes.card_image} card_image`} />
+                    </div>
+                </div>
                 <div className={`${classes.card_info} card_info`}>
                 <div className={`${classes.designation} designation`}>{props.designation}</div>
                 <div className={`${classes.personName} personName`}>{props.personName}</div>

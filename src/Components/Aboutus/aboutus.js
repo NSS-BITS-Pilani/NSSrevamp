@@ -98,7 +98,7 @@ const aboutus = () => {
             </div>
                 </Pulse>
                 <Fade>            
-            <div className={`${classes.section_heading} section_heading`} style={{marginTop:"6rem", marginBottom:"3rem"}} id="mid">Our Team</div>
+            <div className={`${classes.section_heading} section_heading`} style={{marginTop:"5rem", marginBottom:"2rem"}} id="mid">Our Team</div>
 
                 <div className={`${classes.team_heading} team_heading`}>
 
@@ -107,13 +107,18 @@ const aboutus = () => {
             </div>
 
                     
-            <div className={`${classes.profileCardsAlways} profileCardsAlways`}>
+            <div className={`${classes.profileCards} profileCards`}>
                 <ProfileCard
                     imgPath="ProfilePic.png"
                     designation="Faculty Coordinator"
                     personName="Ashish Tiwari"
-                 />
-            </div>
+                        />
+                       
+                    </div>
+                     <div className="mobCardsab">
+                            <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+    
+                    </div>
 
                 <div className={`${classes.team_heading} team_heading`}>
                     <div className={`${classes.blue_bullet} blue_bullet`}></div>
@@ -128,7 +133,12 @@ const aboutus = () => {
                         </div>
                     
                         
-                        <div className={`${classes.carouselab1} carouselab1`}><Carousel number={3} slides={1}></Carousel></div>
+                    <div className="mobCardsab">
+                                    <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+
+                    </div>
                         
                 </Fade>
                 <Fade>
@@ -143,8 +153,12 @@ const aboutus = () => {
                         <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                         
             </div>
-                        <div className={`${classes.carouselab1} carouselab1`}><Carousel number={3} slides={1}></Carousel></div>
-                    
+<div className="mobCardsab">
+                                    <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+
+                    </div>                    
                 <div className={`${classes.team_heading} team_heading`}>
                     <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Coordinators
@@ -159,8 +173,15 @@ const aboutus = () => {
                         <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                         
                     </div>
-                        <div className={`${classes.carouselab1} carouselab1`}><Carousel number={6} slides={1}></Carousel></div>
-            
+<div className="mobCardsab">
+                                    <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+
+                    </div>            
             </Fade>
             </div>
             <Fade>

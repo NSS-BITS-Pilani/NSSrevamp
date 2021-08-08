@@ -30,15 +30,15 @@ const Departments = (props) => {
         }
 
     const Departments = [
-        { title: "CLP", img:"/assets/clp.svg", color:"#9E9E9E99", color_light:"#9E9E9E55" },
-        { title: "D3", img:"/assets/d3.svg", color:"rgb(161, 14, 197,0.45)", color_light:"rgb(161, 14, 197,0.35)"},
-        { title: "Desco", img:"/assets/desco.svg", color:"#FF980099", color_light:"#FF980077"},
-        { title: "EPD", img: "/assets/epd.svg", color: "#1DE9B699", color_light:"#1DE9B666" },
-        { title: "Events", img:"/assets/events.svg", color:"#00968888", color_light:"#00968866" },
-        { title: "HPA", img:"/assets/hpa.svg", color:"#E91E6388", color_light:"#E91E6366" },
-        { title: "Parishod", img:"/assets/parishod.svg", color:"#4CAF5099", color_light:"#4CAF5055" },
-        { title: "School", img:"/assets/school.svg", color:"#3F51B599", color_light:"#3F51B566" },
-        { title: "Umang", img: "/assets/umang.svg", color: "#FFC10799", color_light:"#FFC10777" }
+        { title: "CLP", img:"/assets/clp.svg", color:"#9E9E9E99", color_light:"#9E9E9E55", bglite:"#9E9E9E22" },
+        { title: "D3", img:"/assets/d3.svg", color:"rgb(161, 14, 197,0.45)", color_light:"rgb(161, 14, 197,0.35)", bglite:"rgb(161, 14, 197,0.2)"},
+        { title: "Desco", img:"/assets/desco.svg", color:"#FF980099", color_light:"#FF980077", bglite:"#FF980044"},
+        { title: "EPD", img: "/assets/epd.svg", color: "#1DE9B699", color_light:"#1DE9B666", bglite:"#1DE9B633" },
+        { title: "Events", img:"/assets/events.svg", color:"#00968888", color_light:"#00968866", bglite:"#00968833" },
+        { title: "HPA", img:"/assets/hpa.svg", color:"#E91E6388", color_light:"#E91E6366", bglite:"#E91E6333" },
+        { title: "Parishod", img:"/assets/parishod.svg", color:"#4CAF5099", color_light:"#4CAF5055", bglite:"#4CAF5022" },
+        { title: "School", img:"/assets/school.svg", color:"#3F51B599", color_light:"#3F51B566", bglite:"#3F51B533" },
+        { title: "Umang", img: "/assets/umang.svg", color: "#FFC10799", color_light:"#FFC10777", bglite:"#FFC10744" }
     ];
 
     let index=0;
@@ -92,7 +92,7 @@ const Departments = (props) => {
                     </Slide>
             </aside>
             <Zoom>
-            <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].color_light}`}}>
+            <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].bglite}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
                     {currentDep}
                 </div>
@@ -124,7 +124,7 @@ const Departments = (props) => {
             </div>
 
             <Slide bottom>
-            <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].color_light}`} : {display: "none"}} className="mobModal">
+            <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].bglite}`} : {display: "none"}} className="mobModal">
                 {currentDep}
             </div>
             </Slide>

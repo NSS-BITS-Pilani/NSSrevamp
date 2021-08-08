@@ -1,15 +1,15 @@
-.card {
-  width: 288px;
+.cardab {
+  width: 240px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background: #ffffff;
-  padding:0;
-  transition: transform .2s;
+  padding: 0;
+  transition: transform 0.2s;
   
-  .liIcon{
+  .liIcon {
     margin-top: 0.5rem;
   }
 
@@ -21,10 +21,70 @@
 
   .card_info {
     font-size: 0.875rem;
+    padding: 1rem;
 
     .designation {
       color: #828282;
-      font-size: 0.875rem;
+      font-size: 0.78rem;
+    }
+
+    .personName {
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+@media all and (max-width: 600px) {
+  .cardab:hover {
+    transform: initial;
+  }
+
+  .cardab {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:row;
+  overflow: hidden;
+  box-shadow: -4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background: #ffffff;
+  
+  .liIcon {
+    margin-top: 0;
+    width: 25px;
+  }
+
+  .imageWrapper{
+    width: 30%;
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card_image {
+    border-radius: 20%;
+    width: 100%;
+    height: auto;
+  }
+
+  .card_info {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .designation {
+      color: #828282;
+      font-size: 0.9rem;
     }
 
     .personName {
@@ -34,13 +94,21 @@
   }
 }
 
-.card:hover {
-  transform: scale(1.1); 
 }
 
-@media all and (max-width: 800px){
 
-.card:hover{
-  transform: initial;
+@media all and (max-width: 450px) {
+  .cardab{
+    .designation{
+      font-size: 0.75rem !important;
+    }
+
+    .imageWrapper{
+      padding-right: 0.5rem;
+    }
+    .personName{
+      font-size: 1.2rem !important;
+    }
   }
 }
+
