@@ -6,7 +6,7 @@ const ProfileCard = (props) => {
         <div className={`${classes.card} cardab`}>
             <div className="imageWrapper">
                 <div>
-                    <img src={`assets/${props.imgPath}`} alt="propic" className={`${classes.card_image} card_image`} />
+                    <img src={props.imgurl || `assets/${props.imgPath}`} alt="propic" className={`${classes.card_image} card_image`} />
                     </div>
                 </div>
                 <div className={`${classes.card_info} card_info`}>
@@ -14,7 +14,7 @@ const ProfileCard = (props) => {
                 <div className={`${classes.personName} personName`}>{props.personName}</div>
 
                 <div style={{display:"flex", flexDirection: "column", justifyContent:"center"}}>
-                    <div className={`${classes.liIcon} liIcon`}><img src="assets/image 11.png" width="32px" alt="LI"></img></div>
+                    <div className={`${classes.liIcon} liIcon`}><a href={props.linkedin || "https://google.com"} target="_blank"><img src="assets/image 11.png" width="32px" alt="LI"></img></a></div>
                 </div>
                 </div>
         </div>

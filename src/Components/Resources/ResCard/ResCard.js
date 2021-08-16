@@ -5,8 +5,7 @@ import LightSpeed from 'react-reveal/LightSpeed';
 
 
 const ResCard = (props) => {
-    console.log(props.links)
-
+  
     return (
         <LightSpeed left>
         <div className="resCardCon">

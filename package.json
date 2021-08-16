@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
     "framer-motion": "^4.1.17",
+    "ga-4-react": "^0.1.281",
     "node-sass": "^6.0.0",
     "react": "^17.0.2",
     "react-animate-on-scroll": "^2.1.5",

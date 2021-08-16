@@ -1,5 +1,5 @@
 .cardab {
-  width: 240px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -10,7 +10,8 @@
   transition: transform 0.2s;
   
   .liIcon {
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
+    width: 28px;
   }
 
   .card_image {
@@ -21,16 +22,16 @@
 
   .card_info {
     font-size: 0.875rem;
-    padding: 1rem;
+    padding: 0.7rem;
 
     .designation {
       color: #828282;
-      font-size: 0.78rem;
+      font-size: 0.7rem;
     }
 
     .personName {
       font-weight: 700;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
   }
 }

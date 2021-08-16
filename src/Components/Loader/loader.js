@@ -8,6 +8,7 @@ import { actionCreators } from '../../State/index';
 import App from '../../App';
 
 
+
 const Loader = () => {
 
     const [data, setData] = useState([]);
@@ -15,13 +16,15 @@ const Loader = () => {
 
     const dispatch = useDispatch();
 
-    const { getDepartments, getEvents, getInitiatives, getResources } = bindActionCreators(actionCreators, dispatch);
+    const { getDepartments, getEvents, getInitiatives, getResources, getCoords} = bindActionCreators(actionCreators, dispatch);
 
     useEffect(() => {
         getDepartments();
         getEvents();
         getInitiatives();
         getResources();
+        getCoords();
+
         setTimeout(() => {
             fetch('https://jsonplaceholder.typicode.com/todos')
                 .then((response) => response.json())

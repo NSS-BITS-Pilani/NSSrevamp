@@ -6,11 +6,16 @@ import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
 import Pulse from 'react-reveal/Pulse';
 
+import { useSelector} from 'react-redux';
+
 
 import Footer from "../Footer/footer_alt";
-import Carousel from "./carousel/carousel";
 
-const aboutus = () => {
+
+const Aboutus = () => {
+
+    const coords = useSelector((state) => state.coords);
+
     return (
         <React.Fragment>
         <img className={`${classes.hiddenimage} hiddenimage`} style={{ position: "absolute", right: "85%", top: "6.5rem", zIndex: "-1" }} src="/assets/ellipse_blue.svg"></img>
@@ -116,8 +121,10 @@ const aboutus = () => {
                        
                     </div>
                      <div className="mobCardsab">
+                     <Slide left>
+                     
                             <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-    
+    </Slide>
                     </div>
 
                 <div className={`${classes.team_heading} team_heading`}>
@@ -134,10 +141,12 @@ const aboutus = () => {
                     
                         
                     <div className="mobCardsab">
+                    <Slide left>
+                   
                                     <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-
+ </Slide>
                     </div>
                         
                 </Fade>
@@ -154,33 +163,30 @@ const aboutus = () => {
                         
             </div>
 <div className="mobCardsab">
+<Slide left>
+
                                     <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
                 <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-
+</Slide>
                     </div>                    
                 <div className={`${classes.team_heading} team_heading`}>
                     <div className={`${classes.blue_bullet} blue_bullet`}></div>
                 Coordinators
             </div>
             
-            <div className={`${classes.profileCards} profileCards`}>
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                        
+                    <div className={`${classes.profileCards} profileCards`}>
+                        {coords.map(coord => 
+                            <ProfileCard imgPath="ProfilePic.png" imgurl={coord.imgurl} designation={coord.designation} personName={coord.name} linkedin={coord.linkedin} />
+                        )}
                     </div>
 <div className="mobCardsab">
-                                    <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
-                        <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+<Slide left>
 
+                {coords.map(coord => 
+                            <ProfileCard imgPath="ProfilePic.png" imgurl={coord.imgurl} designation={coord.designation} personName={coord.name} linkedin={coord.linkedin} />
+                        )}
+</Slide>
                     </div>            
             </Fade>
             </div>
@@ -191,4 +197,4 @@ const aboutus = () => {
     );
 }
 
-export default aboutus;
+export default Aboutus;

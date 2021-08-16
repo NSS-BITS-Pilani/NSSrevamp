@@ -52,3 +52,29 @@ export const getResources = () => {
         })
     }
 }
+
+export const getCoords = () => {
+
+    return async (dispatch) => {
+
+        const dataArray = await SanityClient.fetch('*[_type == "coordinator"]');
+
+        dispatch({
+            type: "getCoords",
+            payload: dataArray
+        })
+    }
+}
+
+export const getLeaders = () => {
+
+    return async (dispatch) => {
+
+        const dataArray = await SanityClient.fetch('*[_type == "leader"]');
+
+        dispatch({
+            type: "getLeaders",
+            payload: dataArray
+        })
+    }
+}
