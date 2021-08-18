@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import classes from "./departments.scss";
 import Slide from 'react-reveal/Slide';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
-
+import Zoom from 'react-reveal/Zoom';
 import { useSelector} from 'react-redux';
 
 const BlockContent = require('@sanity/block-content-to-react');
@@ -97,7 +96,7 @@ const Departments = (props) => {
                     {currentDep}
                 </div>
                 </Zoom>
-            </div>
+           </div>
 
             <div className={`${classes.mobileContent} mobileContent`}>
                 <div className={`${classes.mobTitle} mobTitle`} id="depTop">

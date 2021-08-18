@@ -33,14 +33,16 @@ const Home = () => {
 
     const renderEvents = () => {
         if (!eventsExpanded) {
-            return topInitiatives.map((event) => <EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imgurl} eventType={event.eventType}/>);
+            return topInitiatives.map((event) => <EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imageurl} eventType={event.eventType}/>);
         }
-        return initiatives.map((event) => <EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imgurl} eventType={event.eventType}/>);
+        return initiatives.map((event) => <EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imageurl} eventType={event.eventType}/>);
     }
 
     const [eventsExpanded, setEventsExpanded] = useState(false);
     
     const [currentDepartment, setCurrentDepartment] = useState("CLP");
+
+    const depInfoArray = useSelector((state) => state.departments);
 
     const departments = [
         { depName: "CLP", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.", topColor:"#9E9E9E66"},
@@ -53,6 +55,19 @@ const Home = () => {
         { depName: "School", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.", topColor:"#3F51B555" },
         { depName: "Umang", depInfo: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit malesuada fames facilisis commodo, dui. Lorem ut suspendisse nec mauris consectetur ornare. Suspendisse condimentum massa, aliquet nec. Ut amet enim, in lectus scelerisque eget sodales est libero.", topColor:"#FFC10755" }
     ];
+
+    if (depInfoArray) {
+        departments.forEach((dep) => {
+            let index = 0;
+            depInfoArray.forEach((d, i) => {
+                if (d.title === dep.depName) {
+                    index = i;
+                }
+            })
+            
+            dep.depInfo = depInfoArray[index].shortbody;
+        })
+    }
     
     return (
         <div>

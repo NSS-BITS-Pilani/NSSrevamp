@@ -1,12 +1,14 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import Slide from 'react-reveal/Slide';
 
 import classes from "./topbar_alt.scss";
 
 const Topbar = () => {
 
     return (
+        <Slide down>
         <div>
             <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
@@ -44,7 +46,7 @@ const Topbar = () => {
   </Navbar.Collapse>
 </Navbar>
         
-        </div>
+        </div></Slide>
     );
 }
 

@@ -18,7 +18,7 @@ export const getEvents = () => {
 
     return async (dispatch) => {
 
-        const dataArray = await SanityClient.fetch('*[_type == "event"]');
+        const dataArray = await SanityClient.fetch('*[_type == "event"]{title, body, color, "logo_url":logo.asset->url}');
 
         dispatch({
             type: "getEvents",
@@ -31,7 +31,7 @@ export const getInitiatives = () => {
 
     return async (dispatch) => {
 
-        const dataArray = await SanityClient.fetch('*[_type == "initiative"]');
+        const dataArray = await SanityClient.fetch('*[_type == "initiative"]{title, information, eventType, "imageurl":image.asset->url}');
 
         dispatch({
             type: "getInitiatives",
@@ -57,7 +57,7 @@ export const getCoords = () => {
 
     return async (dispatch) => {
 
-        const dataArray = await SanityClient.fetch('*[_type == "coordinator"]');
+        const dataArray = await SanityClient.fetch('*[_type == "coordinator"]{name, linkedin, designation, "imgurl":profilepic.asset->url}');
 
         dispatch({
             type: "getCoords",
