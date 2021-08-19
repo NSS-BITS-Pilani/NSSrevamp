@@ -57,7 +57,7 @@ export const getCoords = () => {
 
     return async (dispatch) => {
 
-        const dataArray = await SanityClient.fetch('*[_type == "coordinator"]{name, linkedin, designation, "imgurl":profilepic.asset->url}');
+        const dataArray = await SanityClient.fetch('*[_type == "coordinator"]{name,srno, linkedin, designation, "imgurl":profilepic.asset->url}');
 
         dispatch({
             type: "getCoords",

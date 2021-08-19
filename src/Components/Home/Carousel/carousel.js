@@ -9,21 +9,13 @@ import sanityClient from '../../../client';
 import './carousel.scss'
 
 import EventCard from '../EventCard/eventcard';
-
+import { useSelector} from 'react-redux';
 
 SwiperCore.use([Pagination]);
 
 function ControlledCarousel(props) {
   
-  const [initiatives, setInitiatives] = useState([]);
-  async function fetchData() {
-        const dataArray = await sanityClient.fetch('*[_type == "initiative"]');
-        setInitiatives(dataArray);
-    }
-
-    React.useEffect(() => {
-        fetchData();
-    }, []);
+  const initiatives = useSelector((state) => state.initiatives);
 
   return (
       <Swiper
@@ -32,7 +24,7 @@ function ControlledCarousel(props) {
       pagination={{ clickable: true }}
 
     >
-      {initiatives.map((event) => <SwiperSlide><div className="car_card"><EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imgurl} eventType={event.eventType}/></div></SwiperSlide>)}
+      {initiatives.map((event) => <SwiperSlide><div className="car_card"><EventCard eventName={event.title} eventInfo={event.information} imgPath={event.imageurl} eventType={event.eventType}/></div></SwiperSlide>)}
     </Swiper>
   );
 }

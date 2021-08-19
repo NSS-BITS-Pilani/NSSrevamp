@@ -13,9 +13,15 @@ import {
 } from "@chakra-ui/react";
 import Slide from 'react-reveal/Slide';
 
+
 const EventCard = (props) => {
 
     const { isOpen, onOpen, onClose } = useDisclosure();
+
+    function getWordStr(str) {
+        if (str.split(" ").length <= 12) return str;
+        return str.split(/\s+/).slice(0, 12).join(" ") + "...";
+    }
 
     return (
     
@@ -25,7 +31,7 @@ const EventCard = (props) => {
                 <div className={`${classes.card_info} card_info`}>
                 <div className={`${classes.event} event`}>{props.eventType}</div>
                 <div className={`${classes.event_heading} event_heading`}>{props.eventName}</div>
-                    <span style={{fontSize:"0.725rem"}}>{props.eventInfo}</span>
+                    <span style={{fontSize:"0.725rem"}}>{getWordStr(props.eventInfo)}</span>
                 <div className={`${classes.view_more} view_more`} onClick={onOpen}>View More</div>
                 <Modal isOpen={isOpen} onClose={onClose} motionPreset="scale" animation isCentered>
         <ModalOverlay />

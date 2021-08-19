@@ -15,6 +15,18 @@ import Footer from "../Footer/footer_alt";
 const Aboutus = () => {
 
     const coords = useSelector((state) => state.coords);
+    console.log(coords);
+    function compare( a, b ) {
+        if ( a.srno < b.srno ){
+            return -1;
+        }
+        if ( a.srno > b.srno ){
+            return 1;
+        }
+        return 0;
+    }
+
+    coords.sort( compare );
 
     return (
         <React.Fragment>
