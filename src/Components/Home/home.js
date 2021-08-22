@@ -90,7 +90,7 @@ const Home = () => {
                                 <HeroCarousel></HeroCarousel>
                             </div>
                         </div>
-                        Lorem ipsum dolor sit, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
                         <div className={`${classes.button_div} button_div`}>
                             <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                         </div>
