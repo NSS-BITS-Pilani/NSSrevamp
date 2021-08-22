@@ -1,14 +1,13 @@
 @font-face {
-font-family: "TimesNRoman";
-src: local("TimesNRoman"),
- url("./fonts//Times\ New\ Roman/times_new_roman.ttf") format("truetype");
-font-weight: normal;
+  font-family: "TimesNRoman";
+  src: local("TimesNRoman"),
+    url("./fonts//Times\ New\ Roman/times_new_roman.ttf") format("truetype");
+  font-weight: normal;
 }
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100% !important;
 }
-
-
