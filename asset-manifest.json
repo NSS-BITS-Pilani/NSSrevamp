@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d9e804b.chunk.css",
-    "main.js": "/static/js/main.b4edce2c.chunk.js",
-    "main.js.map": "/static/js/main.b4edce2c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c98ec66b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c98ec66b.js.map",
-    "static/css/2.b73c1ad9.chunk.css": "/static/css/2.b73c1ad9.chunk.css",
-    "static/js/2.8b9c34ca.chunk.js": "/static/js/2.8b9c34ca.chunk.js",
-    "static/js/2.8b9c34ca.chunk.js.map": "/static/js/2.8b9c34ca.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.b73c1ad9.chunk.css.map": "/static/css/2.b73c1ad9.chunk.css.map",
-    "static/css/main.2d9e804b.chunk.css.map": "/static/css/main.2d9e804b.chunk.css.map",
-    "static/js/2.8b9c34ca.chunk.js.LICENSE.txt": "/static/js/2.8b9c34ca.chunk.js.LICENSE.txt",
-    "static/media/topbar_alt.scss": "/static/media/LiberationSerif-Regular.f85717da.ttf",
-    "static/media/times_new_roman.f85717da.ttf": "/static/media/times_new_roman.f85717da.ttf"
+    "main.css": "/NSSrevamp/static/css/main.ff98facc.chunk.css",
+    "main.js": "/NSSrevamp/static/js/main.d7f1e55c.chunk.js",
+    "main.js.map": "/NSSrevamp/static/js/main.d7f1e55c.chunk.js.map",
+    "runtime-main.js": "/NSSrevamp/static/js/runtime-main.192dc6cc.js",
+    "runtime-main.js.map": "/NSSrevamp/static/js/runtime-main.192dc6cc.js.map",
+    "static/css/2.6025c1bc.chunk.css": "/NSSrevamp/static/css/2.6025c1bc.chunk.css",
+    "static/js/2.e794dd5a.chunk.js": "/NSSrevamp/static/js/2.e794dd5a.chunk.js",
+    "static/js/2.e794dd5a.chunk.js.map": "/NSSrevamp/static/js/2.e794dd5a.chunk.js.map",
+    "index.html": "/NSSrevamp/index.html",
+    "static/css/2.6025c1bc.chunk.css.map": "/NSSrevamp/static/css/2.6025c1bc.chunk.css.map",
+    "static/css/main.ff98facc.chunk.css.map": "/NSSrevamp/static/css/main.ff98facc.chunk.css.map",
+    "static/js/2.e794dd5a.chunk.js.LICENSE.txt": "/NSSrevamp/static/js/2.e794dd5a.chunk.js.LICENSE.txt",
+    "static/media/topbar_alt.scss": "/NSSrevamp/static/media/LiberationSerif-Regular.f85717da.ttf",
+    "static/media/times_new_roman.f85717da.ttf": "/NSSrevamp/static/media/times_new_roman.f85717da.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.c98ec66b.js",
-    "static/css/2.b73c1ad9.chunk.css",
-    "static/js/2.8b9c34ca.chunk.js",
-    "static/css/main.2d9e804b.chunk.css",
-    "static/js/main.b4edce2c.chunk.js"
+    "static/js/runtime-main.192dc6cc.js",
+    "static/css/2.6025c1bc.chunk.css",
+    "static/js/2.e794dd5a.chunk.js",
+    "static/css/main.ff98facc.chunk.css",
+    "static/js/main.d7f1e55c.chunk.js"
   ]
 }
