@@ -4,7 +4,9 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
 import { useSelector} from 'react-redux';
-const BlockContent = require('@sanity/block-content-to-react')
+import * as colors from './colors';
+
+const BlockContent = require('@sanity/block-content-to-react');
 
 const Events = (props) => {
 
@@ -32,10 +34,10 @@ const Events = (props) => {
         }
 
     const Events = [
-        { title: "Junoon", img:"/assets/CLP_icon.svg", color: "#E6FFB1" },
-        { title: "Smile For A Shop", img:"/assets/CLP_icon.svg", color:"#A5F4FF70" },
-        { title: "Blood Donation Camp", img: "/assets/CLP_icon.svg", color: "#F2C94C" },
-        { title: "Conferencia De Youth", img:"/assets/CLP_icon.svg", color:"#F2C94C"}
+        { title: "Junoon", img:"/assets/CLP_icon.svg", color:colors.junoonBg},
+        { title: "Smile For A Shop", img:"/assets/CLP_icon.svg", color:colors.smasBg},
+        { title: "Blood Donation Camp", img: "/assets/CLP_icon.svg", color:colors.bdcBg},
+        { title: "Conferencia De Youth", img:"/assets/CLP_icon.svg", color:colors.cdyBg}
     ];
 
     const dataArray = useSelector((state) => state.events);
@@ -75,53 +77,52 @@ const Events = (props) => {
 
     return (
         <React.Fragment>
-        <div className={`${classes.contentBody} contentBody`}>
-            <Slide left>
-            <aside className={`${classes.eveAside} eveAside`}>
-                {dataArray.map((event, index) =>
-                    <button onClick={() => onClickChange(index)} style={eventIndex === index ? {background: `${dataArray[eventIndex].color}`} : null}>{event.title}</button>
-                )}
-                </aside>
-            </Slide>
-            <Slide bottom>
+            <div className={`${classes.contentBody} contentBody`}>
+                <Slide left>
+                    <aside className={`${classes.eveAside} eveAside`}>
+                        {dataArray.map((event, index) =>
+                            <button onClick={() => onClickChange(index)} style={eventIndex === index ? {background: `${dataArray[eventIndex].color}`} : null}>{event.title}</button>
+                        )}
+                    </aside>
+                </Slide>
+                <Slide top>
                     <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${dataArray[eventIndex].color}` }}>
                         {currentEvent}
-                        
-                </div>
+                    </div>
                 </Slide>
             </div>
             
             <div className={`${classes.mobileContent} mobileContent`}>
-            <div className={`${classes.mobTitle} mobTitle`}>
-                Events
-            </div>
+                <div className={`${classes.mobTitle} mobTitle`}>
+                    Events
+                </div>
 
-            <div className="backMob" onClick={() => setShowModal({show: false})} style={ showModal.show ? {display: "block"} : {display: "none"}}>
-                <img src="assets/back.svg" /> Back
-            </div>
+                <div className="backMob" onClick={() => setShowModal({show: false})} style={ showModal.show ? {display: "block"} : {display: "none"}}>
+                    <img src="assets/back.svg" /> Back
+                </div>
 
-            <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
-                <Fade>
-                {dataArray.map((event, i) =>
-                    <MobCard
-                        title={event.title}
-                        img={event.logo_url}
-                        color={event.color}
-                        click={() => {
-                            setShowModal({ show: true, index: i });
-                            onClickChange(i);
-                        }}
-                    />)}
+                <div className="mobCols" style={!showModal.show ? { display: "grid" } : { display: "none" }}>
+                    <Fade>
+                    {dataArray.map((event, i) =>
+                        <MobCard
+                            title={event.title}
+                            img={event.logo_url}
+                            color={event.color}
+                            click={() => {
+                                setShowModal({ show: true, index: i });
+                                onClickChange(i);
+                            }}
+                        />)}
                     </Fade>
-            </div>
+                </div>
 
-            <Slide bottom>
-            <div style={ showModal.show ? {display: "block", background:`${dataArray[eventIndex].color}`} : {display: "none"}} className="mobModal">
-                {currentEvent}
+                <Slide bottom>
+                    <div style={ showModal.show ? {display: "block", background:`${dataArray[eventIndex].color}`} : {display: "none"}} className="mobModal">
+                        {currentEvent}
+                    </div>
+                </Slide>
             </div>
-            </Slide>
-        </div>
-            </React.Fragment>
+        </React.Fragment>
     );
 }
 

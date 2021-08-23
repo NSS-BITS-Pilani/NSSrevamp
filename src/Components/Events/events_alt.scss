@@ -9,14 +9,13 @@
 
   width: 100%;
 
-
   .eveAside {
     display: grid;
     grid-row-gap: 0.5rem;
     grid-template-rows: repeat(autofit, minmax(200px, 1fr));
     height: max-content;
     padding-top: 3.0625rem;
-  
+
     button {
       text-align: left;
       font-weight: 500;
@@ -39,7 +38,7 @@
   .mainContentEve {
     border-radius: 1.5rem;
     padding: 2.5rem 3.5rem;
-    
+
     margin: 3rem 3rem 5rem 3rem;
     margin-bottom: 2rem;
 
@@ -82,17 +81,16 @@
   }
 }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 800px) {
+  .contentBody {
+    display: none !important;
+  }
 
-.contentBody{
-  display: none !important;
-}
+  .mobileContent {
+    display: block !important;
+  }
 
-.mobileContent{
-  display: block !important;
-}
-    
-.mobTitle{
+  .mobTitle {
     width: 90%;
     margin: 0 auto;
     font-size: 2.5rem;
@@ -101,9 +99,9 @@
     font-family: poppins;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-}
+  }
 
-.mobCols{
+  .mobCols {
     display: grid;
     width: 90%;
     margin: 0 auto;
@@ -111,17 +109,17 @@
     grid-row-gap: 2rem;
     grid-column-gap: 0.5rem;
     margin-bottom: 2rem;
-}
+  }
 
-.backMob{
+  .backMob {
     width: 90%;
     font-family: poppins;
     color: #064396;
     margin: 1rem auto 1rem;
     cursor: pointer;
-}
+  }
 
-.mobModal{
+  .mobModal {
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -132,20 +130,20 @@
     font-size: 1rem;
     margin-bottom: 2rem;
 
-    h1{
-        font-size: 1.4rem;
-        font-weight: bold;
+    h1 {
+      font-size: 1.4rem;
+      font-weight: bold;
     }
 
-    h2{
-        font-size: 1.2rem;
-        font-weight: bold;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: bold;
     }
-}
+  }
 }
 
-@media all and (max-width: 380px){
-    .mobCols{
-        grid-column-gap: 0.2rem;
-    }
+@media all and (max-width: 380px) {
+  .mobCols {
+    grid-column-gap: 0.2rem;
+  }
 }
