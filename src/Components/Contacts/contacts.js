@@ -28,15 +28,15 @@ const Contacts = () => {
     return (
         <React.Fragment>
             <div className={`${classes.contactBody} contactBody container-fluid`}>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center mb-5 p-md-2 p-lg-3">
                     <div className={`${classes.mapContainer} mapContainer`}>
                         <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row ml-sm-1 ml-lg-2">
                     <h1 id="top">Contact Us</h1>
                 </div>
-                <div className="row">
+                <div className="row ml-sm-3 ml-lg-4">
                     <div className="col-12 col-md-4 mt-5">
                         <h2>Points of Contact</h2>
                         <div className="row mt-3">
