@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d9e804b.chunk.css",
+    "main.js": "/static/js/main.b4edce2c.chunk.js",
+    "main.js.map": "/static/js/main.b4edce2c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c98ec66b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c98ec66b.js.map",
+    "static/css/2.b73c1ad9.chunk.css": "/static/css/2.b73c1ad9.chunk.css",
+    "static/js/2.8b9c34ca.chunk.js": "/static/js/2.8b9c34ca.chunk.js",
+    "static/js/2.8b9c34ca.chunk.js.map": "/static/js/2.8b9c34ca.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.b73c1ad9.chunk.css.map": "/static/css/2.b73c1ad9.chunk.css.map",
+    "static/css/main.2d9e804b.chunk.css.map": "/static/css/main.2d9e804b.chunk.css.map",
+    "static/js/2.8b9c34ca.chunk.js.LICENSE.txt": "/static/js/2.8b9c34ca.chunk.js.LICENSE.txt",
+    "static/media/topbar_alt.scss": "/static/media/LiberationSerif-Regular.f85717da.ttf",
+    "static/media/times_new_roman.f85717da.ttf": "/static/media/times_new_roman.f85717da.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c98ec66b.js",
+    "static/css/2.b73c1ad9.chunk.css",
+    "static/js/2.8b9c34ca.chunk.js",
+    "static/css/main.2d9e804b.chunk.css",
+    "static/js/main.b4edce2c.chunk.js"
+  ]
+}
