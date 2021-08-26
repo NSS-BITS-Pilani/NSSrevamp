@@ -27,27 +27,27 @@ const Contacts = () => {
     
     return (
         <React.Fragment>
-            <div className={`${classes.contactBody} contactBody container-fluid`}>
-                <div className="row justify-content-center mb-5 p-md-2 p-lg-3">
+            <div className={`${classes.contactBody} contactBody container-fluid m-3 mt-0`}>
+                <div className="row mb-3">
                     <div className={`${classes.mapContainer} mapContainer`}>
                         <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                     </div>
                 </div>
-                <div className="row ml-sm-1 ml-lg-2">
+                <div className="row">
                     <h1 id="top">Contact Us</h1>
                 </div>
-                <div className="row ml-sm-3 ml-lg-4">
-                    <div className="col-12 col-md-4 mt-5">
+                <div className="row">
+                    <div className="col-12 col-md mt-5">
                         <h2>Points of Contact</h2>
-                        <div className="row mt-3">
+                        <div className="row mt-4">
                             <h3>Address</h3>
                             <p>BITS Pilani, Pilani Campus, Rajasthan-333031</p>
                         </div>
-                        <div className="row mt-3">
+                        <div className="row mt-4">
                             <h3>Web Address</h3>
                             <p><a>www.bit-pilani.ac.in/</a></p>
                         </div>
-                        <div className="row mt-3">
+                        <div className="row mt-4">
                             <h3>President</h3>
                             <p>
                                 ABCDEFG
@@ -55,7 +55,7 @@ const Contacts = () => {
                                 Phone: +91 XXXXXXXXXX
                             </p>
                         </div>
-                        <div className="row mt-3">
+                        <div className="row mt-4">
                             <h3>Vice President</h3>
                             <p>
                                 ABCDEFG
@@ -63,7 +63,7 @@ const Contacts = () => {
                                 Phone: +91 XXXXXXXXXX
                             </p>
                         </div>
-                        <div className="row mt-3">    
+                        <div className="row mt-4">    
                             <h3>Secretary</h3>
                             <p>
                                 ABCDEFG
@@ -72,7 +72,7 @@ const Contacts = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="col-12 col-md-8 mt-5">
+                    <div className="col-12 col-md mt-5">
                         <div className={`${classes.contactForm} contactForm`}>
                             <form action="#" method="POST" onSubmit={submitHandler}>
                                 <h2>Leave us a FeedBack...</h2>
@@ -106,16 +106,11 @@ const Contacts = () => {
                                             Message
                                         </div>
                                     </label>
-                                    <input className={`${classes.message} message row d-none d-xl-block ml-0`} type="text" id="message" name = "message" value = {formData.message} onChange={
-                                                (e) => {
-                                                    setFormData({ email: formData.email, name: formData.name, [e.target.name]: e.target.value });
-                                                } 
-                                            } placeholder="Hey there, I wanted to say hi and that" />
-                                    <textarea className="row ml-0 d-xl-none" id="message" name = "message" value = {formData.message} onChange={
+                                    <textarea className="row ml-0" id="message" name = "message" value = {formData.message} onChange={
                                         (e) => {
                                             setFormData({ email: formData.email, name: formData.name, [e.target.name]: e.target.value });
                                         } 
-                                    } rows="4" cols="50" placeholder="Hey there..."/>
+                                    } rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that"/>
                                 </FormGroup>
                                 <input type="submit" value="Send message"/>              
                             </form>

@@ -85,7 +85,7 @@ const Events = (props) => {
                         )}
                     </aside>
                 </Slide>
-                <Slide top>
+                <Slide bottom>
                     <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${dataArray[eventIndex].color}` }}>
                         {currentEvent}
                     </div>

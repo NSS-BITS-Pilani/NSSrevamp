@@ -1,80 +1,84 @@
-.contactBody {
-  max-width: 100% !important;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  h1 {
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 4.5rem;
-    /* identical to box height */
-
-    color: #333333;
-  }
-  h2 {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 3rem;
-    color: #333333;
-  }
-  h3 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: #333333;
-  }
-  .mapContainer {
-    width: 100%;
-    height: 50vh;
-    margin-top: 3.3125rem;
-    display: flex;
-    justify-content: center;
-    iframe {
-      width: 100%;
-      height: 100%;
-      border-radius: 0.5rem;
-    }
-  }
-}
-.contactForm {
-  form {
-    .inputHead {
-      font-weight: bold;
-      font-size: 1.5rem;
-      line-height: 2.25rem;
-      margin: 2.6875rem 0rem 1rem 0.125rem;
-
-      color: #000000;
-    }
-    input {
-      font-size: 1.4375rem;
-      line-height: 2.125rem;
-
-      color: #828282;
-      border: none;
-      border-bottom: 1px solid #828282;
-      width: 25.625rem;
-      max-width: 100%;
-    }
-    [type="submit"] {
-      height: 5.25rem;
-      width: 17.625rem;
-      background: #333333;
-      border-radius: 1.25rem;
-
-      font-size: 1.4375rem;
-      line-height: 2.125rem;
+body {
+  max-width: 100vw !important;
+  .contactBody {
+    max-width: 100% !important;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4.5rem;
       /* identical to box height */
 
-      color: #ffffff;
+      color: #333333;
     }
-    textarea {
-      width: 35rem;
-      max-width: 100%;
+    h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 3rem;
+      color: #333333;
     }
-    .message {
-      width: 45rem;
-      margin-bottom: 3.5rem;
+    h3 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #333333;
+    }
+    .mapContainer {
+      width: calc(100% - 2rem);
+      height: 50vh;
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  .contactForm {
+    form {
+      .inputHead {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        margin: 2.6875rem 0rem 1rem 0.125rem;
+
+        color: #000000;
+      }
+      input {
+        font-size: 1.4375rem;
+        line-height: 2.125rem;
+
+        color: #828282;
+        border: none;
+        border-bottom: 1px solid #828282;
+        width: 35rem;
+        max-width: 100%;
+      }
+      [type="submit"] {
+        height: 5rem;
+        width: 14rem;
+        background: #333333;
+        border-radius: 1.25rem;
+
+        font-size: 1.4375rem;
+        line-height: 2.125rem;
+        /* identical to box height */
+
+        color: #ffffff;
+      }
+      textarea {
+        width: 35rem;
+        max-width: 100%;
+        font-size: 1.4375rem;
+        line-height: 2.125rem;
+
+        color: #828282;
+        border: none;
+        border: 1px solid #828282;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
     }
   }
 }
@@ -104,20 +108,10 @@
       border: none;
       border-bottom: 1px solid #828282;
     }
-    textarea {
-      font-size: 1.4375rem;
-      line-height: 2.125rem;
-
-      color: #828282;
-      border: none;
-      border: 1px solid #828282;
-      padding: 8px;
-      border-radius: 1rem;
-    }
 
     [type="submit"] {
       height: 4rem;
-      width: 14rem;
+      width: 13rem;
       background: #333333;
       border-radius: 1.25rem;
 
