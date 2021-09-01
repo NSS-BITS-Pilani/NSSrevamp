@@ -87,6 +87,7 @@ const Events = (props) => {
                 </Slide>
                 <Slide bottom>
                     <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${dataArray[eventIndex].color}` }}>
+                        <h1>{ dataArray[eventIndex].title }</h1>
                         {currentEvent}
                     </div>
                 </Slide>

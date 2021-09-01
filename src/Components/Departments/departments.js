@@ -93,7 +93,7 @@ const Departments = (props) => {
             <Slide bottom>
             <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].bglite}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
-                    {currentDep}
+                {currentDep}
                 </div>
             </Slide>
            </div>

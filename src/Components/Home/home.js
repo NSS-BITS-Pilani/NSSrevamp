@@ -90,7 +90,7 @@ const Home = () => {
                                 <HeroCarousel></HeroCarousel>
                             </div>
                         </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
+                            NSS BITS Pilani is composed of enthusiastic volunteers, under the guidance of respected teachers, who always keep in mind comprehensive and sustainable models for development. In addition to the main goals of community development, NSS also aims to inculcate service values ​​in students, and ultimately make them serious and responsible citizens dedicated to improving the country and the world.
                         <div className={`${classes.button_div} button_div`}>
                             <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                         </div>
@@ -124,14 +124,15 @@ const Home = () => {
                         <Slide right>
                         <div className={`${classes.right} right`}>
                             <div className={`${classes.section_heading_home} section_heading_home`}>
-                                        <span style={{ color: "rgba(39, 174, 96, 1)" }}>What are we</span>
-                                        <div className={`${classes.left_mob} left_mob`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
+                                <span style={{ color: "rgba(39, 174, 96, 1)" }}>What are we</span>
+                                <div className={`${classes.left_mob} left_mob`}>
+                                    <div className={`${classes.homeimg} homeimg`}>
+                                        <img src="/assets/rectangle_24.png" alt="img" />
+                                    </div>
+                                </div>
+                            </div>
+                            NSS Bits Pilani has been in existence for more than 50 years and consists of more than 200 active volunteers guided by esteemed professors who have always kept in mind comprehensive and sustainable models for development.
                         </div>
-                            </div>
-                        
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum erat egestas facilisis. Netus molestie nibh pellentesque magna lectus. Faucibus mattis massa sed scelerisque. Donec lacus, ut mauris ac in suspendisse amet lacinia arcu.
-                            </div>
                         </Slide>
                     </div>
                     </div>
@@ -143,15 +144,14 @@ const Home = () => {
                     <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                             <Slide left>
                             <div className={`${classes.leftB} leftB`}>
-                                
-                            <div className={`${classes.section_heading_home} section_heading_home`}>
-                                        <span style={{ color: "rgba(45, 156, 219, 1)" }}>What we do</span>
-                                        <div className={`${classes.rightB} rightB_mob`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                                <div className={`${classes.section_heading_home} section_heading_home`}>
+                                    <span style={{ color: "rgba(45, 156, 219, 1)" }}>What we do</span>
+                                    <div className={`${classes.rightB} rightB_mob`}>
+                                        <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                                    </div>
                                 </div>
+                                Spreading happiness through community service has been one of the primary objectives of NSS. With innovative activities across the departments catering to all classes of the campus residents, we try to create small, happy and memorable moments in their lives. We aim to bring about a positive change in the society with focus on Education and Development.
                             </div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet et donec ut iaculis mauris amet fringilla neque eget. Habitant nec risus viverra at ut arcu, arcu venenatis. Lectus egestas diam at non nec mattis enim vivamus. Faucibus purus orci elit, id ornare pellentesque lectus aliquam. Ut leo consequat malesuada vel proin maecenas dictumst justo. Tristique nam iaculis amet augue justo volutpat varius imperdiet nunc.
-                                </div>
                             </Slide>
                             
                             <Slide right>
