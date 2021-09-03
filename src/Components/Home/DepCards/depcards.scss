@@ -5,39 +5,35 @@
   .card_heading {
     font-weight: 600;
     font-size: 1.6rem;
-    display: inline-block; 
+    display: inline-block;
 
-     .card_color {
-      width: 60%;
+    .card_color {
+      width: 65%;
       height: 2rem;
       position: relative;
       bottom: 2.1rem;
-      left: 60%;
+      left: 65%;
       z-index: -1;
-      transition: width 0.7s;
     }
-  } 
-
-  .depInfo {
-  
   }
 }
 
-.depcard:hover{
-  .card_color{
-      width: 0.2*100vw;
-      left: initial;
-    }
+.depcard:hover {
+  .card_color {
+    animation: coverTrans 0.5s ease-out 1 forwards;
+  }
+}
+@keyframes coverTrans {
+  100% {
+    left: -15%;
+    width: 130%;
+  }
 }
 
-@media all and (max-width: 800px){
-  .depcard{
-    .card_heading{
-    display: none;
+@media all and (max-width: 800px) {
+  .depcard {
+    .card_heading {
+      display: none;
+    }
   }
-
-  
-
-  }
-  
-} 
+}
