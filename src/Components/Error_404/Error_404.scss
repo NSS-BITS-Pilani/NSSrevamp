@@ -1,0 +1,24 @@
+body {
+  .errorContainer {
+    height: 80%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4.5rem;
+      color: #333333;
+    }
+    h3 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #333333;
+    }
+    .homeButton {
+      width: max-content;
+      margin: 0 auto;
+    }
+  }
+}
