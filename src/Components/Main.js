@@ -4,9 +4,9 @@ import Aboutus from "./Aboutus/aboutus";
 import Contacts from "./Contacts/contacts";
 import Departments from "./Departments/departments";
 import Home from "./Home/home.js";
-import Events from "./Events/events_alt.js";
+import Events from "./Events/events.js";
 import Resources from './Resources/Resouces';
-import TopBar from './TopBar/topbar_alt';
+import TopBar from './TopBar/topbar';
 
 const Main = () => (
     <ChakraProvider>

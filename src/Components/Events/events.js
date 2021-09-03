@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from "./events_alt.scss";
+import classes from "./events.scss";
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';

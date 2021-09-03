@@ -1,84 +1,52 @@
-import React, {useState} from 'react';
-import classes from "./topbar.scss";
+import React from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import { FiMenu } from 'react-icons/fi'
-import { AiOutlineClose } from 'react-icons/ai'
+import Slide from 'react-reveal/Slide';
+
+import classes from "./topbar.scss";
 
 const Topbar = () => {
 
-    const [showDrawer, setShowDrawer] = useState(false);
-
-    const links =
-    
-        <React.Fragment>
-    
-            <NavLink to={"/"} className={`${classes.NavLink} NavLink`}>
-                Home
-            </NavLink>
-
-            <NavLink to={"/aboutus"} className={`${classes.NavLink} NavLink`}>
-                About Us
-            </NavLink>
-
-            <NavLink to={"/departments"} className={`${classes.NavLink} NavLink`}>
-                Departments
-            </NavLink>
-
-            <NavLink to={"/events"} className={`${classes.NavLink} NavLink`}>
-                Events
-            </NavLink>
-
-            <NavLink to={"/contactus"} className={`${classes.NavLink} NavLink`}>
-                Contact Us
-            </NavLink>
-    
-        </React.Fragment>
-    const navBtn = 
-        <React.Fragment>
-            <button onClick="">
-                <NavLink to={"/"}>Home</NavLink>
-            </button>
-            <button onClick="">
-                <NavLink to={"/aboutus"}>About Us</NavLink>
-            </button>
-            <button onClick="">
-                <NavLink to={"/departments"}>Departments</NavLink>
-            </button> 
-            <button onClick="">
-                <NavLink to={"/events"}>Events</NavLink>
-            </button> 
-            <button onClick="">
-                <NavLink to={"/contactus"}>Contact </NavLink>
-            </button>
-        </React.Fragment>
-
     return (
-        <div className={`${classes.bar} bar`}>
-            <div className={`${classes.component1} component1`}>
-                <div className={`${classes.logo} logo`}>
-                    <img className={`${classes.nssLogo} nssLogo`} src="/assets/nss-logo-national-service-scheme 1.png" />
-                
-                    <div className={`${classes.nss} nss`}>
-                        NSS
+        <Slide down>
+        <div>
+            <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
+                <Navbar.Brand className={`${classes.brand} brand`}>
+                    <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center"}}>
+                        <div><img className={`${classes.nssLogo} nssLogo`} src="/assets/nss-logo-national-service-scheme 1.png" /></div>
+                       <div style={{ display: "flex", alignItems: "center"}}>
+                             <div className={`${classes.nss} nss`}>
+                                NSS</div>
+                            <div style={{display: "flex", flexDirection: "column", marginLeft: "0.2rem"}}>
+                            <div className={`${classes.bits} bits`}>
+                            BITS
+                            </div>
+                            <div className={`${classes.bits} bits`}>
+                                    PILANI
+                            </div>
+                            </div>
+                        </div>                
+                        
                     </div>
-                    <div className={`${classes.bits} bits`}>
-                        BITS PILANI
-                    </div>
-                </div>
-            </div>
-            <div className={`${classes.component2} component2`}>
-                {links}
-            </div>
-
-            <div className={`${classes.toggle} toggle`} onClick={() => {setShowDrawer(!showDrawer)} }>
-                <FiMenu className={`${classes.FiMenu} FiMenu`}/>
-            </div>
-
-            <div className={`${classes.Barlinks} Barlinks`}>
-                {showDrawer && <button className={`${classes.closeBtn} closeBtn`} onClick={() => { setShowDrawer(!showDrawer) }}><AiOutlineClose /></button>}
-                {showDrawer && navBtn}
-            </div>
-        </div>
+                    
+                </Navbar.Brand>
+  <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+    
+    </Nav>
+    <Nav className={`${classes.links_top} links_top`}>
+                        <NavLink to={"/"} exact={true} className="top_link" activeClassName="active_top_link">Home</NavLink>
+                        <NavLink to={"/aboutus"} className="top_link" activeClassName="active_top_link">About Us</NavLink>
+                        <NavLink to={"/departments"} className="top_link" activeClassName="active_top_link">Departments</NavLink>
+                        <NavLink to={"/events"} className="top_link" activeClassName="active_top_link">Events</NavLink>
+                        <NavLink to={"/resources"} className="top_link" activeClassName="active_top_link">Resources</NavLink>
+                        <NavLink to={"/contactus"} className="top_link" activeClassName="active_top_link">Contact Us</NavLink>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
+        
+        </div></Slide>
     );
 }
 

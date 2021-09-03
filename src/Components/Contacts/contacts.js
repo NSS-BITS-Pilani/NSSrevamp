@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from "./contacts.scss";
-import Footer from "../Footer/footer_alt";
+import Footer from "../Footer/footer";
 import axios from 'axios';
 import { FormGroup } from 'react-bootstrap';
 

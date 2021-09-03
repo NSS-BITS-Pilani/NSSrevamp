@@ -8,7 +8,7 @@ import Slide from 'react-reveal/Slide';
 import { useSelector} from 'react-redux';
 
 
-import Footer from "../Footer/footer_alt";
+import Footer from "../Footer/footer";
 
 
 const Aboutus = () => {

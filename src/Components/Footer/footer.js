@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "./footer_alt.scss";
+import classes from "./footer.scss";
 //import { NavLink } from 'react-router-dom';
 import { HashLink as NavLink } from 'react-router-hash-link';
 

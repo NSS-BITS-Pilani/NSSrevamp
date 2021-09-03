@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Footer from "../Footer/footer_alt";
+import Footer from "../Footer/footer";
     
 import EventCard from './EventCard/eventcard';
 import DepCard from './DepCards/depcards';

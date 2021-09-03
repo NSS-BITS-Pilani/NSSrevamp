@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Resources.scss";
 import ResCard from './ResCard/ResCard';
 import Fade from 'react-reveal/Fade';
-import Footer from '../Footer/footer_alt'
+import Footer from '../Footer/footer'
 import { useSelector} from 'react-redux';
 
 
