@@ -1,28 +1,49 @@
-import React from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import "./App.scss";
-import { ChakraProvider } from "@chakra-ui/react"
-import Aboutus from "./Components/Aboutus/aboutus";
-import Contacts from "./Components/Contacts/contacts";
-import Departments from "./Components/Departments/departments";
-import Home from "./Components/Home/home.js";
-import Events from "./Components/Events/events_alt.js";
-import Resources from './Components/Resources/Resouces';
-import TopBar from './Components/TopBar/topbar_alt';
+import Main from './Components/Main';
+import Loader from './Components/Loader/loader';
 
-const App = () => (
-  <ChakraProvider>
-  <Router>
-      <TopBar />
-      <Route path="/aboutus" component={Aboutus} />
-      <Route path="/departments/:id?" component={Departments} />
-      <Route path="/events/:id?" component={Events} />
-      <Route path="/contactus" component={Contacts} />
-      <Route path="/contactus#" component={Contacts} />
-      <Route path="/resources" component={Resources} />
-      <Route path="/" exact component={Home} />
-    </Router>
-    </ChakraProvider>
-);
+import { useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { actionCreators } from './State/index';
+
+const App = () => {
+  const [data, setData] = useState([]);
+    const [completed, setCompleted] = useState(undefined);
+
+    const dispatch = useDispatch();
+
+    const { getDepartments, getEvents, getInitiatives, getResources, getCoords} = bindActionCreators(actionCreators, dispatch);
+
+    useEffect(() => {
+        getDepartments();
+        getEvents();
+        getInitiatives();
+        getResources();
+        getCoords();
+
+        setTimeout(() => {
+            fetch('https://jsonplaceholder.typicode.com/todos')
+                .then((response) => response.json())
+                .then((json) => {
+                    setData(json);
+                
+                    setTimeout(() => {
+                        setCompleted(true);
+                    }, 1000);
+            });
+        }, 2000);
+    }, []);
+    return (
+        <>
+            {
+                !completed ? (
+                    <Loader />
+                ) : (
+                    <Main />
+                )}
+        </>
+    );
+}
 
 export default App;
