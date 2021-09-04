@@ -75,7 +75,7 @@ const Contacts = () => {
                     <div className="col-12 col-md mt-5">
                         <div className={`${classes.contactForm} contactForm`}>
                             <form action="#" method="POST" onSubmit={submitHandler}>
-                                <h2>Leave us a FeedBack...</h2>
+                                <h2>Leave us a Feedback</h2>
                                 <FormGroup>
                                     <label className="row" for="name">
                                         <div className={`${classes.inputHead} inputHead`}>
@@ -110,7 +110,7 @@ const Contacts = () => {
                                         (e) => {
                                             setFormData({ email: formData.email, name: formData.name, [e.target.name]: e.target.value });
                                         } 
-                                    } rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that"/>
+                                    } rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that..."/>
                                 </FormGroup>
                                 <input type="submit" value="Send message"/>              
                             </form>
