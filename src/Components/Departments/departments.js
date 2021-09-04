@@ -35,7 +35,7 @@ const Departments = (props) => {
         { title: "EPD", img: "/assets/epd.svg", color:colors.epdText, color_light:colors.epdTextLight, bglite:colors.epdBgLight},
         { title: "Events", img:"/assets/events.svg", color:colors.eventsText, color_light:colors.eventsTextLight, bglite:colors.eventsBgLight},
         { title: "HPA", img:"/assets/hpa.svg", color:colors.hpaText, color_light:colors.hpaTextLight, bglite:colors.hpaBgLight },
-        { title: "Parishod", img:"/assets/parishod.svg", color:colors.parishodText, color_light:colors.parishodTextLight, bglite:colors.parishodBgLight},
+        { title: "Parishodh", img:"/assets/parishod.svg", color:colors.parishodText, color_light:colors.parishodTextLight, bglite:colors.parishodBgLight},
         { title: "School", img:"/assets/school.svg", color:colors.schoolText, color_light:colors.schoolTextLight, bglite:colors.schoolBgLight},
         { title: "Umang", img: "/assets/umang.svg", color:colors.umangText, color_light:colors.umangTextLight, bglite:colors.umangBgLight}
     ];
