@@ -60,7 +60,7 @@ const footer_alt = (props) => {
                                 <NavLink to={'/departments/HPA'}>HPA</NavLink>
                             </li>
                             <li>
-                                <NavLink to={'/departments/Parishod'}>Parishod</NavLink>
+                                <NavLink to={'/departments/Parishodh'}>Parishodh</NavLink>
                             </li>
                             <li>
                                 <NavLink to={'/departments/School'}>School</NavLink>
