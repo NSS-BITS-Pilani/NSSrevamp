@@ -20,7 +20,7 @@ const Main = () => (
       <Route path="/contactus#" component={Contacts} />
       <Route path="/resources" component={Resources} />
       <Route path="/" exact component={Home} />
-      <Route path="/error_404" component={Error_404} />
+      <Route path="/" component={Error_404} />
     </Router>
   </ChakraProvider>
 )

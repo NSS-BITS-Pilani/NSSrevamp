@@ -12,23 +12,25 @@ const Topbar = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
-                    <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center"}}>
-                        <div><img className={`${classes.nssLogo} nssLogo`} src="/assets/nss-logo-national-service-scheme 1.png" /></div>
-                       <div style={{ display: "flex", alignItems: "center"}}>
-                             <div className={`${classes.nss} nss`}>
-                                NSS</div>
-                            <div style={{display: "flex", flexDirection: "column", marginLeft: "0.2rem"}}>
-                            <div className={`${classes.bits} bits`}>
-                            BITS
-                            </div>
-                            <div className={`${classes.bits} bits`}>
-                                    PILANI
-                            </div>
-                            </div>
-                        </div>                
+                    <NavLink to={"/"} exact={true}>
+                        <div className={`${classes.logo} logo`} style={{ display: "flex", alignItems: "center" }}>
                         
-                    </div>
-                    
+                            <div><img className={`${classes.nssLogo} nssLogo`} src="/assets/nss_84.png" /></div>
+                            <div style={{ display: "flex", alignItems: "center"}}>
+                                <div className={`${classes.nss} nss`}>
+                                    NSS
+                                </div>
+                                <div style={{display: "flex", flexDirection: "column", marginLeft: "0.2rem"}}>
+                                    <div className={`${classes.bits} bits`}>
+                                        BITS
+                                    </div>
+                                    <div className={`${classes.bits} bits`}>
+                                        PILANI
+                                    </div>
+                                </div>
+                            </div>                
+                        </div>
+                    </NavLink>
                 </Navbar.Brand>
   <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
