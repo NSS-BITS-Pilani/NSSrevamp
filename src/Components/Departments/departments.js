@@ -122,11 +122,12 @@ const Departments = (props) => {
                     </Fade>
             </div>
 
-            <Slide bottom>
+           
             <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].bglite}`} : {display: "none"}} className="mobModal">
                 {currentDep}
             </div>
-            </Slide>
+            
+        
         </div>
             </React.Fragment>
     );

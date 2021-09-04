@@ -13,7 +13,7 @@ const MobCard = (props) => {
                 </div>
 
                 <div className="titleDE">
-                    <div lassname="title_text">{props.title}</div>
+                    <div classname="title_text">{props.title}</div>
                 </div>
 
                 <div className="cardBottom" onClick={props.click}>
