@@ -82,6 +82,7 @@ const Departments = (props) => {
 
     return (
         <React.Fragment>
+        <div  id="depTop"></div>
         <div className={`${classes.contentBody} contentBody`}>
             <aside className={`${classes.depAside} depAside`}>
                 <Slide left>
@@ -99,7 +100,7 @@ const Departments = (props) => {
            </div>
 
             <div className={`${classes.mobileContent} mobileContent`}>
-                <div className={`${classes.mobTitle} mobTitle`} id="depTop">
+                <div className={`${classes.mobTitle} mobTitle`}>
                 Departments
             </div>
 
