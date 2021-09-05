@@ -3,7 +3,6 @@ import classes from "./contacts.scss";
 import Footer from "../Footer/footer";
 import axios from 'axios';
 import { FormGroup } from 'react-bootstrap';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import Lottie from 'react-lottie';
 import animationData from './mapLoader.json';
 
@@ -17,19 +16,32 @@ const defaultMapLoaderOptions = {
 };
 
 const Map = () => {
-    const [mapLoading, setMapLoading] = useState(true)
+    const [mapLoading, setMapLoading] = useState(true);
+    const [animationCompleted, setanimationCompleted] = useState(false);
+
     useEffect(() => {
         setTimeout(() => {
-            setMapLoading(false);
-        }, 4000)
+            setanimationCompleted(true);
+        }, 4000);
     }, []);
 
     return (
-        mapLoading ? (
-            <Lottie options={defaultMapLoaderOptions} />
-        ) : (
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-        )
+        <React.Fragment>
+            {
+                !animationCompleted ? (
+                    <Lottie options={defaultMapLoaderOptions} />
+                ) : (
+                    <React.Fragment>
+                        {
+                            mapLoading ? (
+                                <Lottie options={defaultMapLoaderOptions} />
+                            ) : null
+                        }
+                        <iframe loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" onLoad={() => setMapLoading(false)}></iframe>
+                    </React.Fragment>
+                )
+            }
+        </React.Fragment>
     );
 }
 
