@@ -124,16 +124,15 @@ body {
 
 @media all and (max-width: 768px) {
   .contactBody {
-    width: 99% !important;
-    .contactForm {
-      form {
-        h1 {
-          font-size: 2.5rem;
-          font-weight: bold;
-          text-align: center;
-          font-family: poppins;
-        }
-      }
+    width: 90% !important;
+    margin: 2rem auto;
+    
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        font-family: poppins;
     }
+     
   }
 }
