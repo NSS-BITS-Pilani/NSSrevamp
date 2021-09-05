@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 import { ChakraProvider } from "@chakra-ui/react"
 import Aboutus from "./Aboutus/aboutus";
 import Contacts from "./Contacts/contacts";
@@ -12,15 +12,15 @@ import Error_404 from './Error_404/Error_404';
 const Main = () => (
     <ChakraProvider>
     <Router>
-      <TopBar />
-      <Route path="/aboutus" component={Aboutus} />
-      <Route path="/departments/:id?" component={Departments} />
-      <Route path="/events/:id?" component={Events} />
-      <Route path="/contactus" component={Contacts} />
-      <Route path="/contactus#" component={Contacts} />
-      <Route path="/resources" component={Resources} />
-      <Route path="/" exact component={Home} />
-      <Route path="/404" component={Error_404} />
+        <TopBar />
+        <Route path="/" exact component={Home} />
+        <Route path="/aboutus" component={Aboutus} />
+        <Route path="/departments/:id?" component={Departments} />
+        <Route path="/events/:id?" component={Events} />
+        <Route path="/contactus" component={Contacts} />
+        <Route path="/contactus#" component={Contacts} />
+        <Route path="/resources" component={Resources} />
+        <Route path="*" component={Error_404} />
     </Router>
   </ChakraProvider>
 )
