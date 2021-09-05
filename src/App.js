@@ -8,7 +8,7 @@ import { bindActionCreators } from 'redux';
 import { actionCreators } from './State/index';
 
 const App = () => {
-  const [data, setData] = useState([]);
+    const [data, setData] = useState([]);
     const [completed, setCompleted] = useState(undefined);
 
     const dispatch = useDispatch();
@@ -31,7 +31,7 @@ const App = () => {
                     setTimeout(() => {
                         setCompleted(true);
                     }, 1000);
-            });
+                });
         }, 2000);
     }, []);
     return (

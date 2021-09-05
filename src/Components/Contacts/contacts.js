@@ -1,8 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from "./contacts.scss";
 import Footer from "../Footer/footer";
 import axios from 'axios';
 import { FormGroup } from 'react-bootstrap';
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import Lottie from 'react-lottie';
+import animationData from './mapLoader.json';
+
+const defaultMapLoaderOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid"
+    }
+};
+
+const Map = () => {
+    const [mapLoading, setMapLoading] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setMapLoading(false);
+        }, 4000)
+    }, []);
+
+    return (
+        mapLoading ? (
+            <Lottie options={defaultMapLoaderOptions} />
+        ) : (
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        )
+    );
+}
 
 const Contacts = () => {
 
@@ -23,14 +52,12 @@ const Contacts = () => {
         });
     }
     
-
-    
     return (
         <React.Fragment>
             <div className={`${classes.contactBody} contactBody container-fluid`}>
                 <div className="row mb-3">
                     <div className={`${classes.mapContainer} mapContainer`}>
-                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <Map />
                     </div>
                 </div>
                 <div className="row">
