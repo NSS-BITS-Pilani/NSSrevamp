@@ -19,8 +19,8 @@ const EventCard = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     function getWordStr(str) {
-        if (str.split(" ").length <= 12) return str;
-        return str.split(/\s+/).slice(0, 12).join(" ") + "...";
+        if (str.split(" ").length <= 11) return str;
+        return str.split(/\s+/).slice(0, 11).join(" ") + "...";
     }
 
     return (

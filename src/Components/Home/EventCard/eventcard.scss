@@ -36,14 +36,18 @@
 
   .card_image {
     border-radius: 10px;
-    height: 66%;
+    height: 300px;
     width: 100%;
   }
 
   .card_info {
     font-size: 0.65rem;
     padding: 1.1rem;
-
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
     .event {
       color: #828282;
       font-size: 0.875rem;

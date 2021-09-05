@@ -34,7 +34,7 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <h1 id="top">Contact Us</h1>
+                    <h1 id="top" className="mt-5">Contact Us</h1>
                 </div>
                 <div className="row">
                     <div className="col-12 col-md mt-5">
@@ -75,7 +75,7 @@ const Contacts = () => {
                     <div className="col-12 col-md mt-5">
                         <div className={`${classes.contactForm} contactForm`}>
                             <form action="#" method="POST" onSubmit={submitHandler}>
-                                <h2>Leave us a Feedback</h2>
+                                <h2>Leave us a feedback</h2>
                                 <FormGroup>
                                     <label className="row" for="name">
                                         <div className={`${classes.inputHead} inputHead`}>
