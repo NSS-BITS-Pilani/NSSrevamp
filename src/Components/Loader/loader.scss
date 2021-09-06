@@ -23,10 +23,19 @@ body {
       height: 400px;
       justify-items: center;
       align-items: center;
-      opacity: 0;
+      opacity: 1;
       transform: scale(1.2);
-      animation: scaleDown 1.5s ease-out forwards;
+      // animation: scaleDown 1.5s ease-out forwards;
       margin: 1rem;
+
+      .logoComponent {
+        grid-area: 1/1/2/2;
+        z-index: 1;
+      }
+      .ringReveal {
+        grid-area: 1/1/2/2;
+        z-index: -1;
+      }
 
       img {
         grid-area: 1/1/2/2;
