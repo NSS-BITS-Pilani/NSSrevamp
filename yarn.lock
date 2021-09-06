@@ -15160,7 +15160,7 @@ react-show-more-text@^1.4.6:
 
 react-spring@^9.2.4:
   version "9.2.4"
-  resolved "https://registry.npmjs.org/react-spring/-/react-spring-9.2.4.tgz"
+  resolved "https://registry.yarnpkg.com/react-spring/-/react-spring-9.2.4.tgz#9d89b0321664d594f957dca9459b13d94b3dfa39"
   integrity sha512-bMjbyTW0ZGd+/h9cjtohLqCwOGqX2OuaTvalOVfLCGmhzEg/u3GgopI3LAm4UD2Br3MNdVdGgNVoESg4MGqKFQ==
   dependencies:
     "@react-spring/core" "~9.2.0"

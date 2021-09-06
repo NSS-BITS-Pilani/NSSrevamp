@@ -30,7 +30,7 @@ const App = () => {
                 
                     setTimeout(() => {
                         setCompleted(true);
-                    }, 1000);
+                    }, 2000);
                 });
         }, 2000);
     }, []);
