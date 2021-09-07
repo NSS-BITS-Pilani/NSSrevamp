@@ -14,7 +14,7 @@ try {
     const ga4react = new GA4React("G-RLYDJ0CZJR");
     ga4react.initialize();
   }, 3000);
-} catch (err) {}
+} catch (err) {console.log(err)}
 
 
 ReactDOM.render(<Provider store = {store}><App/></Provider>, document.querySelector('#root'));

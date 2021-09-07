@@ -1,4 +1,5 @@
-import styles from './Error_404.scss';
+import './Error_404.scss';
+import { NavLink } from 'react-router-dom';
 
 const Error_404 = () => (
     <div className="FOF">
@@ -12,7 +13,7 @@ const Error_404 = () => (
 
         <div class="role">
             <div class="block"></div>
-            <p>Page not found</p>
+            <p>Page not found<br></br><NavLink to={"/"} exact={true}><span style={{color:"#1d1761"}}>Go back home</span></NavLink></p>
         </div>
 
         </div>
