@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from "./ProfileCard.scss";
+import Fade from 'react-reveal/Fade';
 
 const ProfileCard = (props) => {
     return (
+        <Fade>
         <div className={`${classes.card} cardab`}>
             <div className="imageWrapper">
                 <div>
@@ -14,10 +16,11 @@ const ProfileCard = (props) => {
                 <div className={`${classes.personName} personName`}>{props.personName}</div>
 
                 <div style={{display:"flex", flexDirection: "column", justifyContent:"center"}}>
-                    <div className={`${classes.liIcon} liIcon`}><a href={props.linkedin || "https://google.com"} target="_blank"><img src="assets/image 11.png" width="32px" alt="LI"></img></a></div>
+                    <div className={`${classes.liIcon} liIcon`}><a href={props.linkedin || "https://google.com"} target="_blank"><img src={props.bits || "assets/image 11.png"} width="32px" alt="LI"></img></a></div>
                 </div>
                 </div>
-        </div>
+            </div>
+            </Fade>
     );
 }
 

@@ -24,6 +24,6 @@ const Main = () => (
       <Route path="*" component={Error_404} />
     </Switch>
     </Router>
-  </ChakraProvider>
+    </ChakraProvider>
 )
 export default Main;

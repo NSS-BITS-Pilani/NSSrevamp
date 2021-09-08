@@ -127,13 +127,15 @@ const Aboutus = () => {
                     imgPath="ProfilePic.png"
                     designation="Faculty Coordinator"
                     personName="Ashish Tiwari"
+                            bits="assets/bits_logo.png"
+                            linkedin="https://www.bits-pilani.ac.in/pilani/ashishtiwari/profile"
                         />
                     
                     </div>
                     <div className="mobCardsab">
                     <Slide left>
                     
-                            <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" personName="Ashish Tiwari" />
+                            <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" linkedin="https://www.bits-pilani.ac.in/pilani/ashishtiwari/profile" personName="Ashish Tiwari" bits="assets/bits_logo.png" />
     </Slide>
                     </div>
 
@@ -160,10 +162,10 @@ const Aboutus = () => {
                     </div>
                         
                 </Fade>
-                <Fade>
+        
                 <div className={`${classes.team_heading} team_heading`}>
                     <div className={`${classes.blue_bullet} blue_bullet`}></div>
-                Leaderships
+                        {/*Leaderships
             </div>
             
             <div className={`${classes.profileCards} profileCards`}>
@@ -181,8 +183,8 @@ const Aboutus = () => {
 </Slide>
                     </div>                    
                 <div className={`${classes.team_heading} team_heading`}>
-                    <div className={`${classes.blue_bullet} blue_bullet`}></div>
-                Coordinators
+                <div className={`${classes.blue_bullet} blue_bullet`}></div> */}
+                Core Team
             </div>
             
                     <div className={`${classes.profileCards} profileCards`}>
@@ -198,7 +200,7 @@ const Aboutus = () => {
                         )}
 </Slide>
                     </div>            
-            </Fade>
+            
             </div>
                 <Fade>
                     <Footer></Footer>
