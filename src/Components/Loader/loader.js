@@ -63,65 +63,6 @@ const Loader = () => {
                     <animated.h2 style={textProps} className="loaderText">nss bits pilani</animated.h2>
                     <animated.h2 style={textProps} className="loaderText">nss bits pilani</animated.h2>
                 </div>
-                <div className="fixedTL">
-                    <animated.svg
-                        style={{ width: 60, height: 60 }}
-                        viewBox="0 0 404 404"
-                        strokeWidth="10"
-                        fill="tomato"
-                        stroke="purple"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeDasharray={1256}
-                        strokeDashoffset={y.to(y => (1 - y) * 1256)}>
-                            <circle cx="202" cy="202" r="190" />
-                    </animated.svg>
-                </div>
-                <div className="fixedTR">
-                    <animated.svg
-                        style={{ width: 60, height: 60 }}
-                        viewBox="0 0 404 404"
-                        strokeWidth="10"
-                        fill="lightgreen"
-                        stroke="purple"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeDasharray={1256}
-                        strokeDashoffset={y.to(y => (1 - y) * 1256)}>
-                            <circle cx="202" cy="202" r="190" />
-                    </animated.svg>
-                </div>
-                <div className="fixedBL">
-                    <animated.svg
-                        style={{ width: 60, height: 60 }}
-                        viewBox="0 0 404 404"
-                        strokeWidth="10"
-                        fill="yellow"
-                        stroke="purple"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeDasharray={1256}
-                        strokeDashoffset={y.to(y => (1 - y) * 1256)}>
-                            <circle cx="202" cy="202" r="190" />
-                    </animated.svg>
-                </div>
-                <div className="fixedBR">
-                    <animated.svg
-                        style={{ width: 60, height: 60 }}
-                        viewBox="0 0 404 404"
-                        strokeWidth="10"
-                        fill="lightblue"
-                        stroke="purple"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeDasharray={1256}
-                        strokeDashoffset={y.to(y => (1 - y) * 1256)}>
-                            <circle cx="202" cy="202" r="190" />
-                    </animated.svg>
-                </div>
-                
-                {/* <div className="loaderSection sectionLeft"></div>
-                <div className="loaderSection sectionRight"></div> */}
             </div>
         </React.Fragment>
     );

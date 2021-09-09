@@ -27,8 +27,6 @@ body {
       border-radius: 50%;
       overflow: hidden;
       box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
-      // transform: scale(1.2);
-      // animation: scaleDown 1.5s ease-out forwards;
       margin: 1rem;
 
       .logoComponent {
@@ -42,8 +40,6 @@ body {
 
       img {
         grid-area: 1/1/2/2;
-        // width: 400px;
-        // height: 400px;
         transform: rotate(0deg);
         animation: rotate 1.5s ease-out forwards;
       }
@@ -64,15 +60,9 @@ body {
       display: grid;
       h2 {
         grid-area: 1/1/2/2;
-        // max-width: 80%;
-        // opacity: 0;
         text-transform: uppercase;
-        // color: #1a1a1a;
         text-align: center;
         font-size: 2rem;
-        // letter-spacing: 0.9rem;
-        // word-spacing: 1.75rem;
-        // animation: shrink 2s ease-in-out 1s forwards;
       }
       h2:nth-child(1) {
         color: transparent;
@@ -83,52 +73,8 @@ body {
         animation: waterFill 1s ease-in-out 2s infinite alternate;
       }
     }
-    // .loaderSection {
-    //   position: fixed;
-    //   top: 0;
-    //   width: 50%;
-    //   height: 100%;
-    //   background-color: yellowgreen;
-    //   opacity: 0;
-    //   z-index: 100;
-    // }
-    // .sectionLeft {
-    //   left: 0;
-    //   animation: slideLeft 1s ease-in-out 3s forwards;
-    // }
-    // .sectionRight {
-    //   right: 0;
-    //   animation: slideRight 1s ease-in-out 3s forwards;
-    // }
-    .fixedTL {
-      position: fixed;
-      top: 10%;
-      left: 10%;
-    }
-    .fixedTR {
-      position: fixed;
-      top: 10%;
-      right: 10%;
-    }
-    .fixedBL {
-      position: fixed;
-      bottom: 10%;
-      left: 10%;
-    }
-    .fixedBR {
-      position: fixed;
-      bottom: 10%;
-      right: 10%;
-    }
   }
 }
-// @keyframes shrink {
-//   100% {
-//     opacity: 1;
-//     letter-spacing: 0.5rem;
-//     word-spacing: 0.8rem;
-//   }
-// }
 @keyframes shine {
   100% {
     left: 25rem;
@@ -176,32 +122,3 @@ body {
     );
   }
 }
-@keyframes scaleDown {
-  100% {
-    opacity: 1;
-    transform: scale(0.8);
-  }
-}
-@keyframes rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-// @keyframes slideLeft {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(-100%);
-//   }
-// }
-// @keyframes slideRight {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(100%);
-//   }
-// }
