@@ -25,6 +25,8 @@ figure {
   width: 100%;
 
   .depAside {
+    position: sticky;
+    top: 0rem;
     display: grid;
 
     grid-template-rows: repeat(autofit, minmax(200px, 1fr));
@@ -79,7 +81,7 @@ figure {
       line-height: 2.125rem;
       color: #1a1919;
     }
-    ul{
+    ul {
       line-height: 2.125rem;
       color: #4f4f4f;
     }
@@ -150,8 +152,6 @@ figure {
       font-size: 1.2rem;
       font-weight: bold;
     }
-
-    
   }
 }
 

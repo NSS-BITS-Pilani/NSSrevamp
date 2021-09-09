@@ -10,6 +10,8 @@
   width: 100%;
 
   .eveAside {
+    position: sticky;
+    top: 0rem;
     display: grid;
     grid-row-gap: 0.5rem;
     grid-template-rows: repeat(autofit, minmax(200px, 1fr));
@@ -73,7 +75,7 @@
       line-height: 2.125rem;
       color: #4f4f4f;
     }
-    ul{
+    ul {
       line-height: 2.125rem;
       color: #4f4f4f;
     }
