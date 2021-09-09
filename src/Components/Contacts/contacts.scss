@@ -1,8 +1,6 @@
 body {
-
   .contactBody {
-
-    .react-reveal{
+    .react-reveal {
       animation-duration: 2000ms !important;
     }
     width: 80%;
@@ -60,6 +58,10 @@ body {
         border-bottom: 1px solid #828282;
         width: 35rem;
         max-width: 100%;
+      }
+      input:focus,
+      textarea:focus {
+        outline: none;
       }
       [type="submit"] {
         max-width: 14rem;
