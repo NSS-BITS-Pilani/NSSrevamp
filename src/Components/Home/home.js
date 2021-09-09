@@ -12,7 +12,7 @@ import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { Select } from "@chakra-ui/react"
 
-import LightSpeed from 'react-reveal/LightSpeed';
+import Zoom from 'react-reveal/Zoom';
 
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
@@ -167,7 +167,7 @@ const Home = () => {
             
             <div className={`${classes.initiatives} initiatives`}>
                     <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
-                    <Slide left>
+                    <Zoom>
                 <div className={`${classes.cards_desk} cards_desk`}>
                     <div className={`${classes.cards} cards`}>
                     {renderEvents()}
@@ -182,7 +182,7 @@ const Home = () => {
                     <div className={`${classes.homeCarousel2} homeCarousel2`}>
                         <Carousel slides={2}></Carousel>
                         </div>
-                    </Slide>    
+                    </Zoom>    
             </div>
 
             <div className={`${classes.departments} departments`}>
