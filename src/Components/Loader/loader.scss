@@ -19,12 +19,10 @@ body {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
-      width: 400px;
-      height: 400px;
       justify-items: center;
       align-items: center;
       opacity: 1;
-      transform: scale(1.2);
+      // transform: scale(1.2);
       // animation: scaleDown 1.5s ease-out forwards;
       margin: 1rem;
 
@@ -81,6 +79,26 @@ body {
     //   right: 0;
     //   animation: slideRight 1s ease-in-out 3s forwards;
     // }
+    .fixedTL {
+      position: fixed;
+      top: 10%;
+      left: 10%;
+    }
+    .fixedTR {
+      position: fixed;
+      top: 10%;
+      right: 10%;
+    }
+    .fixedBL {
+      position: fixed;
+      bottom: 10%;
+      left: 10%;
+    }
+    .fixedBR {
+      position: fixed;
+      bottom: 10%;
+      right: 10%;
+    }
   }
 }
 // @keyframes shrink {
