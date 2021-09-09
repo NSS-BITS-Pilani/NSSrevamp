@@ -8,10 +8,12 @@ import Events from "./Events/events.js";
 import Resources from './Resources/Resouces';
 import TopBar from './TopBar/topbar';
 import Error_404 from './Error_404/Error_404';
+import ScrollToTop from './ScrollToTop';
 
 const Main = () => (
     <ChakraProvider>
     <Router>
+    <ScrollToTop />
     <TopBar />
     <Switch>
         <Route path="/" exact component={Home} />

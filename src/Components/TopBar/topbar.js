@@ -9,7 +9,7 @@ const Topbar = () => {
 
     return (
         <Slide down>
-        <div>
+        <nav>
             <Navbar collapseOnSelect expand="lg" variant="light" className={`${classes.navBarTop} navBarTop`}>
                 <Navbar.Brand className={`${classes.brand} brand`}>
                     <NavLink to={"/"} exact={true}>
@@ -48,7 +48,7 @@ const Topbar = () => {
   </Navbar.Collapse>
 </Navbar>
         
-        </div></Slide>
+        </nav></Slide>
     );
 }
 
