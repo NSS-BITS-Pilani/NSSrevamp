@@ -5,6 +5,8 @@ import axios from 'axios';
 import { FormGroup } from 'react-bootstrap';
 import Lottie from 'react-lottie';
 import animationData from './mapLoader.json';
+import Zoom from 'react-reveal/Zoom';
+
 
 const defaultMapLoaderOptions = {
     loop: true,
@@ -37,7 +39,8 @@ const Map = () => {
                                 <Lottie options={defaultMapLoaderOptions} />
                             ) : null
                         }
-                        <iframe loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" onLoad={() => setMapLoading(false)}></iframe>
+                            
+                        <Zoom><iframe loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=BITS%20Pilani+(NSS%20BITS%20Pilani)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" onLoad={() => setMapLoading(false)}></iframe></Zoom>
                     </React.Fragment>
                 )
             }

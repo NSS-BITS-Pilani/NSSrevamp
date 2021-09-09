@@ -21,6 +21,10 @@ option {
   margin-bottom: 4rem;
   margin-top: 4.5rem;
 
+  .react-reveal{
+      animation-duration: 1700ms !important;
+    }
+
   .homeFlexBox {
     display: flex;
     width: 80%;
@@ -97,6 +101,10 @@ option {
   margin: 0 auto;
   margin-top: 10rem;
 
+  .react-reveal{
+      animation-duration: 1700ms !important;
+    }
+
   img {
     max-width: 100%;
   }
@@ -166,6 +174,10 @@ option {
   margin-bottom: 3rem;
   margin-top: 7rem;
 
+  .react-reveal{
+      animation-duration: 750ms !important;
+    }
+
   .homeCarousel1,
   .homeCarousel2 {
     display: none !important;
@@ -209,6 +221,10 @@ option {
   margin: 0 auto;
   margin-top: 6rem;
 
+  .react-reveal{
+      animation-duration: 1700ms !important;
+    }
+
   .cards {
     display: grid;
     margin-top: 5rem;
@@ -236,7 +252,18 @@ option {
     margin-top: 2rem !important;
   }
 
+  .mainInfo{
+    .react-reveal{
+      animation-duration: 1200ms !important;
+    }
+  }
+
   .homeAbout {
+
+    .react-reveal{
+      animation-duration: 1200ms !important;
+    }
+
     .aboutFlexBox {
       .left {
         display: none;
@@ -262,6 +289,10 @@ option {
   }
 
   .departments {
+
+    .react-reveal{
+      animation-duration: 1200ms !important;
+    }
     .cards {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }

@@ -1,5 +1,10 @@
 body {
+
   .contactBody {
+
+    .react-reveal{
+      animation-duration: 2000ms !important;
+    }
     width: 80%;
     margin: 0 auto;
     font-family: Poppins;
@@ -57,8 +62,8 @@ body {
         max-width: 100%;
       }
       [type="submit"] {
-        height: 5rem;
-        width: 14rem;
+        max-width: 14rem;
+        min-height: 4rem;
         background: #333333;
         border-radius: 1.25rem;
 
