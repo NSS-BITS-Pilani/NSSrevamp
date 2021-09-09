@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from "./ResCard.scss";
 
-import LightSpeed from 'react-reveal/LightSpeed';
+import Bounce from 'react-reveal/Bounce';
 
 
 const ResCard = (props) => {
   
     return (
-        <LightSpeed left>
+        <Bounce left>
         <div className="resCardCon">
             <div className="info">
                 <div className="head">
@@ -28,7 +28,7 @@ const ResCard = (props) => {
                 )}
             </div>
             </div>
-            </LightSpeed>
+            </Bounce>
     );
 }
 

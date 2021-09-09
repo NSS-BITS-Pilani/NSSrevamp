@@ -175,7 +175,7 @@ option {
   margin-top: 7rem;
 
   .react-reveal{
-      animation-duration: 1700ms !important;
+      animation-duration: 750ms !important;
     }
 
   .homeCarousel1,
@@ -252,7 +252,18 @@ option {
     margin-top: 2rem !important;
   }
 
+  .mainInfo{
+    .react-reveal{
+      animation-duration: 1200ms !important;
+    }
+  }
+
   .homeAbout {
+
+    .react-reveal{
+      animation-duration: 1200ms !important;
+    }
+
     .aboutFlexBox {
       .left {
         display: none;
@@ -278,6 +289,10 @@ option {
   }
 
   .departments {
+
+    .react-reveal{
+      animation-duration: 1200ms !important;
+    }
     .cards {
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
