@@ -8,13 +8,13 @@ const Loader = () => {
     const textProps = useSpring({
         to: {
             opacity: 1,
-            'letter-spacing': '0.25rem',
+            'letter-spacing': '0.1rem',
             'word-spacing': '0.4rem' 
         },
         from: {
             opacity: 0,
-            'letter-spacing': '0.5rem',
-            'word-spacing': '1rem'
+            'letter-spacing': '0.2rem',
+            'word-spacing': '0.8rem'
         },
         reset: false,
         delay: 2000,
@@ -59,7 +59,8 @@ const Loader = () => {
                         </animated.svg>
                     </div>
                 </div>
-                <div>
+                <div className="textAnim">
+                    <animated.h2 style={textProps} className="loaderText">nss bits pilani</animated.h2>
                     <animated.h2 style={textProps} className="loaderText">nss bits pilani</animated.h2>
                 </div>
                 <div className="fixedTL">

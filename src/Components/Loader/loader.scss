@@ -22,6 +22,8 @@ body {
       grid-template-rows: 1fr;
       justify-items: center;
       align-items: center;
+      width: 18.75rem;
+      height: 18.75rem;
       border-radius: 50%;
       overflow: hidden;
       box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
@@ -58,15 +60,28 @@ body {
         animation: shine 2s 2s forwards;
       }
     }
-    h2 {
-      // max-width: 80%;
-      // opacity: 0;
-      text-transform: uppercase;
-      color: #1a1a1a;
-      // letter-spacing: 0.9rem;
-      // word-spacing: 1.75rem;
-      text-align: center;
-      // animation: shrink 2s ease-in-out 1s forwards;
+    .textAnim {
+      display: grid;
+      h2 {
+        grid-area: 1/1/2/2;
+        // max-width: 80%;
+        // opacity: 0;
+        text-transform: uppercase;
+        // color: #1a1a1a;
+        text-align: center;
+        font-size: 2rem;
+        // letter-spacing: 0.9rem;
+        // word-spacing: 1.75rem;
+        // animation: shrink 2s ease-in-out 1s forwards;
+      }
+      h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px hsl(272, 100%, 18%);
+      }
+      h2:nth-child(2) {
+        color: hsl(272, 100%, 18%);
+        animation: waterFill 2s ease-in-out 2s infinite alternate;
+      }
     }
     // .loaderSection {
     //   position: fixed;
@@ -117,6 +132,48 @@ body {
 @keyframes shine {
   100% {
     left: 25rem;
+  }
+}
+@keyframes waterFill {
+  0% {
+    clip-path: polygon(
+      0 43%,
+      4% 33%,
+      11% 24%,
+      21% 20%,
+      33% 19%,
+      43% 26%,
+      48% 36%,
+      53% 46%,
+      58% 57%,
+      67% 62%,
+      78% 62%,
+      86% 58%,
+      94% 50%,
+      100% 39%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0 35%,
+      5% 44%,
+      10% 51%,
+      20% 57%,
+      30% 58%,
+      40% 53%,
+      49% 45%,
+      53% 35%,
+      59% 27%,
+      69% 21%,
+      79% 18%,
+      89% 24%,
+      96% 32%,
+      100% 43%,
+      100% 100%,
+      0% 100%
+    );
   }
 }
 @keyframes scaleDown {
