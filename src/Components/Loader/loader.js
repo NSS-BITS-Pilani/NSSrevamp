@@ -40,11 +40,7 @@ const Loader = () => {
     return (
         <React.Fragment>
             <div className={`${classes.loaderWrapper} loaderWrapper container-fluid`}>
-                {/* <animated.div style={springProps} className="logo row">
-                    <img src="./assets/nss.svg" alt="NSS Logo" />
-                </animated.div> */}
-                <div className="logo row">
-                    {/* <img src="./assets/nss.svg" alt="NSS Logo" /> */}
+                <div className="logo">
                     <div className="logoComponent">
                         <Logo />
                     </div>
@@ -63,7 +59,7 @@ const Loader = () => {
                         </animated.svg>
                     </div>
                 </div>
-                <div className="row">
+                <div>
                     <animated.h2 style={textProps} className="loaderText">nss bits pilani</animated.h2>
                 </div>
                 <div className="fixedTL">

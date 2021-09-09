@@ -29,7 +29,7 @@ const App = () => {
                     setData(json);
                 
                     setTimeout(() => {
-                        setCompleted(true);
+                        // setCompleted(true);
                     }, 2000);
                 });
         }, 2000);
