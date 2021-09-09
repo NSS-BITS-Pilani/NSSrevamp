@@ -117,11 +117,11 @@ const Events = (props) => {
                     </Fade>
                 </div>
 
-                <Slide bottom>
+                
                     <div style={ showModal.show ? {display: "block", background:`${dataArray[eventIndex].color}`} : {display: "none"}} className="mobModal">
                         {currentEvent}
                     </div>
-                </Slide>
+                
             </div>
         </React.Fragment>
     );
