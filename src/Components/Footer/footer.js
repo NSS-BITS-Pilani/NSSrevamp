@@ -2,9 +2,14 @@ import React from 'react';
 import classes from "./footer.scss";
 //import { NavLink } from 'react-router-dom';
 import { HashLink as NavLink } from 'react-router-hash-link';
+import { useSelector } from 'react-redux';
 
 
-const footer_alt = (props) => {
+const Footer = (props) => {
+
+    const departmentsData = useSelector((state) => state.departments)
+    const eventsData = useSelector((state) => state.events);
+    
     return (
         <footer class="ct-footer">
             
@@ -40,51 +45,26 @@ const footer_alt = (props) => {
                     </li>
                     <li>
                         <h2 class="ct-footer-list-header">DEPARTMENTS</h2>
-                        <ul>
-                            <li style={{marginTop:"1rem"}}>
-                               <NavLink to={`/departments/CLP`}>CLP</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/D3'}>D3</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/Desco'}>Desco</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/EPD'}>EPD</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/Events'}>Events</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/HPA'}>HPA</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/Parishodh'}>Parishodh</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/School'}>School</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'/departments/Umang'}>Umang</NavLink>
-                            </li>
+                        <ul style={{marginTop:"1rem"}}>
+                            {
+                                departmentsData.map((department) =>
+                                    <li>
+                                        <NavLink to={`departments/${department.title}`}>{department.title}</NavLink>
+                                    </li>
+                                )
+                            }
                         </ul>
                     </li>
                     <li>
                         <h2 class="ct-footer-list-header">EVENTS</h2>
-                        <ul>
-                            <li style={{marginTop:"1rem"}}>
-                                <NavLink to={'events/Junoon'}>Junoon</NavLink>
-                            </li>
-                            <li>
-                               <NavLink to={'events/Blood Donation Camp'}>Blood Donation Camp</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'events/Shop For A Smile'}>Shop For A Smile</NavLink>
-                            </li>
-                            <li>
-                                <NavLink to={'events/Conferencia De Youth'}>Conferencia De Youth</NavLink>
-                            </li>
+                        <ul style={{marginTop:"1rem"}}>
+                            {
+                                eventsData.map((event) =>
+                                    <li>
+                                        <NavLink to={`events/${event.title}`}>{event.title}</NavLink>
+                                    </li>
+                                )
+                            }
                         </ul>
                     </li>
                     <li>
@@ -159,4 +139,4 @@ const footer_alt = (props) => {
     );
 }
 
-export default footer_alt;
+export default Footer;
