@@ -21,6 +21,10 @@ option {
   margin-bottom: 4rem;
   margin-top: 4.5rem;
 
+  .react-reveal{
+      animation-duration: 2000ms !important;
+    }
+
   .homeFlexBox {
     display: flex;
     width: 80%;
@@ -97,6 +101,10 @@ option {
   margin: 0 auto;
   margin-top: 10rem;
 
+  .react-reveal{
+      animation-duration: 2000ms !important;
+    }
+
   img {
     max-width: 100%;
   }
@@ -166,6 +174,10 @@ option {
   margin-bottom: 3rem;
   margin-top: 7rem;
 
+  .react-reveal{
+      animation-duration: 2000ms !important;
+    }
+
   .homeCarousel1,
   .homeCarousel2 {
     display: none !important;
@@ -208,6 +220,10 @@ option {
   width: 80%;
   margin: 0 auto;
   margin-top: 6rem;
+
+  .react-reveal{
+      animation-duration: 2000ms !important;
+    }
 
   .cards {
     display: grid;

@@ -3,6 +3,10 @@
     margin: 3rem auto;
     font-family: poppins;
 
+    .react-reveal{
+      animation-duration: 1500ms !important;
+    }
+
     .heading{
         font-weight: bold;
         font-size: 3.5rem;
