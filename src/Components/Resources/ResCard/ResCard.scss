@@ -7,16 +7,15 @@
   border-radius: 10px;
   padding: 2rem;
 
-
   .info {
     width: 50%;
     padding-right: 0.5rem;
-    .head{
-        font-weight: bold;
-        font-size: 1.4rem;
+    .head {
+      font-weight: bold;
+      font-size: 1.4rem;
     }
-    .infotext{
-        font-size: 0.8rem;
+    .infotext {
+      font-size: 0.8rem;
     }
     display: flex;
     flex-direction: column;
@@ -32,35 +31,35 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    .fancylink{
-        padding: 0.4rem;
-        font-weight: 600;
-        font-size: 0.85rem;
-        width: 100%;
-        margin-bottom: 5px;
-        background-color: rgba(163, 157, 157, 0.151);
-        border-radius: 6px;
-        cursor: pointer;
+    .fancylink {
+      padding: 0.4rem;
+      font-weight: 600;
+      font-size: 0.85rem;
+      width: 100%;
+      margin-bottom: 5px;
+      background-color: rgba(163, 157, 157, 0.151);
+      border-radius: 6px;
+      cursor: pointer;
+
+      .linktitle {
+        padding: 0.2rem;
+      }
     }
     .fancylink:hover {
-        transform: scale(1.03);
+      transform: scale(1.03);
     }
   }
 }
 
 @media all and (max-width: 800px) {
-    .resCardCon{
-
-      flex-direction: column;
-      .info{
-        width: 100%;
-      }
-      .linkslist{
-        margin-top: 0.7rem;
-        width: 100%;
-      }
+  .resCardCon {
+    flex-direction: column;
+    .info {
+      width: 100%;
     }
+    .linkslist {
+      margin-top: 0.7rem;
+      width: 100%;
+    }
+  }
 }
-
-
-

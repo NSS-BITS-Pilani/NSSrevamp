@@ -21,8 +21,8 @@ const ResCard = (props) => {
                 {props.links.map((link) =>
                     <div className="fancylink">
                         <a href={link.href} target="_blank">
-                        <div className="linktitle">{link.title}</div>
-                        <div className="goimg"></div>
+                            <div className="linktitle">{link.title}</div>
+                            <div className="goimg"></div>
                         </a>
                     </div>
                 )}
