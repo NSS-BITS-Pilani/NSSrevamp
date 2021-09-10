@@ -107,7 +107,7 @@ const Contacts = () => {
                                     })
                                 }
                                 <br />
-                                Phone: <a href="tel:">+91 9064412959</a>
+                                Phone: <a href="tel:+919064412959">+91 9064412959</a>
                             </p>
                         </div>
                         <div className="row mt-4">
@@ -120,7 +120,7 @@ const Contacts = () => {
                                     })
                                 }
                                 <br />
-                                Phone: <a href="tel:">+91 9820668301</a>
+                                Phone: <a href="tel:+919820668301">+91 9820668301</a>
                             </p>
                         </div>
                         <div className="row mt-4">    
@@ -133,7 +133,7 @@ const Contacts = () => {
                                     })
                                 }
                                 <br />
-                                Phone: <a href="tel:">+91 8420752210</a>
+                                Phone: <a href="tel:+918420752210">+91 8420752210</a>
                             </p>
                         </div>
                     </div>
