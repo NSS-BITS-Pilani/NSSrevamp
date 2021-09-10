@@ -23,6 +23,17 @@ import { useSelector} from 'react-redux';
 const Home = () => {
     
     const dataArray = useSelector((state) => state.initiatives);
+    function compare( a, b ) {
+        if ( a.srno < b.srno ){
+            return -1;
+        }
+        if ( a.srno > b.srno ){
+            return 1;
+        }
+        return 0;
+    }
+
+    dataArray.sort( compare );
     let topInitiatives = [];
     const initiatives = dataArray;
     if (dataArray.length <= 3) {

@@ -14,7 +14,7 @@ import Footer from "../Footer/footer";
 const Aboutus = () => {
 
     const coords = useSelector((state) => state.coords);
-    console.log(coords);
+    //console.log(coords);
     function compare( a, b ) {
         if ( a.srno < b.srno ){
             return -1;

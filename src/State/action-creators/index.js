@@ -31,7 +31,7 @@ export const getInitiatives = () => {
 
     return async (dispatch) => {
 
-        const dataArray = await SanityClient.fetch('*[_type == "initiative"]{title, information, eventType, "imageurl":image.asset->url}');
+        const dataArray = await SanityClient.fetch('*[_type == "initiative"]{title, information, eventType, srno, "imageurl":image.asset->url}');
 
         dispatch({
             type: "getInitiatives",
