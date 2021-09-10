@@ -87,30 +87,30 @@ const Contacts = () => {
                         </div>
                         <div className="row mt-4">
                             <h3>Web Address</h3>
-                            <p><a>www.bit-pilani.ac.in/</a></p>
+                            <p><a href="https://www.nssbitspilani.org">www.nssbitspilani.org</a></p>
                         </div>
                         <div className="row mt-4">
                             <h3>President</h3>
                             <p>
-                                ABCDEFG
+                                Siddharth Todi
                                 <br />
-                                Phone: +91 XXXXXXXXXX
+                                Phone: +91 9064412959
                             </p>
                         </div>
                         <div className="row mt-4">
                             <h3>Vice President</h3>
                             <p>
-                                ABCDEFG
+                                Ram Mehta
                                 <br />
-                                Phone: +91 XXXXXXXXXX
+                                Phone: +91 9820668301
                             </p>
                         </div>
                         <div className="row mt-4">    
                             <h3>Secretary</h3>
                             <p>
-                                ABCDEFG
+                                Sanskar Jhajharia
                                 <br />
-                                Phone: +91 XXXXXXXXXX
+                                Phone: +91 8420752210
                             </p>
                         </div>
                     </div>
