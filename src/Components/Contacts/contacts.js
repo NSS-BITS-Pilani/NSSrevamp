@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useSelector} from 'react-redux';
+
 import classes from "./contacts.scss";
 import Footer from "../Footer/footer";
 import axios from 'axios';
@@ -66,6 +68,8 @@ const Contacts = () => {
             console.log(response.data);
         });
     }
+
+    const coords = useSelector((state) => state.coords);
     
     return (
         <React.Fragment>
@@ -90,27 +94,46 @@ const Contacts = () => {
                             <p><a href="https://www.nssbitspilani.org">www.nssbitspilani.org</a></p>
                         </div>
                         <div className="row mt-4">
+                            <h3>Email Address</h3>
+                            <p><a href="mailto:nss@pilani.bits-pilani.ac.in">nss@pilani.bits-pilani.ac.in</a></p>
+                        </div>
+                        <div className="row mt-4">
                             <h3>President</h3>
                             <p>
-                                Siddharth Todi
+                                {
+                                    coords.map((coord) => {
+                                        if (coord.designation.toUpperCase() === "President".toUpperCase())
+                                            return coord.name;
+                                    })
+                                }
                                 <br />
-                                Phone: +91 9064412959
+                                Phone: <a href="tel:">+91 9064412959</a>
                             </p>
                         </div>
                         <div className="row mt-4">
                             <h3>Vice President</h3>
                             <p>
-                                Ram Mehta
+                                {
+                                    coords.map((coord) => {
+                                        if (coord.designation.toUpperCase() === "Vice President".toUpperCase())
+                                            return coord.name;
+                                    })
+                                }
                                 <br />
-                                Phone: +91 9820668301
+                                Phone: <a href="tel:">+91 9820668301</a>
                             </p>
                         </div>
                         <div className="row mt-4">    
                             <h3>Secretary</h3>
                             <p>
-                                Sanskar Jhajharia
+                                {
+                                    coords.map((coord) => {
+                                        if (coord.designation.toUpperCase() === "Secretary".toUpperCase())
+                                            return coord.name;
+                                    })
+                                }
                                 <br />
-                                Phone: +91 8420752210
+                                Phone: <a href="tel:">+91 8420752210</a>
                             </p>
                         </div>
                     </div>
