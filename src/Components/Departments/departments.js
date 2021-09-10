@@ -105,7 +105,7 @@ const Departments = (props) => {
             </div>
 
             <div className="backMob" onClick={() => setShowModal({show: false})} style={ showModal.show ? {display: "block"} : {display: "none"}}>
-                <img src="assets/back.svg" /> Back
+                    <p><img src="assets/back.svg" style={{display:"inline"}}/> <span style={{fontSize:"1rem", marginLeft:"0.1rem"}}>Back</span></p>
             </div>
 
             <div className="mobColsD" style={!showModal.show ? { display: "grid" } : { display: "none" }}>

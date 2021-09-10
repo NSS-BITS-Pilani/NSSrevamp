@@ -52,8 +52,8 @@ const Contacts = () => {
 
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-    const url1 = 'https://sheet.best/api/sheets/25c88114-88cd-438b-a017-066cc9a056c9';
-    const url2 = "https://sheet.best/api/sheets/5e0c7761-3e9a-411e-8356-c9ca84d5bc3a";
+    const url1 = 'https://sheet.best/api/sheets/aeb1902d-6681-4939-a7db-999211ca9af6';
+    const url2 = "https://sheet.best/api/sheets/c971af4e-e04a-43a9-bedf-94aa6df09731";
 
 
     const submitHandler = e => {
