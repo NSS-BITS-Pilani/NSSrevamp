@@ -19,14 +19,75 @@ const Departments = (props) => {
     const initialDep = props.match.params.id;
 
     const serializers = {
-            types: {
-                code: (props) => (
+        types: {
+            code: (props) => (
                 <pre data-language={props.node.language}>
                     <code>{props.node.code}</code>
                 </pre>
-                ),
-            },
+            ),
         }
+    }
+
+    const serializerss = {
+            types: {
+                block: (props) => {
+                const { style = "normal" } = props.node;
+
+                if (/^h\d/.test(style)) {
+                    const level = style.replace(/[^\d]/g, "");
+                    return React.createElement(
+                    style,
+                    { className: `heading-${level}` },
+                    props.children
+                    );
+                }
+
+                if (style === "blockquote") {
+                    return <blockquote>- {props.children}</blockquote>;
+                    }
+                    
+                    if (style === "center") {
+                        return <div style={{textAlign:"center"}}> {props.children}</div>
+                    }
+                    
+                    if (style === "centerHeading") {
+                        return <div style={{textAlign:"center"}}><h2>{props.children}</h2></div>
+                    }
+                    
+            
+
+                // Fall back to default handling
+                return BlockContent.defaultSerializers.types.block(props);
+                },
+                code: (props) =>
+                console.log("code block", props) || (
+                    <pre data-language={props.node.language}>
+                    <code>{props.node.code}</code>
+                    </pre>
+                )
+            },
+            list: (props) =>
+                console.log("list", props) ||
+                (props.type === "bullet" ? (
+                <ul>{props.children}</ul>
+                ) : (
+                <ol>{props.children}</ol>
+                )),
+            listItem: (props) =>
+                console.log("list", props) ||
+                (props.type === "bullet" ? (
+                <li>{props.children}</li>
+                ) : (
+                <li>{props.children}</li>
+                )),
+            marks: {
+                strong: (props) =>
+                console.log("strong", props) || <strong>{props.children}</strong>,
+                em: (props) => console.log("em", props) || <em>{props.children}</em>,
+                code: (props) => console.log("code", props) || <code>{props.children}</code>
+            }
+        };
+
 
     const Departments = [
         { title: "CLP", img:"/assets/clp.svg", color:colors.clpText, color_light:colors.clpTextLight, bglite:colors.clpBgLight},
@@ -52,12 +113,14 @@ const Departments = (props) => {
         setDepartmentIndex(index);
         depData.forEach((element) => {
             if (element.title === Departments[index].title) {
-                setCurrentDep(<BlockContent blocks={element.body} serializers={serializers} dataset="production" projectId="9gzz7muj" />);
+                setCurrentDep(<BlockContent blocks={element.body} serializers={serializerss} dataset="production" projectId="9gzz7muj" />);
             }
         });
     }
 
     const dataArray = useSelector((state) => state.departments);
+
+    console.log(dataArray);
 
     React.useEffect(() => {
         setDepData(dataArray);
