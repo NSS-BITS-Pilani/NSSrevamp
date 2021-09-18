@@ -13,7 +13,7 @@ const D3Carousel = ({ dep }) => {
     const style = {width: "100%", height: "100%"};
     if (dep === "D3") {
         return (
-            <div style={{width: "35rem", height: "max-content", margin: "2rem auto"}}>
+            <div style={{width: "35rem", height: "max-content", maxWidth: "100%", margin: "2rem auto"}}>
                 <Swiper
                     grabCursor={true}
                     effect={'flip'}

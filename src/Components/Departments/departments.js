@@ -190,6 +190,8 @@ const Departments = (props) => {
 
            
             <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].bglite}`} : {display: "none"}} className="mobModal">
+                <h1>{ Departments[departmentIndex].title }</h1>
+                <D3Carousel className="d3Carousel" dep={Departments[departmentIndex].title} />
                 {currentDep}
             </div>
             
