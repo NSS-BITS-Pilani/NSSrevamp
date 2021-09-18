@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
 import { useSelector} from 'react-redux';
 import * as colors from './colors';
+import D3Carousel from './D3Carousel/D3Carousel';
 
 const BlockContent = require('@sanity/block-content-to-react');
 
@@ -94,6 +95,7 @@ const Departments = (props) => {
             <Slide bottom>
             <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].bglite}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
+                <D3Carousel className="d3Carousel" dep={Departments[departmentIndex].title} />
                 {currentDep}
                 </div>
             </Slide>
