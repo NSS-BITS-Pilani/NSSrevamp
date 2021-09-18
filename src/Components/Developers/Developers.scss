@@ -1,0 +1,126 @@
+
+.devHead{
+    width: 80%;
+    margin: 3rem auto;
+    h1{
+        font-size: 2.5rem;
+        font-weight: bold;
+        font-family: poppins;
+        text-align: center;
+    }
+}
+
+.devContainer{
+    font-family: poppins;
+    margin: 3rem auto;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    //min-height: 70vh;
+    //background: linear-gradient(rgb(24, 48, 80), rgb(90, 28, 58));
+    .devCard{
+        position: relative;
+        width: 250px;
+        height: 320px;
+        background: rgba(255,255,255,0.05);
+        margin: 20px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+
+        .content{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0.8;
+            transition: 0.5s;
+            
+            .imgBx{
+                position: relative;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 7px solid rgba(0, 0, 0, 0.212);
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            
+
+            .contentBx h3{
+                //color: white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 500;
+                font-size: 1.2rem;
+                text-align: center;
+                margin: 20px 0 10px;
+                line-height: 1.1em;
+
+            }
+
+            .contentBx h3 span{
+                font-size: 0.75rem;
+                font-weight: 300;
+                text-transform: initial;
+
+            }
+        }
+
+        .sci{
+            position: absolute;
+            bottom: 30px;
+            display: flex;
+
+            li{
+               list-style: none;
+                margin: 0 10px;
+                transform: translateY(20px);
+                transition: 0.5s;
+                transition-delay: 0.1s;
+                opacity: 0;
+            }
+        }
+    }
+
+    .devCard:hover{
+            .content{
+                opacity: 1;
+                transform: translateY(-20px);
+            }
+
+            .sci li{
+                transform: translateY(0px);  
+                opacity: 1;        
+            }
+    }
+}
+
+@media all and (max-width: 800px) {
+    .devContainer{
+        width: 100%;
+    }
+
+    .devHead{
+        width: 100%;
+
+        h1{
+            font-size: 2.2rem;
+        }
+    }
+}
