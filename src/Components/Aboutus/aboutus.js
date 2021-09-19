@@ -50,9 +50,17 @@ const Aboutus = () => {
                                 <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
                                 <div className={`${classes.aboutInfo} aboutInfo`}>
                                     <div className={`${classes.desktopInfo} desktopInfo`}>
-                                        Founded in 1964, BITS Pilani is a recognized university based on the late founder G.D. Birla, leading the community to the prosperity of emerging India. NSS BITS Pilani was founded in 1969 and developed with the same vision. Since then, it has been working hard to realize the vision of an advanced and self-sufficient community, actively contributing to the progress of the entire country. 
-                                        NSS BITS Pilani is composed of enthusiastic volunteers, under the guidance of respected teachers, who always keep in mind comprehensive and sustainable models for development. In addition to the main goals of community development, NSS also aims to inculcate service values ​​in students, and ultimately make them serious and responsible citizens dedicated to improving the country and the world. 
-                                        Our unremitting efforts are not only aimed at giving underdeveloped and oppressed people a chance to live a better life, but also through our various campus-wide initiatives, such as clean-up activities, we also ensure that the development of the community does not remain incomplete. Our commitment towards excellence is complete and with each passing day, the resolve only goes stronger as can be seen through the diversification taking place while also ensuring that the basic aims and thoughts are not lost in the process.
+                                        <p>
+                                            Founded in 1964, BITS Pilani is a recognized university based on the late founder G.D. Birla, leading the community to the prosperity of emerging India. NSS BITS Pilani was founded in 1969 and developed with the same vision. Since then, it has been working hard to realize the vision of an advanced and self-sufficient community, actively contributing to the progress of the entire country. 
+                                        </p>
+                                        <br />
+                                        <p>
+                                            NSS BITS Pilani is composed of enthusiastic volunteers, under the guidance of respected teachers, who always keep in mind comprehensive and sustainable models for development. In addition to the main goals of community development, NSS also aims to inculcate service values ​​in students, and ultimately make them serious and responsible citizens dedicated to improving the country and the world. 
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Our unremitting efforts are not only aimed at giving underdeveloped and oppressed people a chance to live a better life but also through our various campus-wide initiatives, such as clean-up activities, we also ensure that the development of the community does not remain incomplete. Our commitment towards excellence is complete and with each passing day, the resolve only goes stronger as can be seen through the diversification taking place while also ensuring that the basic aims and thoughts are not lost in the process.
+                                        </p>
                                     </div>
                                     
                                     <ShowMoreText className={`${classes.mobInfo} mobInfo`} lines={5} anchorClass="anchor_class">
@@ -76,11 +84,15 @@ const Aboutus = () => {
                                 <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
                                 <div className={`${classes.aboutInfo} aboutInfo`}>
                                     <div className={`${classes.desktopInfo} desktopInfo`}>
-                                        NSS Bits Pilani has been in existence for more than 50 years and consists of more than 200 active volunteers guided by esteemed professors who have always kept in mind comprehensive and sustainable models for development.  Along with the principal aim of community growth, NSS also aims to teach the values of service amongst the students, eventually making them aware and responsible citizens dedicated to improving the country and the world.
+                                        <p>
+                                            NSS Bits Pilani has been in existence for more than 50 years and consists of more than 200 active volunteers guided by esteemed professors who have always kept in mind comprehensive and sustainable models for development. Along with the principal aim of community growth, NSS also aims to teach the values of service amongst the students, eventually making them aware and responsible citizens dedicated to improving the country and the world.
+                                        </p>
                                     </div>
                                         
                                     <ShowMoreText className={`${classes.mobInfo} mobInfo`} lines={5} anchorClass="anchor_class">
-                                        NSS Bits Pilani has been in existence for more than 50 years and consists of more than 200 active volunteers guided by esteemed professors who have always kept in mind comprehensive and sustainable models for development.  Along with the principal aim of community growth, NSS also aims to teach the values of service amongst the students, eventually making them aware and responsible citizens dedicated to improving the country and the world.
+                                        <p>
+                                            NSS Bits Pilani has been in existence for more than 50 years and consists of more than 200 active volunteers guided by esteemed professors who have always kept in mind comprehensive and sustainable models for development.
+                                        </p>
                                     </ShowMoreText>
                                 </div>
                             </div>
@@ -100,13 +112,23 @@ const Aboutus = () => {
                                 <div className={`${classes.aboutInfoGap} aboutInfoGap`}></div>
                                 <div className={`${classes.aboutInfo} aboutInfo`}>
                                     <div className={`${classes.desktopInfo} desktopInfo`}>
-                                        NSS BITS Pilani is the largest student volunteer body in the campus. It is extremely active and persevering in the field of social/community service.
-                                        Spreading happiness through community service has been one of the primary objectives of NSS. With innovative activities across the departments catering to all classes of the campus residents, we try to create small, happy and memorable moments in their lives. We aim to bring about a positive change in the society with focus on Education and Development.
+                                        <p>
+                                            NSS BITS Pilani is the largest student volunteer body on the campus. It is extremely active and persevering in the field of social/community service.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Spreading happiness through community service has been one of the primary objectives of NSS. With innovative activities across the departments catering to all classes of the campus residents, we try to create small, happy, and memorable moments in their lives. We aim to bring about a positive change in the society with our focus on Education and Development.
+                                        </p>
                                     </div>
                                         
                                     <ShowMoreText className={`${classes.mobInfo} mobInfo`} lines={5} anchorClass="anchor_class">
-                                        NSS BITS Pilani is the largest student volunteer body in the campus. It is extremely active and persevering in the field of social/community service.
-                                        Spreading happiness through community service has been one of the primary objectives of NSS. With innovative activities across the departments catering to all classes of the campus residents, we try to create small, happy and memorable moments in their lives.
+                                        <p>
+                                            NSS BITS Pilani is the largest student volunteer body on the campus. It is extremely active and persevering in the field of social/community service.
+                                        </p>
+                                        <br />
+                                        <p>
+                                            Spreading happiness through community service has been one of the primary objectives of NSS. With innovative activities across the departments catering to all classes of the campus residents, 
+                                        </p>
                                     </ShowMoreText>
                                 </div>
                             </div>

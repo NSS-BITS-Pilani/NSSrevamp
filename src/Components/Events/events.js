@@ -4,7 +4,6 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import MobCard from './mobCard/mobCard';
 import { useSelector} from 'react-redux';
-import * as colors from './colors';
 
 const BlockContent = require('@sanity/block-content-to-react');
 
@@ -32,13 +31,6 @@ const Events = (props) => {
                 ),
             },
         }
-
-    const Events = [
-        { title: "Junoon", img:"/assets/CLP_icon.svg", color:colors.junoonBg},
-        { title: "Smile For A Shop", img:"/assets/CLP_icon.svg", color:colors.smasBg},
-        { title: "Blood Donation Camp", img: "/assets/CLP_icon.svg", color:colors.bdcBg},
-        { title: "Conferencia De Youth", img:"/assets/CLP_icon.svg", color:colors.cdyBg}
-    ];
 
     const dataArray = useSelector((state) => state.events);
 
@@ -88,7 +80,9 @@ const Events = (props) => {
                 <Slide bottom>
                     <div className={`${classes.mainContent} mainContentEve`} style={{ background: `${dataArray[eventIndex].color}` }}>
                         <h1>{ dataArray[eventIndex].title }</h1>
-                        {currentEvent}
+                        <div className="fetchedData">
+                            {currentEvent}
+                        </div>
                     </div>
                 </Slide>
             </div>
@@ -119,7 +113,9 @@ const Events = (props) => {
 
                 
                     <div style={ showModal.show ? {display: "block", background:`${dataArray[eventIndex].color}`} : {display: "none"}} className="mobModal">
-                        {currentEvent}
+                        <div className="fetchedData">
+                            {currentEvent}
+                        </div>
                     </div>
                 
             </div>

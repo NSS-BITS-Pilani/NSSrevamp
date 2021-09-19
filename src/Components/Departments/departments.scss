@@ -2,14 +2,23 @@
   display: none;
 }
 
-figure {
+.fetchedData {
+  blockquote {
+    text-align: center;
+    margin: 1rem 0rem;
+  }
+  ul {
+    margin-left: 3rem;
+  }
+  p {
+    margin: 1rem 0;
+  }
   img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
+    width: 30rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    border-radius: 0.75rem;
   }
 }
 

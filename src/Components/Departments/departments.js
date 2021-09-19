@@ -159,7 +159,9 @@ const Departments = (props) => {
             <div className={`${classes.mainContent} mainContent`} style={{background:`${Departments[departmentIndex].bglite}`}}>
                 <h1>{ Departments[departmentIndex].title }</h1>
                 <D3Carousel className="d3Carousel" dep={Departments[departmentIndex].title} />
-                {currentDep}
+                <div className="fetchedData">
+                    {currentDep}
+                </div>
                 </div>
             </Slide>
            </div>
@@ -192,7 +194,9 @@ const Departments = (props) => {
             <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].bglite}`} : {display: "none"}} className="mobModal">
                 <h1>{ Departments[departmentIndex].title }</h1>
                 <D3Carousel className="d3Carousel" dep={Departments[departmentIndex].title} />
-                {currentDep}
+                <div className="fetchedData">
+                    {currentDep}
+                </div>
             </div>
             
         
