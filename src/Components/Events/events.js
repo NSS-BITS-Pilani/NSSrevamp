@@ -113,7 +113,7 @@ const Events = (props) => {
 
                 
                     <div style={ showModal.show ? {display: "block", background:`${dataArray[eventIndex].color}`} : {display: "none"}} className="mobModal">
-                        <h1>{ Departments[departmentIndex].title }</h1>
+                        <h1>{ dataArray[eventIndex].title }</h1>
                         <div className="fetchedData">
                             {currentEvent}
                         </div>
