@@ -14247,6 +14247,13 @@ react-overlays@^5.1.1:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
+react-particles-js@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-3.5.3.tgz#5fa8912cd3317061e4d31ed7743d331d9d7f2afe"
+  integrity sha512-e9GWBT51WDtPkcaSy0ZLUAT93lBzDvuqrfW81NOf6G69XSurgCtVy4+ZYpUCnLhZgkokzsjrhtVOSj1FxPVyEw==
+  dependencies:
+    lodash "^4.17.11"
+
 react-reconciler@^0.26.2:
   version "0.26.2"
   resolved "https://registry.npmjs.org/react-reconciler/-/react-reconciler-0.26.2.tgz#bbad0e2d1309423f76cf3c3309ac6c96e05e9d91"
@@ -16512,6 +16519,11 @@ tslib@^2, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
+tsparticles@^1.35.0:
+  version "1.35.0"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.35.0.tgz#59b992d7a624e00f38142d3b545ceecf1e6acdb1"
+  integrity sha512-gPPiaoMq/LyRmoH+ImGvwxCymN42Uh/FK7rCi+dE5Pu5yX4x6hh1CB58OOMFvMVekdP1Y4S/KITv/XojBzN3zA==
 
 tsutils@^3.17.1, tsutils@^3.21.0:
   version "3.21.0"

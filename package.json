@@ -27,6 +27,7 @@
     "react-icons": "^4.2.0",
     "react-loading": "^2.0.3",
     "react-lottie": "^1.2.3",
+    "react-particles-js": "^3.5.3",
     "react-redux": "^7.2.4",
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.0",
@@ -40,6 +41,7 @@
     "redux-thunk": "^2.3.0",
     "swiper": "^6.6.2",
     "three": "^0.130.1",
+    "tsparticles": "^1.35.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
