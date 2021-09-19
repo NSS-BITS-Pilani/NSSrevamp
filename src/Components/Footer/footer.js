@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from "./footer.scss";
-//import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HashLink as NavLink } from 'react-router-hash-link';
 import { useSelector } from 'react-redux';
 
@@ -94,7 +94,9 @@ const Footer = (props) => {
             </div>
 
             <div class="ct-footer-post">
-                
+                <div className="developersLink">
+                    <Link to={"/developers"} exact={true}>Meet the Developers</Link>
+                </div>
                 <div class="alt_container">
                     <div class="inner-right">
                             <ul>

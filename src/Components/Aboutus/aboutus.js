@@ -4,6 +4,7 @@ import ProfileCard from './ProfileCard/ProfileCard';
 import ShowMoreText from 'react-show-more-text';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import Developers from '../Developers/Developers';
 
 import { useSelector} from 'react-redux';
 
@@ -224,6 +225,7 @@ const Aboutus = () => {
                     </div>            
             
             </div>
+            <Developers />
                 <Fade>
                     <Footer></Footer>
                     </Fade>

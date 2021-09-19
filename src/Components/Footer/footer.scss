@@ -6,8 +6,13 @@ a:active {
   color: inherit;
 }
 
-.inner-right-500{
+.inner-right-500 {
   display: none;
+}
+
+.developersLink {
+  font-size: 1.25rem;
+  text-align: center;
 }
 
 .ct-footer {
@@ -27,12 +32,12 @@ a:active {
   width: 100%;
 }
 
-.ct-footer-list li{
+.ct-footer-list li {
   margin: 0.5rem;
   margin-left: 0;
 }
 
-.ct-footer-post{
+.ct-footer-post {
   margin-bottom: 4rem;
 }
 
@@ -181,34 +186,32 @@ a:active {
 }
 
 @media all and (max-width: 1200px) {
-
-  .ct-footer-list, .follow, .mediaContainer{
+  .ct-footer-list,
+  .follow,
+  .mediaContainer {
     display: none;
   }
 
-  .ct-footer-post{
+  .ct-footer-post {
     margin-bottom: 0rem !important;
   }
 
-  .ct-footer{
+  .ct-footer {
     margin-top: 2rem !important;
   }
-
 }
 
 @media all and (max-width: 500px) {
-
-  .inner-right{
+  .inner-right {
     display: none;
   }
-  .inner-right-500{
+  .inner-right-500 {
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
   }
 
-  .inner-left{
+  .inner-left {
     font-size: 0.9rem;
   }
-
 }
