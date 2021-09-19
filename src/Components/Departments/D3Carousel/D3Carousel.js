@@ -22,10 +22,26 @@ const D3Carousel = ({ dep }) => {
                     navigation={true}
                 >
                     <div style={{alignItems: "center"}}>
-                        <SwiperSlide><img src="/assets/2021-02-10_Bits_Cycling_Day.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/assets/2021-04-16_Cyber_Security_Talk.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/assets/2021-06-14_World_Blood_Donor_Day.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/assets/2021-09-01_India_At_Paralympics.jpg" alt="" /></SwiperSlide>
+                        <SwiperSlide>
+                            <div className="imageContainer">
+                                <img src="/assets/2021-02-10_Bits_Cycling_Day.jpg" alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="imageContainer">
+                                <img src="/assets/2021-04-16_Cyber_Security_Talk.jpg" alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="imageContainer">
+                                <img src="/assets/2021-06-14_World_Blood_Donor_Day.jpg" alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="imageContainer">
+                                <img src="/assets/2021-09-01_India_At_Paralympics.jpg" alt="" />
+                            </div>
+                        </SwiperSlide>
                     </div>
                 </Swiper>
             </div>
