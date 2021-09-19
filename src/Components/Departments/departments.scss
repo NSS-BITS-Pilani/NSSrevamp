@@ -3,6 +3,9 @@
 }
 
 .fetchedData {
+  h1 {
+    margin: 1rem 0;
+  }
   blockquote {
     text-align: center;
     margin: 1rem 0rem;
@@ -10,6 +13,9 @@
   ul {
     margin-left: 3rem;
   }
+  h2,
+  h3,
+  h4,
   p {
     margin: 1rem 0;
   }
