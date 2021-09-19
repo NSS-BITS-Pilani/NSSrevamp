@@ -29,8 +29,8 @@ body {
       grid-template-rows: 1fr;
       justify-items: center;
       align-items: center;
-      width: 18.75rem;
-      height: 18.75rem;
+      width: 17.5rem;
+      height: 17.5rem;
       border-radius: 50%;
       overflow: hidden;
       box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
@@ -47,8 +47,6 @@ body {
 
       img {
         grid-area: 1/1/2/2;
-        transform: rotate(0deg);
-        animation: rotate 1.5s ease-out forwards;
       }
       &:before {
         content: "";

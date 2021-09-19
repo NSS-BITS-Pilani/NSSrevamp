@@ -49,7 +49,7 @@ const Loader = () => {
                     </div>
                     <div className="ringReveal">
                         <animated.svg
-                            style={{ width: 300, height: 300 }}
+                            style={{ width: 280, height: 280 }}
                             viewBox="0 0 404 404"
                             strokeWidth="7"
                             fill="floralwhite"
