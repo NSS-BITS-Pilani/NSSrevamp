@@ -62,17 +62,17 @@ const Developers = () => (
 
             <div className="devCard">
                 <div className="content">
-                    <div className="imgBx"><img src="assets/ProfilePic.png" width="250px"></img></div>
+                    <div className="imgBx"><img src="assets/Photo_of_Aman.jpg" width="250px"></img></div>
                     <div className="contentBx">
                     <h3>Aman Kumar Shukla<br></br><span>Frontend Developer</span></h3>
                     </div>
                 </div>
                 <ul className="sci">
                     <li>
-                        <a href="#"><img src="assets/GitLogo.png" width="32px"></img></a>
+                        <a href="https://github.com/theWiseAman"><img src="assets/GitLogo.png" width="32px"></img></a>
                     </li>
                     <li>
-                        <a href="#"><img src="assets/image 11.png" width="32px"></img></a>
+                        <a href="https://www.linkedin.com/in/aman-k-646b17186/"><img src="assets/image 11.png" width="32px"></img></a>
                     </li>
                 </ul>
             </div>
