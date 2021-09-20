@@ -1,9 +1,24 @@
 
+
+.mobImage{
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .webImage{
+        display: none;
+    }
+
+    .mobImage{
+        display: initial;
+    }
+}
+
 .devHead{
     width: 80%;
     margin: 3rem auto;
     h1{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         font-weight: bold;
         font-family: poppins;
         text-align: center;
@@ -39,7 +54,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            opacity: 0.8;
+            opacity: 1;
             transition: 0.5s;
             
             .imgBx{
@@ -120,7 +135,7 @@
         width: 100%;
 
         h1{
-            font-size: 2.2rem;
+            font-size: 3rem;
         }
     }
 }

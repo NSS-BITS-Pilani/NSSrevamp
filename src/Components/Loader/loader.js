@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import classes from "./loader.scss";
 import { animated, useSpring } from 'react-spring';
-import Particles from "react-particles-js";
-import ParticleConfig from "./particle-config";
+//import Particles from "react-particles-js";
+//import ParticleConfig from "./particle-config";
 import Logo from "./Logo";
 
 const Loader = () => {
@@ -42,7 +42,7 @@ const Loader = () => {
     return (
         <React.Fragment>
             <div className={`${classes.loaderWrapper} loaderWrapper container-fluid`}>
-                <Particles id="particleBackground" params={ParticleConfig} />
+                
                 <div className="logo">
                     <div className="logoComponent">
                         <Logo />
