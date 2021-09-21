@@ -20,9 +20,10 @@
     .mobCardimg{
         margin-top: 7.5%;
         width: 80%
-
+        
         img{
-            width: 100%;
+            width: 90% !important;
+            max-height: 170px !important;
         }
     }
 

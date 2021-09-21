@@ -66,6 +66,19 @@ export const getCoords = () => {
     }
 }
 
+export const getProfs = () => {
+
+    return async (dispatch) => {
+
+        const dataArray = await SanityClient.fetch('*[_type == "prof"]{name,srno, bitsprofile, designation, "imgurl":profilepic.asset->url}');
+
+        dispatch({
+            type: "getProfs",
+            payload: dataArray
+        })
+    }
+}
+
 export const getLeaders = () => {
 
     return async (dispatch) => {

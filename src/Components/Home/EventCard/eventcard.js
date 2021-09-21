@@ -40,8 +40,10 @@ const EventCard = (props) => {
           <ModalCloseButton />
                         <ModalBody>
                             <span className={`${classes.modalInfo} modalInfo`}>
-            {props.eventInfo}</span>
-          </ModalBody>
+                                <img style={{borderRadius:"10px", margin:"0 auto 10px", width:"75%"}} src={props.imgPath} alt="Initiative" className={`${classes.card_image} card_image`}/>
+                                {props.eventInfo}
+                            </span>
+                        </ModalBody>
 
           <ModalFooter>
             <div className={`${classes.button} button`} onClick={onClose}>Close</div>

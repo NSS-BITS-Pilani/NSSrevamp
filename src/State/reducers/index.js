@@ -5,6 +5,7 @@ import initiativesReducer from './initiativesReducer';
 import resourcesReducer from './resourcesReducer';
 import coordReducer from './coordReducer';
 import leaderReducer from './leaderReducer';
+import profReducer from './profReducer';
 
 const reducers = combineReducers({
     departments: departmentsReducer,
@@ -12,7 +13,8 @@ const reducers = combineReducers({
     initiatives: initiativesReducer,
     resources: resourcesReducer,
     coords: coordReducer,
-    leaders: leaderReducer
+    leaders: leaderReducer,
+    profs: profReducer,
 });
 
 export default reducers;

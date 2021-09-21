@@ -9,7 +9,7 @@ const MobCard = (props) => {
             <div className="mobCardDEE" style={{background:props.color}}>
                 
                 <div className="mobCardimg">
-                    <img src={props.img}></img>
+                    <img src={props.img} align="center" style={{width:"100%", maxHeight:"170px"}}></img>
                 </div>
 
                 <div className="titleDE">

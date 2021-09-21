@@ -11,21 +11,21 @@ const HeroCarousel = (props) => {
   <Carousel.Item interval={4000}>
     <img
       className="d-block w-100"
-      src="/assets/home_top.png"
+      src="/assets/allnss2fin.jpeg"
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item  interval={3000}>
     <img
       className="d-block w-100"
-      src="https://placekitten.com/201/161"
+      src="/assets/CdY-min.jpg"
       alt="Second slide"
     />
   </Carousel.Item>
   <Carousel.Item interval={3000}>
     <img
       className="d-block w-100"
-      src="https://placekitten.com/200/160"
+      src="/assets/junooneve-min.JPG"
       alt="Third slide"
     />
 

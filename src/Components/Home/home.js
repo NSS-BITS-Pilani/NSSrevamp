@@ -129,7 +129,7 @@ const Home = () => {
                         <div className={`${classes.aboutFlexBox} aboutFlexBox`}>
                             <Slide left>
                         <div className={`${classes.left} left`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" alt="img" /></div>
+                            <div className={`${classes.homeimg} homeimg`}><img style={{borderRadius:"10px"}} src="/assets/whatarewe.jpg" alt="img" /></div>
                         </div>
                             </Slide>
                             
@@ -139,7 +139,7 @@ const Home = () => {
                                 <span style={{ color: "rgba(39, 174, 96, 1)" }}>What are we</span>
                                 <div className={`${classes.left_mob} left_mob`}>
                                     <div className={`${classes.homeimg} homeimg`}>
-                                        <img src="/assets/rectangle_24.png" alt="img" />
+                                        <img style={{borderRadius:"10px"}} src="/assets/whatarewe.jpg" alt="img" />
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ const Home = () => {
                                 <div className={`${classes.section_heading_home} section_heading_home`}>
                                     <span style={{ color: "rgba(45, 156, 219, 1)" }}>What we do</span>
                                     <div className={`${classes.rightB} rightB_mob`}>
-                                        <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                                        <div className={`${classes.homeimg} homeimg`}><img style={{borderRadius:"10px"}} src="/assets/whatwedomin.jpg" align="right" alt="img" /></div>
                                     </div>
                                 </div>
                                 Spreading happiness through community service has been one of the primary objectives of NSS. With innovative activities across the departments catering to all classes of the campus residents, we try to create small, happy and memorable moments in their lives. We aim to bring about a positive change in the society with focus on education and development.
@@ -168,7 +168,7 @@ const Home = () => {
                             
                             <Slide right>
                         <div className={`${classes.rightB} rightB`}>
-                            <div className={`${classes.homeimg} homeimg`}><img src="/assets/rectangle_24.png" align="right" alt="img" /></div>
+                            <div className={`${classes.homeimg} homeimg`}><img style={{borderRadius:"10px"}} src="/assets/whatwedomin.jpg" align="right" alt="img" /></div>
                                 </div>
                                 </Slide>
                     </div>
@@ -179,7 +179,7 @@ const Home = () => {
             
             <div className={`${classes.initiatives} initiatives`}>
                     <div className={`${classes.section_heading_home} section_heading_home`}>Our initiatives</div>
-                    <Flip left>
+                    <Fade>
                 <div className={`${classes.cards_desk} cards_desk`}>
                     <div className={`${classes.cards} cards`}>
                     {renderEvents()}
@@ -194,7 +194,7 @@ const Home = () => {
                     <div className={`${classes.homeCarousel2} homeCarousel2`}>
                         <Carousel slides={2}></Carousel>
                         </div>
-                    </Flip>    
+                    </Fade>    
             </div>
 
             <div className={`${classes.departments} departments`}>

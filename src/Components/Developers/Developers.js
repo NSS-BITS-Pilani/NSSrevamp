@@ -1,5 +1,6 @@
 import './Developers.scss';
 import { NavLink } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const Developers = () => {
     
@@ -12,11 +13,12 @@ const Developers = () => {
                 <h1>Meet the developers</h1>
             </div>
             <div className="devContainer">
+                <Fade>
                 <div className="devCard">
                     <div className="content">
                         <div className="imgBx"><img src="assets/manan.jpeg"></img></div>
                         <div className="contentBx">
-                            <h3>Manan Agarwal<br></br><span>Frontend Developer</span></h3>
+                            <h3>Manan Agarwal<br></br><span>Developer and Coordinator</span></h3>
                         </div>
                     </div>
                     <ul className="sci">
@@ -79,6 +81,7 @@ const Developers = () => {
                         </li>
                     </ul>
                 </div>
+                </Fade>
             </div>
         </div>
     );

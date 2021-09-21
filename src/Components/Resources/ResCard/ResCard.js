@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from "./ResCard.scss";
 
-import Bounce from 'react-reveal/Bounce';
+import Slide from 'react-reveal/Slide';
 
 
 const ResCard = (props) => {
   
     return (
-        <Bounce left>
+        <Slide left>
         <div className="resCardCon">
             <div className="info">
                 <div className="head">
@@ -28,7 +28,7 @@ const ResCard = (props) => {
                 )}
             </div>
             </div>
-            </Bounce>
+            </Slide>
     );
 }
 

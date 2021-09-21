@@ -7,7 +7,12 @@ import { useSelector } from 'react-redux';
 
 const Footer = (props) => {
 
-    const departmentsData = useSelector((state) => state.departments)
+    const departmentsData = useSelector((state) => state.departments);
+    departmentsData.sort(function(a, b){
+        if(a.title < b.title) { return -1; }
+        if(a.title > b.title) { return 1; }
+        return 0;
+    })
     const eventsData = useSelector((state) => state.events);
     
     return (

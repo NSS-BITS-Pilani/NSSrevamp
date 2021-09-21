@@ -10,6 +10,19 @@ a:active {
   display: none;
 }
 
+.mediaContainer{
+  .socialMedia{
+
+    img{
+      transition: transform 0.3s;
+      width: 20px;
+    }
+    img:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
 .developersLink {
   font-size: 1.25rem;
   text-align: center;

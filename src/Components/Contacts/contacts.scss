@@ -43,8 +43,8 @@ body {
     form {
       .inputHead {
         font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 2.25rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
         margin: 2.6875rem 0rem 1rem 0.125rem;
 
         color: #000000;
@@ -63,14 +63,14 @@ body {
       textarea:focus {
         outline: none;
       }
-      [type="submit"] {
+      Button {
         max-width: 14rem;
         min-height: 4rem;
         background: #333333;
         border-radius: 1.25rem;
 
-        font-size: 1.4375rem;
-        line-height: 2.125rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
         /* identical to box height */
 
         color: #ffffff;

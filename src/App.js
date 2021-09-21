@@ -6,6 +6,7 @@ import Loader from './Components/Loader/loader';
 import { useDispatch } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { actionCreators } from './State/index';
+import { getProfs } from './State/action-creators';
 
 const App = () => {
     const [data, setData] = useState([]);
@@ -13,7 +14,7 @@ const App = () => {
 
     const dispatch = useDispatch();
 
-    const { getDepartments, getEvents, getInitiatives, getResources, getCoords} = bindActionCreators(actionCreators, dispatch);
+    const { getProfs, getDepartments, getEvents, getInitiatives, getResources, getCoords} = bindActionCreators(actionCreators, dispatch);
 
     useEffect(() => {
         getDepartments();
@@ -21,6 +22,7 @@ const App = () => {
         getInitiatives();
         getResources();
         getCoords();
+        getProfs();
 
         setTimeout(() => {
             fetch('https://jsonplaceholder.typicode.com/todos')
