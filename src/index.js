@@ -11,7 +11,7 @@ const store = ConfigureStore();
 
 try {
   setTimeout(_ => {
-    const ga4react = new GA4React("G-RLYDJ0CZJR");
+    const ga4react = new GA4React("G-1HHXV8764C");
     ga4react.initialize();
   }, 3000);
 } catch (err) {console.log(err)}
