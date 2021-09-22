@@ -121,7 +121,7 @@ const Departments = (props) => {
 
     const dataArray = useSelector((state) => state.departments);
 
-    console.log(dataArray);
+    //console.log(dataArray);
 
     React.useEffect(() => {
         setDepData(dataArray);

@@ -12,7 +12,6 @@ import { NavLink } from 'react-router-dom';
 import { Form } from 'react-bootstrap';
 import { Select } from "@chakra-ui/react"
 
-import Flip from 'react-reveal/Flip';
 
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
@@ -34,7 +33,7 @@ const Home = () => {
     }
 
     dataArray.sort(compare);
-    console.log(dataArray);
+    
     let topInitiatives = [];
     const initiatives = dataArray;
     if (dataArray.length <= 3) {
