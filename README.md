@@ -4,7 +4,7 @@ The above website code repository is being hosted on domains:-
 
 ### GitHub Page
 
-https://nss-bits-pilani.github.io/NSSrevamp/
+https://nss-bits-pilani.github.io/
 
 ### Netlify Website Links
 

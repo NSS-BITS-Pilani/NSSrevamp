@@ -2,7 +2,7 @@
   "name": "nssrevamp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nss-bits-pilani.github.io/NSSrevamp",
+  "homepage": "http://nss-bits-pilani.github.io/",
   "dependencies": {
     "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11.4.0",
@@ -52,7 +52,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build && netlify deploy --prod"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
