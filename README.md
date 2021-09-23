@@ -2,6 +2,10 @@
 
 The above website code repository is being hosted on domains:-
 
+### GitHub Page
+
+https://nss-bits-pilani.github.io/NSSrevamp/
+
 ### Netlify Website Links
 
 https://nssbits.netlify.app/
