@@ -85,7 +85,7 @@ const Footer = (props) => {
                                 <a target="_blank" href="http://dishafoundationindia.in/">Disha Foundation</a>
                             </li>
                             <li>
-                                <a target="_blank" href="http://www.deepalaya.org/">Deepaiaya</a>
+                                <a target="_blank" href="http://www.deepalaya.org/">Deepalaya</a>
                             </li>
                             <li>
                                 <a target="_blank" href="http://www.tenderheartngo.org/">Tender Heart</a>

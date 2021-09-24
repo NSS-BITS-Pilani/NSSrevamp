@@ -1,4 +1,4 @@
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ChakraProvider } from "@chakra-ui/react"
 import Aboutus from "./Aboutus/aboutus";
 import Contacts from "./Contacts/contacts";
@@ -13,7 +13,7 @@ import ScrollToTop from './ScrollToTop';
 
 const Main = () => (
     <ChakraProvider>
-    <HashRouter>
+    <BrowserRouter>
     <ScrollToTop />
     <TopBar />
     <Switch>
@@ -27,7 +27,7 @@ const Main = () => (
         <Route path="/developers" component={Developers} />
       <Route path="*" component={Error_404} />
     </Switch>
-    </HashRouter>
+    </BrowserRouter>
     </ChakraProvider>
 )
 export default Main;

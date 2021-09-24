@@ -150,7 +150,7 @@ const Aboutus = () => {
                 <ProfileCard
                     imgPath="ProfilePic.png"
                     designation="Faculty Coordinator"
-                    personName="Ashish Tiwari"
+                    personName="Prof. Ashish Tiwari"
                             bits="assets/bits_logo.png"
                             linkedin="https://www.bits-pilani.ac.in/pilani/ashishtiwari/profile"
                         />
@@ -159,7 +159,7 @@ const Aboutus = () => {
                     <div className="mobCardsab">
                     <Slide left>
                     
-                            <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" linkedin="https://www.bits-pilani.ac.in/pilani/ashishtiwari/profile" personName="Ashish Tiwari" bits="assets/bits_logo.png" />
+                            <ProfileCard imgPath="ProfilePic.png" designation="Faculty Coordinator" linkedin="https://www.bits-pilani.ac.in/pilani/ashishtiwari/profile" personName="Prof. Ashish Tiwari" bits="assets/bits_logo.png" />
     </Slide>
                     </div>
 
