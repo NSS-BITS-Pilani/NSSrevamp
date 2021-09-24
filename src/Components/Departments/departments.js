@@ -6,6 +6,7 @@ import MobCard from './mobCard/mobCard';
 import { useSelector} from 'react-redux';
 import * as colors from './colors';
 import D3Carousel from './D3Carousel/D3Carousel';
+import D3AppWeb from './D3AppWeb/D3AppWeb';
 
 const BlockContent = require('@sanity/block-content-to-react');
 
@@ -162,9 +163,10 @@ const Departments = (props) => {
                 <div className="fetchedData">
                     {currentDep}
                 </div>
-                </div>
+                <D3AppWeb className="d3AppWeb" dep={Departments[departmentIndex].title} />
+            </div>
             </Slide>
-           </div>
+        </div>
 
             <div className={`${classes.mobileContent} mobileContent`}>
                 <div className={`${classes.mobTitle} mobTitle`}>
@@ -197,6 +199,7 @@ const Departments = (props) => {
                 <div className="fetchedData">
                     {currentDep}
                 </div>
+                <D3AppWeb className="d3AppWeb" dep={Departments[departmentIndex].title} />
             </div>
             
         

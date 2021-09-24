@@ -36,6 +36,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
+  height: max-content;
 
   .react-reveal {
     animation-duration: 1500ms !important;
@@ -109,6 +110,9 @@
       font-weight: 700;
       font-size: 1.5rem;
       line-height: 4rem;
+    }
+    .d3AppWeb {
+      margin: 1rem;
     }
   }
 }
