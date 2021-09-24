@@ -99,10 +99,10 @@ const Footer = (props) => {
             </div>
 
             <div class="ct-footer-post">
-                <div className="developersLink">
-                    <Link to={"/developers"} exact={true}>Meet the Developers</Link>
-                </div>
                 <div class="alt_container">
+                    <div className="developersLink">
+                        <Link to={"/developers"} exact={true}>Meet the Developers</Link>
+                    </div>
                     <div class="inner-right">
                             <ul>
                                 <li>
