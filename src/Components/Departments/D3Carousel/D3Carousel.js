@@ -24,7 +24,7 @@ const D3Carousel = ({ dep }) => {
                     <div style={{alignItems: "center"}}>
                         <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/2021-02-10_Bits_Cycling_Day.jpg" alt="" />
+                                <img src="/assets/OnPaste.20210330-225632.png" alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -35,6 +35,16 @@ const D3Carousel = ({ dep }) => {
                         <SwiperSlide>
                             <div className="imageContainer">
                                 <img src="/assets/2021-09-01_India_At_Paralympics.jpg" alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="imageContainer">
+                                <img src="/assets/OnPaste.20210330-225518.png" alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="imageContainer">
+                                <img src="/assets/OnPaste.20210330-225724.png" alt="" />
                             </div>
                         </SwiperSlide>
                     </div>
