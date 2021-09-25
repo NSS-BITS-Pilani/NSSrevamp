@@ -23,21 +23,21 @@ const D3AppWeb = ({ dep }) => {
                     navigation={true}
                 >
                     <div style={{alignItems: "center"}}>
-                        {/* <SwiperSlide>
+                        <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/screencapture-localhost-3000-aboutus-2021-09-24-07_30_48.png" alt="" />
+                                <img src="/assets/web_screenshots_initiatives.jpg" alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/screencapture-localhost-3000-departments-2021-09-24-07_30_24.png" alt="" />
+                                <img src="/assets/web_screenshots_aboutus.jpg" alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/screencapture-localhost-3000-events-2021-09-24-07_30_01.png" alt="" />
+                                <img src="/assets/web_screenshots_cdy.jpg" alt="" />
                             </div>
-                        </SwiperSlide> */}
+                        </SwiperSlide>
                         <SwiperSlide>
                             <div className="imageContainer">
                                 <img src="/assets/app-mockup-ios-screenshot-4-default0.png" alt="" />

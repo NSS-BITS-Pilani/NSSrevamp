@@ -1,4 +1,4 @@
-$width: 25rem;
+$width: 20rem;
 
 .webCarouselBody {
   width: $width;
@@ -8,15 +8,12 @@ $width: 25rem;
   .imageContainer {
     height: 2.16 * $width;
     width: 100%;
-    display: block;
     position: relative;
 
     img {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 100%;
-      height: max-content;
       border-radius: 1rem;
       transform: translate(-50%, -50%);
     }

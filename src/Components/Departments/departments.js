@@ -7,6 +7,7 @@ import { useSelector} from 'react-redux';
 import * as colors from './colors';
 import D3Carousel from './D3Carousel/D3Carousel';
 import D3AppWeb from './D3AppWeb/D3AppWeb';
+import Skeleton from 'react-loading-skeleton';
 
 const BlockContent = require('@sanity/block-content-to-react');
 
@@ -194,7 +195,7 @@ const Departments = (props) => {
 
            
             <div style={ showModal.show ? {display: "block", background:`${Departments[departmentIndex].bglite}`} : {display: "none"}} className="mobModal">
-                <h1>{ Departments[departmentIndex].title }</h1>
+                <h1>{ Departments[departmentIndex].title || <Skeleton /> }</h1>
                 <D3Carousel className="d3Carousel" dep={Departments[departmentIndex].title} />
                 <div className="fetchedData">
                     {currentDep}
