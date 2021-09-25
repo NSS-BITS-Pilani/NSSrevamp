@@ -7,6 +7,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/effect-flip/effect-flip.scss';
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/navigation/navigation.scss";
+import { background } from '@chakra-ui/styled-system';
 
 SwiperCore.use([EffectFlip, Pagination, Navigation]);
 
@@ -22,7 +23,7 @@ const D3AppWeb = ({ dep }) => {
                     navigation={true}
                 >
                     <div style={{alignItems: "center"}}>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className="imageContainer">
                                 <img src="/assets/screencapture-localhost-3000-aboutus-2021-09-24-07_30_48.png" alt="" />
                             </div>
@@ -36,55 +37,20 @@ const D3AppWeb = ({ dep }) => {
                             <div className="imageContainer">
                                 <img src="/assets/screencapture-localhost-3000-events-2021-09-24-07_30_01.png" alt="" />
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                         <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/screencapture-localhost-3000-resources-2021-09-24-07_29_45.png" alt="" />
+                                <img src="/assets/app-mockup-ios-screenshot-4-default0.png" alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/screencapture-nssbitspilani-org-2021-09-24-07_26_19.png" alt="" />
+                                <img src="/assets/Screenshot_20210924-201917_Mockup.jpg" alt="" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="imageContainer">
-                                <img src="/assets/screencapture-nssbitspilani-org-contactus-2021-09-24-07_27_46.png" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071659.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071659.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071726.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071810.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071834.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071850.jpg" alt="" />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="imageContainer">
-                                <img src="/assets/Screenshot_20210924-071910.jpg" alt="" />
+                                <img src="/assets/Screenshot_20210924-202225_Mockup.jpg" alt="" />
                             </div>
                         </SwiperSlide>
                     </div>
