@@ -1,7 +1,8 @@
 import React from 'react';
 import './Recruitments.scss';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col, Alert } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Recruitments = () => {
     return (
@@ -9,42 +10,34 @@ const Recruitments = () => {
             <div className="recruitments">
                 <Container fluid>
                     <Row className="recruitmentsBody">
-                        <Col lg={{order: 2, span: 5}}>
+                        <Col xs={{offset: 1, span: 10}} md={{offset: 2, span: 8}}  lg={{offset: 0, span: 5, order: 2}}>
                             <img src="/assets/vecteezy_employee-recruitment-concept_.jpg" alt="Recruitment Image" />
                         </Col>
-                        <Col lg={{order: 1, span: 5, offset: 1}}>
-                            <h1>NSS is Recruiting!</h1>
-                            <p className="mt-3">
-                                NSS recruitments are ON. Interested candidates are required to fill the form mentioned below before 19th November, 2021. Those interested in NSS D3 can also fill the second form. 
-                            </p>
-                            <div className="button_div">
-                                <a href="https://forms.gle/GAKi8464ENXse6ex5" target="_blank">
-                                    <span className="button">
-                                        Click here to apply
-                                    </span>
-                                </a>
+                        <Col sm={{offset: 1, span: 10}} md={{offset: 2, span: 8}} lg={{offset: 1, order: 1, span: 6}} xl={{span: 5}}>
+                            <h1 className="title">NSS is Recruiting!</h1>
+                            <div className="mx-3 mx-sm-0">
+                                <p>
+                                    NSS recruitments are ON! All interested candidates are required to fill the NSS recuitments form mentioned below before 19th November, 2021. Those interested in NSS D3 department are also required to fill the 2nd form of NSS D3 recruitments besides the main NSS recruitments form by clicking on the button mentioned below before 19th November, 2021. 
+                                </p>
+                                <div className="button_div m-2 m-sm-3">
+                                    <a href="https://forms.gle/GAKi8464ENXse6ex5" target="_blank">
+                                        <span className="button">
+                                            NSS recruitments
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className="button_div m-2 m-sm-3">
+                                    <a href="https://forms.gle/CHcsRtcR8knYRxk89" target="_blank">
+                                        <span className="button">
+                                            NSS D3 recruitments
+                                        </span>
+                                    </a>
+                                </div>
+                                <p>
+                                    For more info on the NSS Departments, visit {}
+                                    <NavLink to={"/departments"} className="link">NSS Departments</NavLink>.
+                                </p>
                             </div>
-                        {/* <Col md={{offset: 2, span: 8}}> */}
-                        {/* </Col> */}
-                        {/* <Col md={{offset: 2, span: 8}}>
-                            <Alert variant="danger">
-                                NSS recruitments are ON!! Interested candidates are required to fill the form mentioned below between 11th Nov, 2021 and 19th Nov, 2021.
-                                <br />
-                                NSS D3 recruitments form link is only meant for candidates who have filled NSS D3 as their preferrence for the NSS departments.
-                            </Alert>
-                        </Col> */}
-                        {/* <Col md={{offset: 2, span: 8}}> */}
-                            {/* <h2>NSS recruitment forms</h2>
-                            <h3 className="mt-2">Preference filling form for NSS Departments</h3>
-                            <p className="mt-1">
-                                Anyone seeking to be a part of NSS BITS Pilani is mandatorily required to fill this form within the above mentioned deadline:- {}
-                                
-                            </p>
-                            <h3 className="mt-3">NSS D3 recruitment form</h3>
-                            <p className="mt-1">
-                                This form is meant for only those who chose NSS D3 in their preference for departments:- {}
-                                <a href="https://forms.gle/CHcsRtcR8knYRxk89" target="_blank">NSS D3 Recruitments Form</a>
-                            </p> */} 
                         </Col>
                     </Row>
                 </Container>

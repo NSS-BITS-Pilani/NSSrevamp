@@ -6,49 +6,37 @@ body {
     background-color: hsl(54, 100%, 60%);
     .recruitmentsBody {
       background-color: hsl(0, 0%, 100%);
-      border-radius: 10vw 0 10vw 0;
+      border-radius: 15vw 0;
       height: calc(100vh - 102px);
       align-items: center;
-      h1 {
+      text-align: center;
+      .title {
         font-weight: 700;
         font-size: 3rem;
         line-height: 4.5rem;
-        /* identical to box height */
-
         color: #333333;
       }
-      h2 {
-        text-transform: capitalize;
-        font-weight: 600;
-        font-size: 2rem;
-        line-height: 3rem;
-        color: #333333;
+      p {
+        font-size: 1.1rem;
+        text-align: left;
       }
-      h3 {
-        text-transform: capitalize;
-        font-weight: 500;
-        font-size: 1.5rem;
-        line-height: 2rem;
-        color: #333333;
+      .link {
+        color: hsl(271, 100%, 30%);
+        &:hover {
+          text-decoration: underline;
+        }
+        &:active {
+          color: hsl(271, 100%, 20%);
+        }
       }
-      // a {
-      //   color: hsl(271, 100%, 30%);
-      //   &:hover {
-      //     text-decoration: underline;
-      //   }
-      //   &:active {
-      //     color: hsl(271, 100%, 20%);
-      //   }
-      // }
       .button_div {
-        display: flex;
-        margin-top: 2rem;
+        display: inline-block;
         cursor: pointer;
         .button {
           display: block;
           color: white;
           background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
-          border-radius: 15px;
+          border-radius: 1rem;
           padding-top: 0.8rem;
           padding-bottom: 0.8rem;
           padding-left: 1.3rem;
@@ -58,21 +46,33 @@ body {
     }
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 576px) {
   body {
     .recruitments {
       .recruitmentsBody {
-        h1 {
-          font-size: 2.35rem;
+        border-radius: 5rem 0;
+        .title {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 576px) and (max-width: 768px) {
+  body {
+    .recruitments {
+      .recruitmentsBody {
+        border-radius: 5rem 0;
+        .title {
+          font-size: 2.5rem;
           line-height: 3.5rem;
         }
-        h2 {
-          font-size: 1.75rem;
-          line-height: 2.6rem;
-        }
-        h3 {
-          font-size: 1.25rem;
-          line-height: 1.6rem;
+        p {
+          font-size: 1rem;
         }
       }
     }
