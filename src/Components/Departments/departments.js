@@ -164,7 +164,7 @@ const Departments = (props) => {
                 <div className="fetchedData">
                     {currentDep}
                 </div>
-                <D3AppWeb className="d3AppWeb" dep={Departments[departmentIndex].title} />
+                {/* <D3AppWeb className="d3AppWeb" dep={Departments[departmentIndex].title} /> */}
             </div>
             </Slide>
         </div>
@@ -200,8 +200,8 @@ const Departments = (props) => {
                 <div className="fetchedData">
                     {currentDep}
                 </div>
-                <D3AppWeb className="d3AppWeb" dep={Departments[departmentIndex].title} />
-            </div>
+                    {/*<D3AppWeb className="d3AppWeb" dep={Departments[departmentIndex].title} />*/}
+                    </div>
             
         
         </div>

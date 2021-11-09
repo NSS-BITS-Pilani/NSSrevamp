@@ -1,0 +1,80 @@
+body {
+  .recruitments {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    background-color: hsl(54, 100%, 60%);
+    .recruitmentsBody {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10vw 0 10vw 0;
+      height: calc(100vh - 102px);
+      align-items: center;
+      h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        /* identical to box height */
+
+        color: #333333;
+      }
+      h2 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: #333333;
+      }
+      h3 {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #333333;
+      }
+      // a {
+      //   color: hsl(271, 100%, 30%);
+      //   &:hover {
+      //     text-decoration: underline;
+      //   }
+      //   &:active {
+      //     color: hsl(271, 100%, 20%);
+      //   }
+      // }
+      .button_div {
+        display: flex;
+        margin-top: 2rem;
+        cursor: pointer;
+        .button {
+          display: block;
+          color: white;
+          background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
+          border-radius: 15px;
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+          padding-left: 1.3rem;
+          padding-right: 1.3rem;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  body {
+    .recruitments {
+      .recruitmentsBody {
+        h1 {
+          font-size: 2.35rem;
+          line-height: 3.5rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+          line-height: 2.6rem;
+        }
+        h3 {
+          font-size: 1.25rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+  }
+}

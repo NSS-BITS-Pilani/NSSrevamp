@@ -5,12 +5,12 @@
   src: url(./LiberationSerif-Regular.ttf) format("truetype");
 }
 
-nav {
-  // position: sticky;
-  // top: 0rem;
-  // background-color: floralwhite;
-  // z-index: 2;
-}
+// nav {
+//   position: sticky;
+//   top: 0rem;
+//   background-color: floralwhite;
+//   z-index: 2;
+// }
 
 .nssLogo {
   max-width: 90%;
@@ -53,7 +53,7 @@ nav {
   }
 }
 
-@media all and (min-width: 990px) {
+@media all and (min-width: 992px) {
   .brand {
     margin-left: 2rem;
   }
@@ -62,7 +62,6 @@ nav {
     margin-right: 2rem;
   }
 }
-
 @media all and (max-width: 600px) {
   .logo {
     width: 90%;
