@@ -17,7 +17,7 @@ const Recruitments = () => {
                             <h1 className="title">NSS is Recruiting!</h1>
                             <div className="mx-3 mx-sm-0">
                                 <p>
-                                    NSS recruitments are ON! All interested candidates are required to fill the NSS recuitments form mentioned below before 19th November, 2021. Those interested in NSS D3 department are also required to fill the 2nd form of NSS D3 recruitments besides the main NSS recruitments form by clicking on the button mentioned below before 19th November, 2021. 
+                                    NSS recruitments are ON! All interested candidates are requested to fill the NSS recuitments form mentioned below before 19th November, 2021. For those interested in NSS D3 department its a request that they fill the 2nd form for NSS D3 recruitments besides the main NSS recruitments form by clicking on the button mentioned below before 19th November, 2021. 
                                 </p>
                                 <div className="button_div m-2 m-sm-3">
                                     <a href="https://forms.gle/GAKi8464ENXse6ex5" target="_blank">
@@ -34,8 +34,10 @@ const Recruitments = () => {
                                     </a>
                                 </div>
                                 <p>
-                                    For more info on the NSS Departments, visit {}
-                                    <NavLink to={"/departments"} className="link">NSS Departments</NavLink>.
+                                    For more info on the {}
+                                    <NavLink to={"/departments"} className="link">NSS Departments</NavLink>
+                                    {} and the {}
+                                    <NavLink to={"/events"} className="link">NSS Events</NavLink> conducted annually, click the respective links.
                                 </p>
                             </div>
                         </Col>
