@@ -65,8 +65,12 @@ body {
 }
 
 @media all and (max-width: 800px) {
+  .buttonsR{
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
 .button_div{
-   padding: 5px;
+   padding: 1px;
    width: 80%;
    .button{
      width: 100%;

@@ -21,6 +21,7 @@ const Recruitments = () => {
                                 <p>
                                     NSS recruitments are ON! All interested candidates are requested to fill the NSS recuitments form mentioned below before 19th November, 2021. Those interested in NSS D3 department can also fill the 2nd form before 19th November, 2021. 
                                 </p>
+                                <div className="buttonsR">
                                 <div className="button_div m-2 m-sm-3">
                                     <a href="https://forms.gle/GAKi8464ENXse6ex5" target="_blank">
                                         <span className="button">
@@ -34,6 +35,7 @@ const Recruitments = () => {
                                             NSS D3 recruitments
                                         </span>
                                     </a>
+                                </div>
                                 </div>
                                 <p>
                                     For more info on the {}
