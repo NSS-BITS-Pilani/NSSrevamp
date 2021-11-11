@@ -8,9 +8,9 @@ const Recruitments = () => {
     return (
         <Fade>
             <div className="recruitments">
-            <img style={{ position: "absolute", right: "-13%", top: "15rem",}} className="webImage" src="/assets/ellipse_yellow.svg"></img>
-            <img style={{ position: "absolute", left: "0%", top: "12rem",}} className="webImage" src="/assets/magenta_blob.svg"></img>
-                <Container fluid>
+            <img style={{ position: "absolute", right: "-13%", top: "15rem", }} className="webImage" src="/assets/ellipse_yellow.svg"></img>
+            <img style={{ position: "absolute", left: "0%", top: "10rem",}} className="webImage" src="/assets/magenta_blob.svg"></img>
+                <Container>
                     <Row className="recruitmentsBody">
                         <Col xs={{offset: 1, span: 10}} md={{offset: 2, span: 8}}  lg={{offset: 0, span: 5, order: 2}}>
                             <img src="/assets/vecteezy_employee-recruitment-concept_.jpg" alt="Recruitment Image" style={{zIndex:"-5"}} />
