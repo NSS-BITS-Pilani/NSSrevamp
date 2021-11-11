@@ -3,7 +3,7 @@ body {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    background-color: hsl(54, 100%, 60%);
+    //background-color: hsl(54, 100%, 60%);
     .recruitmentsBody {
       background-color: hsl(0, 0%, 100%);
       border-radius: 15vw 0;
@@ -46,6 +46,7 @@ body {
     }
   }
 }
+
 @media all and (max-width: 576px) {
   body {
     .recruitments {
@@ -62,6 +63,18 @@ body {
     }
   }
 }
+
+@media all and (max-width: 800px) {
+.button_div{
+   padding: 5px;
+   width: 80%;
+   .button{
+     width: 100%;
+   }
+}
+
+}
+
 @media all and (min-width: 576px) and (max-width: 768px) {
   body {
     .recruitments {

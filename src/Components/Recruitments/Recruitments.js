@@ -8,16 +8,18 @@ const Recruitments = () => {
     return (
         <Fade>
             <div className="recruitments">
+            <img style={{ position: "absolute", right: "-13%", top: "15rem",}} className="webImage" src="/assets/ellipse_yellow.svg"></img>
+            <img style={{ position: "absolute", left: "0%", top: "12rem",}} className="webImage" src="/assets/magenta_blob.svg"></img>
                 <Container fluid>
                     <Row className="recruitmentsBody">
                         <Col xs={{offset: 1, span: 10}} md={{offset: 2, span: 8}}  lg={{offset: 0, span: 5, order: 2}}>
-                            <img src="/assets/vecteezy_employee-recruitment-concept_.jpg" alt="Recruitment Image" />
+                            <img src="/assets/vecteezy_employee-recruitment-concept_.jpg" alt="Recruitment Image" style={{zIndex:"-5"}} />
                         </Col>
                         <Col sm={{offset: 1, span: 10}} md={{offset: 2, span: 8}} lg={{offset: 1, order: 1, span: 6}} xl={{span: 5}}>
                             <h1 className="title">NSS is Recruiting!</h1>
                             <div className="mx-3 mx-sm-0">
                                 <p>
-                                    NSS recruitments are ON! All interested candidates are requested to fill the NSS recuitments form mentioned below before 19th November, 2021. For those interested in NSS D3 department its a request that they fill the 2nd form for NSS D3 recruitments besides the main NSS recruitments form by clicking on the button mentioned below before 19th November, 2021. 
+                                    NSS recruitments are ON! All interested candidates are requested to fill the NSS recuitments form mentioned below before 19th November, 2021. Those interested in NSS D3 department can also fill the 2nd form before 19th November, 2021. 
                                 </p>
                                 <div className="button_div m-2 m-sm-3">
                                     <a href="https://forms.gle/GAKi8464ENXse6ex5" target="_blank">
