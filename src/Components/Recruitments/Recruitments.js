@@ -23,14 +23,14 @@ const Recruitments = () => {
                                 </p>
                                 <div className="buttonsR">
                                 <div className="button_div m-2 m-sm-3">
-                                    <a href="https://forms.gle/GAKi8464ENXse6ex5" target="_blank">
+                                    <a href="http://tiny.cc/NSS_Form_21-22" target="_blank">
                                         <span className="button">
                                             NSS recruitments
                                         </span>
                                     </a>
                                 </div>
                                 <div className="button_div m-2 m-sm-3">
-                                    <a href="https://forms.gle/CHcsRtcR8knYRxk89" target="_blank">
+                                    <a href="https://forms.gle/h6KwCZHDbgy3PNAK7" target="_blank">
                                         <span className="button">
                                             NSS D3 recruitments
                                         </span>
