@@ -207,7 +207,7 @@ const Contacts = () => {
                                         } 
                                     } rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that..."/>
                                 </FormGroup>
-                                <Button className="button">Send message</Button>
+                                <Button className="button" style={{marginTop:"1rem"}}>Send message</Button>
                             </Form>
                         </div>
                     </div>

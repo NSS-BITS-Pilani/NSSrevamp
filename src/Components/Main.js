@@ -7,6 +7,7 @@ import Home from "./Home/home.js";
 import Events from "./Events/events.js";
 import Resources from './Resources/Resouces';
 import Recruitments from "./Recruitments/Recruitments";
+import Umang from "./Umang/Umang";
 import TopBar from './TopBar/topbar';
 import Developers from './Developers/Developers';
 import Error_404 from './Error_404/Error_404';
@@ -25,7 +26,7 @@ const Main = () => (
         <Route path="/contactus" component={Contacts} />
         <Route path="/contactus#" component={Contacts} />
         <Route path="/resources" component={Resources} />
-        <Route path="/recruitments" component={Recruitments} />        
+        <Route path="/uc" component={Umang} />        
         <Route path="/developers" component={Developers} />
       <Route path="*" component={Error_404} />
     </Switch>

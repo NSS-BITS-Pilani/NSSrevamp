@@ -92,9 +92,10 @@ const Home = () => {
                     <div className={`${classes.homeFlexBox} homeFlexBox`}>
                         <Slide left>
                     <div className={`${classes.homeLeft} homeLeft`}>
-                        <div className={`${classes.section_heading_home} section_heading_home`}>
+                        <div className={`${classes.section_heading_home} section_heading_home`} style={{textAlign:"center"}}>
                             
-                            NSS BITS PILANI<br></br>Not me but you
+                                    NSS BITS PILANI<br></br>Not me but you
+                                    <div className='ucollection'><a href="https://docs.google.com/forms/d/e/1FAIpQLScmU0QOMdi3_TT5ETIAwaxe153J_Vq49c94tI-NJQZmBy5ZPg/viewform" target="_blank">Umang Collection Donate Now</a></div>
                         </div>
                         <div className={`${classes.homeRight_mob} homeRight_mob`}>
                             <div>
@@ -102,7 +103,7 @@ const Home = () => {
                             </div>
                         </div>
                             NSS BITS Pilani is composed of enthusiastic volunteers, under the guidance of respected teachers, who always keep in mind comprehensive and sustainable models for development. In addition to the main goals of community development, NSS also aims to inculcate service values ​​in students, and ultimately make them serious and responsible citizens dedicated to improving the country and the world.
-                        <div className={`${classes.button_div} button_div`}>
+                        <div className={`${classes.button_div} button_div`} style={{textAlign:"center"}}>
                             <span className={`${classes.button} button`}><NavLink to={"/aboutus"}>View More</NavLink></span>
                         </div>
                     </div>

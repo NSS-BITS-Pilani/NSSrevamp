@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 
+.ucollection{
+  font-size: 1.7rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  background-color: #ff5858;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.3rem;
+}
 
 option {
   font-family: "Poppins";
@@ -405,6 +414,11 @@ option {
 }
 
 @media all and (max-width: 800px) {
+  .ucollection{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+
   .mainInfo {
     margin-top: 2rem;
   }
